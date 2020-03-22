@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Landing = props => {
+const Landing = () => {
   return <section>ABC</section>;
 };
-
-Landing.section.propTypes = {};
 
 export default Landing;
