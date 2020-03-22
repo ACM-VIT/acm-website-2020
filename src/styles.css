@@ -10902,8 +10902,16 @@ video {
   transition-duration: 1000ms;
 }
 
+<<<<<<< HEAD
 .text-acm-blue{
   color: #0085B9;
+||||||| 47ca1ab
+.acm-blue{
+  color: #0085B9;
+=======
+.text-acm-blue {
+  color: #0085b9;
+>>>>>>> da86c76eb8be032ccae9f3b0b4187f85385efcc8
 }
 
 .team-box{
