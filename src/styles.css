@@ -10902,13 +10902,8 @@ video {
   transition-duration: 1000ms;
 }
 
-<<<<<<< HEAD
-.acm-color {
-  color: red;
-=======
-.acm-blue{
-  color: #0085B9;
->>>>>>> 47ca1ab2131874efdfbf36584c22daac53e6270a
+.text-acm-blue {
+  color: #0085b9;
 }
 
 @media (min-width: 870px) {
@@ -41821,8 +41816,4 @@ video {
   .lg\:duration-1000 {
     transition-duration: 1000ms;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 47ca1ab2131874efdfbf36584c22daac53e6270a

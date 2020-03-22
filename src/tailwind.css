@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.acm-blue {
+.text-acm-blue {
   color: #0085b9;
 }
