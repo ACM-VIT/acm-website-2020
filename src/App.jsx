@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { ReactFragment } from 'react';
+import LandingSection from './components/LandingSection/Landing.section';
 
 import './App.css';
 
-function App() {
-  return <div className="App">ACM Website</div>;
-}
+const App = () => {
+  return (
+    <ReactFragment>
+      <LandingSection />
+    </ReactFragment>
+  );
+};
 
 export default App;
