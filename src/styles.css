@@ -10902,8 +10902,50 @@ video {
   transition-duration: 1000ms;
 }
 
-.acm-blue{
+.text-acm-blue{
   color: #0085B9;
+}
+
+.team-box{
+  position: absolute;
+  width: 177px;
+  height: 255px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.team-image{
+  position: absolute;
+  width: 118.96px;
+  height: 118.96px;
+  background: black;
+  background-blend-mode: normal;
+}
+
+.team-name{
+  position: absolute;
+  width: 117px;
+  height: 29px;
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.team-designation{
+  position: absolute;
+  width: 85px;
+  height: 18px;
+  font-family: Myriad Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
 
 @media (min-width: 870px) {
