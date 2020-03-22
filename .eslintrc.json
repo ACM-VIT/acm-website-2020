@@ -16,5 +16,5 @@
     "sourceType": "module"
   },
   "plugins": ["prettier"],
-  "rules": { "no-unused-vars": "warn" }
+  "rules": { "no-unused-vars": "warn", "global-require": "off" }
 }

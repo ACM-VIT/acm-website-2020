@@ -1,13 +1,7 @@
 import React from 'react';
 
-import Container from '@material-ui/core/Container';
-
 const Landing = () => {
-  return (
-    <section>
-      <Container maxWidth="sm">Varying One Liner</Container>
-    </section>
-  );
+  return <section className="bg-black text-white">ABC</section>;
 };
 
 export default Landing;
