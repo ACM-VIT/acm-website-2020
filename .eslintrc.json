@@ -16,5 +16,9 @@
     "sourceType": "module"
   },
   "plugins": ["prettier"],
-  "rules": { "no-unused-vars": "warn", "global-require": "off" }
+  "rules": {
+    "no-unused-vars": "warn",
+    "global-require": "off",
+    "jsx-a11y/click-events-have-key-events": "off"
+  }
 }

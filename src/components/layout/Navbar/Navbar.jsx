@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 
 import { ReactComponent as AcmLogo } from '../../../vectors/AcmLogo.svg';
 import NavLink from './NavLink.component';
+import NavLine from './NavLine.component';
 
 const Navbar = () => {
-  const [links] = useState([
+  const [links, setLinks] = useState([
     { id: 1, text: 'Home', active: true },
     { id: 2, text: 'About', active: false },
     { id: 3, text: 'Team', active: false },
@@ -14,18 +15,40 @@ const Navbar = () => {
     { id: 6, text: 'Contact Us', active: false },
     { id: 7, text: 'Gallery', active: false }
   ]);
+  const [customStyles, setCustomStyles] = useState({ width: '80px' });
+
+  const setActive = (index, id, text, width) => {
+    let newLinks = [...links];
+    newLinks = newLinks.map(link => {
+      // eslint-disable-next-line no-param-reassign
+      link.active = false;
+      return link;
+    });
+    newLinks[index] = { id, text, active: true };
+    setLinks(newLinks);
+    setCustomStyles({
+      width: `${width * 1.75}px`
+    });
+  };
 
   return (
-    <header className="bg-black text-white h-20 flex items-center px-16 justify-between">
+    <header className="bg-black text-white flex items-center py-4 px-16 justify-between fixed w-full z-50">
       <div>
         <AcmLogo />
       </div>
-      <div className="flex">
-        {links.map(link => (
-          <NavLink active={link.active} key={link.id}>
-            {link.text}
-          </NavLink>
-        ))}
+      <div className="flex flex-col">
+        <div className="flex flex-row h-8 items-center my-2">
+          {links.map((link, index) => (
+            <NavLink
+              active={link.active}
+              key={link.id}
+              handleClick={width => setActive(index, link.id, link.text, width)}
+            >
+              {link.text}
+            </NavLink>
+          ))}
+        </div>
+        <NavLine customStyles={customStyles} />
       </div>
     </header>
   );
