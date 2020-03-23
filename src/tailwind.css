@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 
-.text-acm-blue{
+.text-acm-blue {
     color: #0085B9;
 }
 
-.team-box{
+.team-box {
     position: relative;
     width: 177px;
     height: 255px;
@@ -17,7 +17,7 @@
     border-radius: 8px;
 }
 
-.team-image{
+.team-image {
     position: relative;
     width: 118.96px;
     height: 118.96px;
@@ -26,7 +26,7 @@
     background-blend-mode: normal;
 }
 
-.team-name{
+.team-name {
     position: relative;
     width: 117px;
     height: 29px;
@@ -41,7 +41,7 @@
     color: #000000;
 }
 
-.team-designation{
+.team-designation {
     position: relative;
     width: 85px;
     height: 18px;
@@ -53,4 +53,18 @@
     line-height: 19px;
 
     color: #000000;
+}
+
+.contact-shadow {
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+}
+
+.bg-acm-blue {
+    background-color: #0085B9;
+}
+
+.reach-us {
+    left: -6rem;
+    border-radius: 5px;
 }

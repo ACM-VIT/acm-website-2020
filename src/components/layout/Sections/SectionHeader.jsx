@@ -5,7 +5,9 @@ const SectionHeader = props => {
   const { children } = props;
 
   return (
-    <header className="text-acm-blue text-4xl uppercase">{children}</header>
+    <header className="text-acm-blue text-4xl uppercase text-center">
+      {children}
+    </header>
   );
 };
 

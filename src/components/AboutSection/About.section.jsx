@@ -20,7 +20,9 @@ const About = () => {
     <div className="container mx-auto text-center">
       <SectionHeader>About Us</SectionHeader>
       {about.map(para => (
-        <p className="text-xl my-4">{para.text}</p>
+        <p className="text-xl my-4" key={para.id}>
+          {para.text}
+        </p>
       ))}
     </div>
   );
