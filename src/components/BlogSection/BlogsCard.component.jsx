@@ -11,13 +11,13 @@ const BlogsCard = props => {
     };
 
     return(
-        <div className="box-border events-box flex flex-row flex-no-wrap justify-around">
+        <section className="box-border events-box flex flex-row flex-no-wrap justify-around">
             <div className="h-full w-full">
                 <div className="blog-image" style={blogsImg} />
                 <p className="blog-title top-0 right-0">{blogsInfo.name}</p>
                 <p className="blog-description">{blogsInfo.desc}</p>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -11,13 +11,13 @@ const EventsCard = props => {
     };
 
     return(
-        <div className="box-border events-box">
+        <section className="box-border events-box">
             <div className="h-full w-full">
                 <div className="h-32 w-32" style={eventImg} />
                 <p className="events-name text-right">{eventsInfo.name}</p>
                 <p className="events-description text-justify">{eventsInfo.desc}</p>
             </div>
-        </div>
+        </section>
     );
 };
 

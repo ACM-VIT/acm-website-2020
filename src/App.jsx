@@ -7,6 +7,7 @@ import AboutPage from './components/AboutSection/About.section';
 import TeamPage from './components/TeamSection/Team.section';
 import EventsPage from './components/EventsSection/Events.section';
 import BlogPage from './components/BlogSection/Blog.section'
+import ProjectPage from './components/ProjectSection/Project.section';
 import ContactPage from './components/ContactSection/Contact.section';
 
 import './App.css';
@@ -20,6 +21,7 @@ const App = () => {
       <TeamPage />
       <EventsPage />
       <BlogPage />
+      <ProjectPage />
       <ContactPage />
     </>
   );
