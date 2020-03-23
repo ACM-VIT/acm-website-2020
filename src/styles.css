@@ -403,10 +403,6 @@ svg {
   background-color: #a0aec0;
 }
 
-.bg-gray-600 {
-  background-color: #718096;
-}
-
 .bg-red-800 {
   background-color: #9b2c2c;
 }
@@ -447,6 +443,10 @@ svg {
   align-items: center;
 }
 
+.items-stretch {
+  align-items: stretch;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -473,6 +473,10 @@ svg {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .h-screen {
@@ -542,6 +546,14 @@ svg {
   padding: 1rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -581,6 +593,10 @@ svg {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-white {
@@ -658,6 +674,11 @@ svg {
 .contact-shadow {
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.32);
   border-radius: 5px;
+}
+
+.project-card {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  border-radius: 8px;
 }
 
 .reach-us {
