@@ -403,6 +403,14 @@ svg {
   background-color: #a0aec0;
 }
 
+.bg-gray-600 {
+  background-color: #718096;
+}
+
+.bg-red-800 {
+  background-color: #9b2c2c;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -447,6 +455,10 @@ svg {
   justify-content: space-between;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -474,6 +486,11 @@ svg {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-4 {
@@ -509,8 +526,16 @@ svg {
   margin-left: 5rem;
 }
 
+.ml-40 {
+  margin-left: 10rem;
+}
+
 .focus\:outline-none:focus {
   outline: 0;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .p-4 {
@@ -619,7 +644,11 @@ svg {
 }
 
 .text-acm-blue {
-  color: #0085B9;
+  color: #0085b9;
+}
+
+.bg-acm-blue {
+  background-color: #0085b9;
 }
 
 .team-box {
@@ -629,10 +658,6 @@ svg {
 .contact-shadow {
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.32);
   border-radius: 5px;
-}
-
-.bg-acm-blue {
-  background-color: #0085B9;
 }
 
 .reach-us {
