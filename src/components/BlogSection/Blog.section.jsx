@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent-props */
 /* eslint-disable import/no-duplicates */
 /* eslint-disable no-shadow */
 /* eslint-disable react/jsx-indent */
@@ -65,14 +66,20 @@ const Blog = () => {
     ]);
 
     return(
-        <div className="my-15">
+        <section className="ml-40 text-center my-12">
             <SectionHeader>BLOGS</SectionHeader>
-            <div className="overflow-x-scroll flex flex-no-wrap justify-around">
+            <div className="flex overflow-x-scroll items-stretch p-16">
                 {blogs.map(blogs => (
-                    <BlogsCard blogsInfo={blogs} key={blogs.id} />
+                    <BlogsCard 
+                        key={blogs.id}
+                        desc={blogs.desc}
+                        avatarURL={blogs.avatarURL}   
+                    >
+                        {blogs.name}
+                    </BlogsCard>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

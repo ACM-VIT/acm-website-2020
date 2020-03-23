@@ -3,26 +3,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const BlogsCard = props => {
-    const {blogsInfo} = props;
+    const {children, desc, image} = props;
 
-    const blogsImg = {
-        backgroundImage: `url(${blogsInfo.avatarURL})`,
-        backgroundSize: '8rem 8rem'
+    const imageStyle = {
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover'
     };
 
     return(
-        <section className="box-border events-box flex flex-row flex-no-wrap justify-around">
-            <div className="h-full w-full">
-                <div className="blog-image" style={blogsImg} />
-                <p className="blog-title top-0 right-0">{blogsInfo.name}</p>
-                <p className="blog-description">{blogsInfo.desc}</p>
-            </div>
-        </section>
+        <div className="blog-box w-1/3 mx-4 flex-shrink-0 p-8 shadow-2xl">
+            <div className="bg-red-800 w-40 h-40 -mt-12 -ml-3" style={imageStyle} />
+            <p className="my-4 font-bold text-3xl text-right -mt-12">{children}</p>
+            <p className="text-justify">{desc}</p>
+        </div>
     );
 };
 
 BlogsCard.propTypes = {
-    blogsInfo: PropTypes.objectOf(PropTypes.any).isRequired
+    children: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired
   };
 
 export default BlogsCard;
