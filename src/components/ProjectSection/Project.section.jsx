@@ -73,7 +73,7 @@ const ProjectSection = () => {
   return (
     <section className="ml-40 text-center my-12">
       <SectionHeader>Projects</SectionHeader>
-      <div className="flex overflow-x-scroll items-stretch p-16">
+      <div className="flex overflow-x-scroll items-stretch pl-0 p-16">
         {projects.map(project => (
           <ProjectCard
             key={project.id}
