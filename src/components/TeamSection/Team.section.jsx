@@ -6,10 +6,63 @@ import SectionHeader from '../layout/Sections/SectionHeader';
 const Team = () => {
   return (
     <div className="container mx-auto text-center">
-      <SectionHeader>Team</SectionHeader>
-      <div className="grid gap-4 grid-cols-4">
-        <Card />
-      </div>
+        <SectionHeader>Team</SectionHeader><br></br><br></br>
+        <div className="flex flex-row justify-around">
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+        </div><br></br><br></br>
+        <div className="flex flex-row justify-around">
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+        </div><br></br><br></br>
+        <div className="flex flex-row justify-around">
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+        </div><br></br><br></br>
+        <div className="flex flex-row justify-around">
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+            <div>
+                <Card />
+            </div>
+        </div><br></br><br></br>
     </div>
   );
 };
