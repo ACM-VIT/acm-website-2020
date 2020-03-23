@@ -33,11 +33,6 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -197,7 +192,6 @@ a {
  */
 
 
-h1,
 p {
   margin: 0;
 }
@@ -271,11 +265,6 @@ html {
  *
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
-
-h1 {
-  font-size: inherit;
-  font-weight: inherit;
-}
 
 /**
  * Reset links to optimize for opt-in styling instead of
@@ -385,6 +374,11 @@ svg {
   height: 100%;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -418,6 +412,10 @@ svg {
 
 .text-4xl {
   font-size: 2.25rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .w-full {

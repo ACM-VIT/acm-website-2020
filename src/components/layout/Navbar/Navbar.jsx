@@ -1,8 +1,8 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 
-import { ReactComponent as AcmLogo } from '../../vectors/AcmLogo.svg';
-import NavLink from './NavLink';
+import { ReactComponent as AcmLogo } from '../../../vectors/AcmLogo.svg';
+import NavLink from './NavLink.component';
 
 const Navbar = () => {
   const [links] = useState([
