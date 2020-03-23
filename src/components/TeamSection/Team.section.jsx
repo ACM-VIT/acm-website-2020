@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import TeamCard from './TeamCard.component';
-import SectionHeader from '../layout/Sections/SectionHeader';
+import SectionHeader from '../layout/Sections/SectionHeader.component';
 
 const Team = () => {
   const [ACMTeam] = useState([
@@ -52,18 +52,66 @@ const Team = () => {
       name: 'Your Name',
       designation: 'Designation',
       avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 9,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 10,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 11,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 12,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 13,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 14,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 15,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+    },
+    {
+      id: 16,
+      name: 'Your Name',
+      designation: 'Designation',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
     }
   ]);
 
   return (
-    <div className="container mx-auto text-center">
+    <section className="container mx-auto text-center my-8">
       <SectionHeader>Team</SectionHeader>
-      <div className="flex flex-row justify-between flex-wrap">
+      <div className="flex flex-row justify-center flex-wrap">
         {ACMTeam.map(member => (
           <TeamCard memberInfo={member} key={member.id} />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

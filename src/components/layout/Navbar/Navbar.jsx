@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 
@@ -20,14 +21,15 @@ const Navbar = () => {
   const setActive = (index, id, text, width) => {
     let newLinks = [...links];
     newLinks = newLinks.map(link => {
-      // eslint-disable-next-line no-param-reassign
       link.active = false;
       return link;
     });
     newLinks[index] = { id, text, active: true };
     setLinks(newLinks);
+
+    width = Number(width);
     setCustomStyles({
-      width: `${width * 1.75}px`
+      width: `${width + 34.5}px`
     });
   };
 
