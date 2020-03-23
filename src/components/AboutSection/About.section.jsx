@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import SectionHeader from '../layout/Sections/SectionHeader';
+import SectionHeader from '../layout/Sections/SectionHeader.component';
 
 const About = () => {
   const [about] = useState([

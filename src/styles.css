@@ -451,6 +451,10 @@ svg {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -463,8 +467,8 @@ svg {
   height: 100vh;
 }
 
-.m-8 {
-  margin: 2rem;
+.m-6 {
+  margin: 1.5rem;
 }
 
 .my-2 {
@@ -518,6 +522,11 @@ svg {
   padding-bottom: 1rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -555,6 +564,10 @@ svg {
 
 .hover\:text-blue-300:hover {
   color: #90cdf4;
+}
+
+.text-sm {
+  font-size: 0.875rem;
 }
 
 .text-lg {
