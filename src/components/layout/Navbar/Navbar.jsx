@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-black text-white flex items-center py-4 px-16 justify-between">
+    <header className="bg-black text-white flex items-center py-4 px-16 justify-between fixed w-full">
       <div>
         <AcmLogo />
       </div>
