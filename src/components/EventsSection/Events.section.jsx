@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeader from '../layout/Sections/SectionHeader';
-import EventsCard from './Event.card'
+import EventsCard from './EventCard.component'
 
 const Events = () => {
     return(
