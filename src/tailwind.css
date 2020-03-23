@@ -8,7 +8,7 @@
 }
 
 .team-box{
-    position: absolute;
+    position: relative;
     width: 177px;
     height: 255px;
 
@@ -18,7 +18,7 @@
 }
 
 .team-image{
-    position: absolute;
+    position: relative;
     width: 118.96px;
     height: 118.96px;
 
@@ -27,7 +27,7 @@
 }
 
 .team-name{
-    position: absolute;
+    position: relative;
     width: 117px;
     height: 29px;
 
@@ -42,7 +42,7 @@
 }
 
 .team-designation{
-    position: absolute;
+    position: relative;
     width: 85px;
     height: 18px;
 
