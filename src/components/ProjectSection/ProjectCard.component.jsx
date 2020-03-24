@@ -10,7 +10,7 @@ const ProjectCard = props => {
   };
 
   return (
-    <div className="project-card w-1/3 mx-4 flex-shrink-0 p-8 shadow-2xl">
+    <div className="w-1/3 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
       <div className="bg-red-800 w-full h-40" style={imageStyling} />
       <div className="my-4 font-bold text-4xl">{children}</div>
       <div className="text-justify">{description}</div>

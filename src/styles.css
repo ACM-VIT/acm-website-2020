@@ -533,6 +533,10 @@ svg {
   margin-left: 10rem;
 }
 
+.-mt-16 {
+  margin-top: -4rem;
+}
+
 .focus\:outline-none:focus {
   outline: 0;
 }
@@ -576,10 +580,6 @@ svg {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
-}
-
-.pl-0 {
-  padding-left: 0;
 }
 
 .pl-4 {
