@@ -21,3 +21,9 @@
 .shift-left {
   left: -6rem;
 }
+
+.eventspage-img{
+  float: left;
+  margin-right: 0.625rem;
+  display: flex;
+}

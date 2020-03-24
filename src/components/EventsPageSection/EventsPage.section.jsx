@@ -10,32 +10,32 @@ const EventsPage = () => {
       id: 1,
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo mi nec nisl facilisis blandit nunc donec donec. Commodo dictum molestie amet sagittis, non pellentesque arcu. Ipsum ullamcorper odio mauris ultricies orci cras sit ut vestibulum. Et amet, libero odio purus semper.',
-      image: `${process.env.PUBLIC_URL}/assets/images/EventsPage.png`
+      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
     },
     {
       id: 2,
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo mi nec nisl facilisis blandit nunc donec donec. Commodo dictum molestie amet sagittis, non pellentesque arcu. Ipsum ullamcorper odio mauris ultricies orci cras sit ut vestibulum. Et amet, libero odio purus semper.',
-      image: `${process.env.PUBLIC_URL}/assets/images/EventsPage.png`
+      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
     },
     {
       id: 3,
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo mi nec nisl facilisis blandit nunc donec donec. Commodo dictum molestie amet sagittis, non pellentesque arcu. Ipsum ullamcorper odio mauris ultricies orci cras sit ut vestibulum. Et amet, libero odio purus semper.',
-      image: `${process.env.PUBLIC_URL}/assets/images/EventsPage.png`
+      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
     },
     {
       id: 4,
       desc:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo mi nec nisl facilisis blandit nunc donec donec. Commodo dictum molestie amet sagittis, non pellentesque arcu. Ipsum ullamcorper odio mauris ultricies orci cras sit ut vestibulum. Et amet, libero odio purus semper.',
-      image: `${process.env.PUBLIC_URL}/assets/images/EventsPage.png`
+      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
     }
   ]);
 
   return(
     <section className="ml-40 text-center my-12">
       <SectionHeader>OUR EVENTS</SectionHeader>
-      <VerticalTimeline>
+      <VerticalTimeline className="">
         {events.map(event => (
           <EventsNet key={event.id} desc={event.desc} image={event.image} />
         ))}
