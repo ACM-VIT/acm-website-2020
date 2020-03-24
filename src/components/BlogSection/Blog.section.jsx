@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 
-const Blog = () => {
+const Blog = ({ findOffset }) => {
   const [blogs] = useState([
     {
       id: 1,
@@ -71,7 +72,14 @@ const Blog = () => {
   ]);
 
   return (
-    <section className="text-center my-12" id="blogs-section">
+    <section
+      ref={el => {
+        if (!el) return;
+        findOffset(el.getBoundingClientRect().y);
+      }}
+      className="text-center my-12"
+      id="blogs-section"
+    >
       <SectionHeader>Blogs</SectionHeader>
       <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {blogs.map(blog => (
@@ -83,5 +91,7 @@ const Blog = () => {
     </section>
   );
 };
+
+Blog.propTypes = { findOffset: PropTypes.func.isRequired };
 
 export default Blog;

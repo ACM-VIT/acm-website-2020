@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 
-const Events = () => {
+const Events = ({ findOffset }) => {
   const [events] = useState([
     {
       id: 1,
@@ -71,7 +72,14 @@ const Events = () => {
   ]);
 
   return (
-    <section className="text-center my-12" id="events-section">
+    <section
+      ref={el => {
+        if (!el) return;
+        findOffset(el.getBoundingClientRect().y);
+      }}
+      className="text-center my-12"
+      id="events-section"
+    >
       <SectionHeader>Events</SectionHeader>
       <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {events.map(event => (
@@ -83,5 +91,7 @@ const Events = () => {
     </section>
   );
 };
+
+Events.propTypes = { findOffset: PropTypes.func.isRequired };
 
 export default Events;

@@ -1,26 +1,70 @@
 /* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { ReactComponent as AcmLogo } from '../../../vectors/AcmLogo.svg';
 import NavLink from './NavLink.component';
 import NavLine from './NavLine.component';
 
-const Navbar = () => {
+const Navbar = ({ offsetPos }) => {
   const [links, setLinks] = useState([
-    { id: 1, text: 'Home', scrollTo: 'landing-section', active: true },
-    { id: 2, text: 'About', scrollTo: 'about-section', active: false },
-    { id: 3, text: 'Team', scrollTo: 'team-section', active: false },
-    { id: 4, text: 'Events', scrollTo: 'events-section', active: false },
-    { id: 5, text: 'Blogs', scrollTo: 'blogs-section', active: false },
-    { id: 6, text: 'Projects', scrollTo: 'projects-section', active: false },
-    { id: 7, text: 'Contact Us', scrollTo: 'contact-section', active: false },
-    { id: 8, text: 'Gallery', scrollTo: 'contact-section', active: false }
+    {
+      id: 1,
+      text: 'Home',
+      scrollTo: 'landing-section',
+      offsetY: 0,
+      active: true
+    },
+    {
+      id: 2,
+      text: 'About',
+      scrollTo: 'about-section',
+      offsetY: 0,
+      active: false
+    },
+    {
+      id: 3,
+      text: 'Team',
+      scrollTo: 'team-section',
+      offsetY: 0,
+      active: false
+    },
+    {
+      id: 4,
+      text: 'Events',
+      scrollTo: 'events-section',
+      offsetY: 0,
+      active: false
+    },
+    {
+      id: 5,
+      text: 'Blogs',
+      scrollTo: 'blogs-section',
+      offsetY: 0,
+      active: false
+    },
+    {
+      id: 6,
+      text: 'Projects',
+      scrollTo: 'projects-section',
+      offsetY: 0,
+      active: false
+    },
+    {
+      id: 7,
+      text: 'Contact Us',
+      scrollTo: 'contact-section',
+      offsetY: 0,
+      active: false
+    }
   ]);
   const [customStyles, setCustomStyles] = useState({
     width: '77.51px',
     left: '0px'
   });
   const [startPos, setStartPos] = useState(0);
+
+  console.log(offsetPos);
 
   const setHomePos = homePos => {
     setStartPos(homePos);
@@ -80,6 +124,10 @@ const Navbar = () => {
       </div>
     </header>
   );
+};
+
+Navbar.propTypes = {
+  offsetPos: PropTypes.arrayOf(PropTypes.number).isRequired
 };
 
 export default Navbar;

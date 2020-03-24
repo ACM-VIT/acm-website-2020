@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import ProjectCard from './ProjectCard.component';
 
-const ProjectSection = () => {
+const Projects = ({ findOffset }) => {
   const [projects] = useState([
     {
       id: 1,
@@ -71,7 +72,14 @@ const ProjectSection = () => {
   ]);
 
   return (
-    <section className="text-center my-12" id="projects-section">
+    <section
+      ref={el => {
+        if (!el) return;
+        findOffset(el.getBoundingClientRect().y);
+      }}
+      className="text-center my-12"
+      id="projects-section"
+    >
       <SectionHeader>Projects</SectionHeader>
       <div className="ml-32 flex overflow-x-scroll items-stretch pl-4 p-16">
         {projects.map(project => (
@@ -88,4 +96,6 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+Projects.propTypes = { findOffset: PropTypes.func.isRequired };
+
+export default Projects;

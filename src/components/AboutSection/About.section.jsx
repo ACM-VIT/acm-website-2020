@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 
-const About = () => {
+const About = ({ findOffset }) => {
   const [about] = useState([
     {
       id: 1,
@@ -17,7 +18,14 @@ const About = () => {
   ]);
 
   return (
-    <section className="container mx-auto text-center my-12" id="about-section">
+    <section
+      ref={el => {
+        if (!el) return;
+        findOffset(el.getBoundingClientRect().y);
+      }}
+      className="container mx-auto text-center my-12"
+      id="about-section"
+    >
       <SectionHeader>About Us</SectionHeader>
       {about.map(para => (
         <p className="text-xl my-4" key={para.id}>
@@ -26,6 +34,10 @@ const About = () => {
       ))}
     </section>
   );
+};
+
+About.propTypes = {
+  findOffset: PropTypes.func.isRequired
 };
 
 export default About;

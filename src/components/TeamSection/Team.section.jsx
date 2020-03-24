@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import TeamCard from './TeamCard.component';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 
-const Team = () => {
+const Team = ({ findOffset }) => {
   const [ACMTeam] = useState([
     {
       id: 1,
@@ -104,7 +105,14 @@ const Team = () => {
   ]);
 
   return (
-    <section className="container mx-auto text-center my-8" id="team-section">
+    <section
+      ref={el => {
+        if (!el) return;
+        findOffset(el.getBoundingClientRect().y);
+      }}
+      className="container mx-auto text-center my-8"
+      id="team-section"
+    >
       <SectionHeader>Team</SectionHeader>
       <div className="flex flex-row justify-center flex-wrap">
         {ACMTeam.map(member => (
@@ -113,6 +121,10 @@ const Team = () => {
       </div>
     </section>
   );
+};
+
+Team.propTypes = {
+  findOffset: PropTypes.func.isRequired
 };
 
 export default Team;
