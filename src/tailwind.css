@@ -12,11 +12,6 @@
 
 
 .events-box{
-    position: relative;
-    width: 426px;
-    height: 233px;
-
-    background: #FFFFFF;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
     border-radius: 8px;
 }
@@ -87,11 +82,6 @@
 }
 
 .blog-box{
-    position: absolute;
-    width: 426px;
-    height: 233px;
-
-    background: #FFFFFF;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
     border-radius: 8px;
 }
