@@ -13,7 +13,7 @@ const TeamCard = props => {
   };
 
   return (
-    <div className="box-border team-box relative rounded-lg flex flex-col items-center w-2/12 m-6 py-8 px-4">
+    <div className="box-border shadow-card relative rounded-lg flex flex-col items-center w-2/12 m-6 py-8 px-4">
       <div
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
