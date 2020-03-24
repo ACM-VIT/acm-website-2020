@@ -73,7 +73,7 @@ const Events = () => {
   return (
     <section className="text-center my-12">
       <SectionHeader>Events</SectionHeader>
-      <div className="ml-40 flex overflow-x-scroll items-stretch p-16 pl-4">
+      <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {events.map(event => (
           <CarouselCard key={event.id} desc={event.desc} image={event.image}>
             {event.name}

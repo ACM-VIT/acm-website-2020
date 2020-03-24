@@ -529,12 +529,8 @@ svg {
   margin-left: 5rem;
 }
 
-.ml-40 {
-  margin-left: 10rem;
-}
-
-.-mt-16 {
-  margin-top: -4rem;
+.ml-32 {
+  margin-left: 8rem;
 }
 
 .focus\:outline-none:focus {
@@ -596,10 +592,6 @@ svg {
 
 .relative {
   position: relative;
-}
-
-.shadow-2xl {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .text-center {
@@ -702,6 +694,6 @@ svg {
   top: -6rem;
 }
 
-.reach-us {
+.shift-left {
   left: -6rem;
 }

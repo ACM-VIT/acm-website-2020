@@ -73,7 +73,7 @@ const Blog = () => {
   return (
     <section className="text-center my-12">
       <SectionHeader>Blogs</SectionHeader>
-      <div className="ml-40 flex overflow-x-scroll items-stretch p-16 pl-4">
+      <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {blogs.map(blog => (
           <CarouselCard key={blog.id} desc={blog.desc} image={blog.image}>
             {blog.name}

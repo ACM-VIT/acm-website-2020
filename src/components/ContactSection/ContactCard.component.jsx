@@ -17,8 +17,8 @@ const ContactCard = () => {
 
   return (
     <div className="flex justify-center mb-4 py-4">
-      <div className="contact-shadow w-2/3 shadow-2xl flex p-4 py-8">
-        <div className="w-1/3 bg-acm-blue text-white relative reach-us px-6 py-4">
+      <div className="shadow-card w-2/3 rounded-lg flex p-4 py-8">
+        <div className="w-1/3 bg-acm-blue text-white relative shift-left px-6 py-4 shadow-card rounded-lg">
           <div className="text-4xl">Reach us at</div>
           {socialLinks.map(social => (
             <SocialLink logo={social.logo} key={social.id}>
