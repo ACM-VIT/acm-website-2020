@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
-import EventsCard from './EventCard.component';
+import CarouselCard from '../layout/Sections/CarouselCard.component';
 
 const Events = () => {
   const [events] = useState([
@@ -75,9 +75,9 @@ const Events = () => {
       <SectionHeader>Events</SectionHeader>
       <div className="ml-40 flex overflow-x-scroll items-stretch p-16 pl-4">
         {events.map(event => (
-          <EventsCard key={event.id} desc={event.desc} image={event.image}>
+          <CarouselCard key={event.id} desc={event.desc} image={event.image}>
             {event.name}
-          </EventsCard>
+          </CarouselCard>
         ))}
       </div>
     </section>
