@@ -14,43 +14,10 @@
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
 }
 
-.team-box {
-  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+.shift-up {
+  top: -6rem;
 }
 
-.project-card {
-  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
-  border-radius: 8px;
-}
-
-.carousel {
-  position: relative;
-  width: 20px;
-  height: 20px;
-
-  background: #000000;
-}
-
-.reach-us {
+.shift-left {
   left: -6rem;
-  border-radius: 5px;
-}
-
-.contact-shadow {
-  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.32);
-  border-radius: 5px;
-}
-
-.eventspage-box{
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.eventspage-text{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
-
-  color: #000000;
 }

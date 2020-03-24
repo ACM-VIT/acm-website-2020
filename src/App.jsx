@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-// Sections
 import Navbar from './components/layout/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
-import EventsPage from './pages/EventsPage';
+import EventsPageLanding from './pages/EventsPageLanding';
 
 import './App.css';
 
@@ -16,7 +15,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           {/* Start working from here  */}
-          <Route exact path="/events" component={EventsPage} />
+          <Route exact path="/events" component={EventsPageLanding} />
         </Switch>
       </BrowserRouter>
     </>

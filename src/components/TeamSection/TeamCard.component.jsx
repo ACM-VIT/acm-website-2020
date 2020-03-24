@@ -19,12 +19,10 @@ const TeamCard = props => {
         style={dpStyles}
       />
       <div className="my-4">
-        <div className="team-name text-center font-extrabold text-lg ">
+        <div className="text-center font-extrabold text-lg ">
           {memberInfo.name}
         </div>
-        <div className="team-designation text-center text-sm">
-          {memberInfo.designation}
-        </div>
+        <div className="text-center text-sm">{memberInfo.designation}</div>
       </div>
       <div className="flex justify-center items-center w-full">
         <Facebook />
