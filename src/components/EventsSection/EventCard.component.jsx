@@ -10,13 +10,19 @@ const EventsCard = props => {
   };
 
   return (
-    <div className="events-box w-1/3 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
-      <div
-        className="bg-red-800 w-40 h-40 mt-12 ml-3 rounded-lg absolute"
-        style={imageStyle}
-      />
-      <div className="my-4 font-bold text-3xl text-right mt-12">{children}</div>
-      <div className="text-justify">{desc}</div>
+    <div className="events-box w-2/5 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
+      <div className="flex flex-col">
+        <div className="flex items-end justify-between relative">
+          <div
+            className="shift-up bg-red-800 w-40 h-40 rounded-lg absolute flex-shrink-0"
+            style={imageStyle}
+          />
+          <div className="font-bold text-3xl text-right text-right my-4 w-full">
+            {children}
+          </div>
+        </div>
+        <div className="text-justify">{desc}</div>
+      </div>
     </div>
   );
 };
