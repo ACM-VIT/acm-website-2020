@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Sections
 import Navbar from './components/layout/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
+import EventsPage from './pages/EventsPage';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={LandingPage} />
           {/* Start working from here  */}
-          {/* <Route exact path="/events" component={EventsPage} /> */}
+          <Route exact path="/events" component={EventsPage} />
         </Switch>
       </BrowserRouter>
     </>
