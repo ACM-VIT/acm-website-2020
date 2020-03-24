@@ -17,7 +17,7 @@ const About = () => {
   ]);
 
   return (
-    <section className="container mx-auto text-center my-12">
+    <section className="container mx-auto text-center my-12" id="about-section">
       <SectionHeader>About Us</SectionHeader>
       {about.map(para => (
         <p className="text-xl my-4" key={para.id}>

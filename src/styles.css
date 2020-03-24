@@ -582,6 +582,10 @@ svg {
   padding-left: 1rem;
 }
 
+.pt-32 {
+  padding-top: 8rem;
+}
+
 .fixed {
   position: fixed;
 }
@@ -676,6 +680,18 @@ svg {
 
 .z-50 {
   z-index: 50;
+}
+
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .text-acm-blue {

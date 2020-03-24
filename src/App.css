@@ -4,4 +4,5 @@ html {
   width: 100%;
   margin: 0;
   cursor: default;
+  scroll-behavior: smooth;
 }

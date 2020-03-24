@@ -104,7 +104,7 @@ const Team = () => {
   ]);
 
   return (
-    <section className="container mx-auto text-center my-8">
+    <section className="container mx-auto text-center my-8" id="team-section">
       <SectionHeader>Team</SectionHeader>
       <div className="flex flex-row justify-center flex-wrap">
         {ACMTeam.map(member => (
