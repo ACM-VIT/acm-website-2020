@@ -71,7 +71,7 @@ const Blog = () => {
   ]);
 
   return (
-    <section className="text-center my-12">
+    <section className="text-center my-12" id="blogs-section">
       <SectionHeader>Blogs</SectionHeader>
       <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {blogs.map(blog => (

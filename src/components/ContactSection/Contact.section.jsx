@@ -4,7 +4,7 @@ import ContactCard from './ContactCard.component';
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact-section">
       <ContactCard />
     </div>
   );

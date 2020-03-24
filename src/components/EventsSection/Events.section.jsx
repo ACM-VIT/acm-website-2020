@@ -71,7 +71,7 @@ const Events = () => {
   ]);
 
   return (
-    <section className="text-center my-12">
+    <section className="text-center my-12" id="events-section">
       <SectionHeader>Events</SectionHeader>
       <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
         {events.map(event => (

@@ -10,6 +10,7 @@ const Landing = () => {
     <section
       className="h-screen bg-gray-500 flex justify-center items-center bg-landing"
       style={backgroundStyling}
+      id="landing-section"
     >
       <h1 className="text-4xl text-white font-bold">Varying one liner</h1>
     </section>
