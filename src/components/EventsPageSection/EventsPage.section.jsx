@@ -35,7 +35,7 @@ const EventsPage = () => {
   return(
     <section className="ml-40 text-center my-12">
       <SectionHeader>OUR EVENTS</SectionHeader>
-      <VerticalTimeline className="">
+      <VerticalTimeline>
         {events.map(event => (
           <EventsNet key={event.id} desc={event.desc} image={event.image} />
         ))}
