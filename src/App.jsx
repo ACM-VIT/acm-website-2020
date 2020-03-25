@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar/Navbar';
+import HamburgerNavbar from './components/HamburgerNavSection/HamburgerNav'
 import LandingPage from './pages/LandingPage';
 import EventsPageLanding from './pages/EventsPageLanding';
 import BlogsPageLanding from './pages/BlogsPageLanding';
@@ -20,6 +21,7 @@ const App = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar offsetPos={offsetPos} />
+      <HamburgerNavbar offsetPos={offsetPos} />
       <Switch>
         <Route
           exact
