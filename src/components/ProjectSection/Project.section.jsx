@@ -62,7 +62,7 @@ const Projects = ({ findOffset }) => {
     <section
       ref={el => {
         if (!el) return;
-        findOffset(el.getBoundingClientRect().y);
+        findOffset(el.getBoundingClientRect().y - 180);
       }}
       className="text-center my-12"
       id="projects-section"
