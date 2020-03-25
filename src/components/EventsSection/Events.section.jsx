@@ -184,12 +184,14 @@ const Events = ({ findOffset }) => {
         </div>
       </div>
       <div className="text-acm-blue text-2xl px-32 underline">
-        <Link to="/events">
-          <div className="flex items-center flex-no-wrap justify-end">
-            <div>View All Events</div>
-            <RightLink />
-          </div>
-        </Link>
+        <div className="flex items-center flex-no-wrap justify-end">
+          <Link to="/events">
+            <div className="flex items-center flex-no-wrap justify-end">
+              <div>View All Events</div>
+              <RightLink />
+            </div>
+          </Link>
+        </div>
       </div>
     </section>
   );

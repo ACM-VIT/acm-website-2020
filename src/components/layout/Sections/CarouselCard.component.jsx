@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const EventsCard = props => {
+const CarouselCard = props => {
   const { children, desc, image, url } = props;
 
   const imageStyle = {
@@ -13,7 +13,7 @@ const EventsCard = props => {
 
   return (
     <a href={url}>
-      <div className="w-448 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
+      <div className="w-448 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg h-64">
         <div className="flex flex-col justify-between items-center">
           <div className="flex items-end justify-between relative w-full">
             <div
@@ -31,11 +31,13 @@ const EventsCard = props => {
   );
 };
 
-EventsCard.propTypes = {
+CarouselCard.propTypes = {
   children: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string
 };
 
-export default EventsCard;
+CarouselCard.defaultProps = { url: '' };
+
+export default CarouselCard;
