@@ -163,15 +163,14 @@ const Events = ({ findOffset }) => {
           }}
         >
           {events.reverse().map(event => (
-            <a href={event.url}>
-              <CarouselCard
-                key={event.id}
-                desc={event.desc}
-                image={event.image}
-              >
-                {event.name}
-              </CarouselCard>
-            </a>
+            <CarouselCard
+              key={event.id}
+              desc={event.desc}
+              image={event.image}
+              url={event.url}
+            >
+              {event.name}
+            </CarouselCard>
           ))}
         </div>
         <div className="w-32 flex-shrink-0 flex justify-center items-center">
