@@ -13,16 +13,18 @@ const BlogsNet = props => {
   return(
       <div className="w-3/12 m-12 p-4 shadow-card">
         <div className="flex flex-col">
-          <div className="flex items-stretch justify-around">
+          <div className="flex items-start justify-around">
             <div
-              className="bg-red-800 w-56 h-40 blogspage-image"
+              className="bg-red-800 w-full h-40 blogspage-image pr-24"
               style={imageStyle}
             />
-            <div className="font-bold blogspage-title text-left w-full h-12">
-              {children}
+            <div>
+              <div className="font-bold blogspage-title text-left w-38 h-4">
+                {children}
+              </div>
+              <div className="text-left text-sm pt-2 w-38">{desc}</div>
             </div>
           </div>
-          <div className="text-justify text-sm p-2">{desc}</div>
         </div>
       </div>
   );
