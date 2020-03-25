@@ -29,7 +29,7 @@ const TeamCard = props => {
           <a href={memberInfo.github}>
             <GithubIcon />
           </a>
-          <a href={memberInfo.linkedin}>
+          <a href={memberInfo.linkedIn}>
             <LinkedinIcon />
           </a>
         </div>
