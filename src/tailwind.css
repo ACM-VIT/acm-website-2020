@@ -22,13 +22,26 @@
   left: -6rem;
 }
 
-.eventspage-img{
+.hide-scrollbar {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.w-448 {
+  width: 28rem;
+}
+
+.eventspage-img {
   float: left;
   margin-right: 0.625rem;
   display: flex;
 }
 
-.blogspage-title{
+.blogspage-title {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -37,17 +50,17 @@
   color: #000000;
 }
 
-.blogspage-medium-image{
+.blogspage-medium-image {
   margin: 2.75rem;
   margin-right: 20rem;
 }
 
-.blogspage-vector-image{
+.blogspage-vector-image {
   margin: 3.35rem;
   margin-right: 8rem;
 }
 
-.blogspage-image{
+.blogspage-image {
   display: flex;
   float: left;
   margin-right: 0.625rem;

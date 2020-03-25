@@ -110,12 +110,10 @@ const About = ({ findOffset }) => {
       id="about-section"
     >
       {about.map(section => (
-        <>
+        <div key={section.id}>
           <SectionHeader>{section.title}</SectionHeader>
-          <div className="text-xl my-4 text-justified" key={section.id}>
-            {section.text}
-          </div>
-        </>
+          <div className="text-xl my-4 text-justified">{section.text}</div>
+        </div>
       ))}
     </section>
   );

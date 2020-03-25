@@ -1,8 +1,11 @@
+/* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
+import RightArrow from './RightArrow';
+import LeftArrow from './LeftArrow';
 
 const Events = ({ findOffset }) => {
   const [events] = useState([
@@ -71,6 +74,23 @@ const Events = ({ findOffset }) => {
     }
   ]);
 
+  let node;
+
+  const scrollHorizontally = (element, direction, speed, distance, step) => {
+    let scrollAmount = 0;
+    const slideTimer = setInterval(() => {
+      if (direction === 'right') {
+        element.scrollLeft += step;
+      } else {
+        element.scrollLeft -= step;
+      }
+      scrollAmount += step;
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+    }, speed);
+  };
+
   return (
     <section
       ref={el => {
@@ -81,12 +101,38 @@ const Events = ({ findOffset }) => {
       id="events-section"
     >
       <SectionHeader>Events</SectionHeader>
-      <div className="ml-32 flex overflow-x-scroll items-stretch p-16 pl-4">
-        {events.map(event => (
-          <CarouselCard key={event.id} desc={event.desc} image={event.image}>
-            {event.name}
-          </CarouselCard>
-        ))}
+      <div className="flex">
+        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+          <div
+            onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
+            role="button"
+            tabIndex="-1"
+          >
+            <LeftArrow />
+          </div>
+        </div>
+        <div
+          className="hide-scrollbar flex overflow-x-scroll items-stretch p-16 px-4"
+          ref={el => {
+            if (!el) return;
+            node = el;
+          }}
+        >
+          {events.map(event => (
+            <CarouselCard key={event.id} desc={event.desc} image={event.image}>
+              {event.name}
+            </CarouselCard>
+          ))}
+        </div>
+        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+          <div
+            onClick={() => scrollHorizontally(node, 'right', 25, 480, 48)}
+            role="button"
+            tabIndex="-1"
+          >
+            <RightArrow />
+          </div>
+        </div>
       </div>
     </section>
   );
