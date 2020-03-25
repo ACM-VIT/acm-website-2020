@@ -66,14 +66,6 @@
   margin-right: 0.625rem;
 }
 
-.hamburger-nav{
-  background-color: #0085B9;
-  padding-right: 0;
-  padding-left: 0;
-  padding-top: 15rem;
-  padding-bottom: 15rem;
-}
-
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -85,18 +77,19 @@
  
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #fff;
+  right: 0;
 }
  
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #0085B9;
 }
  
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 50px;
+  width: 50px;
 }
  
 /* Color/shape of close button cross */
@@ -115,8 +108,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
  
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
+  background: #0085B9;
+  padding: 9em 1.5em 0;
   font-size: 1.15em;
 }
  
@@ -128,7 +121,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  padding: 2em;
 }
  
 /* Individual item */
@@ -138,5 +131,5 @@ Note: Beware of modifying this element as it can break the animations - you shou
  
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: #0085B9;
 }
