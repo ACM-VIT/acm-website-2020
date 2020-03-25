@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ReactComponent as Facebook } from '../../vectors/FacebookOutline.svg';
-import { ReactComponent as LinkedIn } from '../../vectors/LinkedinOutline.svg';
+import LinkedinIcon from './LinkedinIcon';
+import GithubIcon from './GithubIcon';
 
 const TeamCard = props => {
   const { memberInfo } = props;
@@ -13,7 +13,7 @@ const TeamCard = props => {
   };
 
   return (
-    <div className="box-border shadow-card relative rounded-lg flex flex-col items-center w-2/12 m-6 py-8 px-4">
+    <div className="box-border shadow-card relative rounded-lg flex flex-col justify-between items-center w-2/12 m-6 py-8 px-4">
       <div
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
@@ -24,10 +24,16 @@ const TeamCard = props => {
         </div>
         <div className="text-center text-sm">{memberInfo.designation}</div>
       </div>
-      <div className="flex justify-center items-center w-full">
-        <Facebook />
-        <LinkedIn />
-      </div>
+      {memberInfo.github && (
+        <div className="flex justify-center items-center w-full">
+          <a href={memberInfo.github}>
+            <GithubIcon />
+          </a>
+          <a href={memberInfo.linkedin}>
+            <LinkedinIcon />
+          </a>
+        </div>
+      )}
     </div>
   );
 };

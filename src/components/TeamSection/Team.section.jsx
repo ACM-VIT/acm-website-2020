@@ -8,99 +8,123 @@ const Team = ({ findOffset }) => {
   const [ACMTeam] = useState([
     {
       id: 1,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Sarthak Gupta',
+      designation: 'President',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 2,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Hrishita Chakrabarti',
+      designation: 'Managing Director',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 3,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Eesha Shetty',
+      designation: 'Technical Director',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 4,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Anjali Roy',
+      designation: 'General Secretary',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 5,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Dhruv Roy',
+      designation: 'Treasurer',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 6,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Kashish Mittal',
+      designation: 'Webmaster',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 7,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Shovin Kakaraddi',
+      designation: 'UI/UX Lead',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 8,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Devansh Mehta',
+      designation: 'App Lead',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 9,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Iishi Patel',
+      designation: 'Research Lead',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 10,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Nimit Jain',
+      designation: 'Competetive Lead',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 11,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Jerelyn Preeja',
+      designation: 'ACM-W Lead',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 12,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Sidharth Nahar',
+      designation: 'Competetive Guide',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 13,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Elio Jordan Lopes',
+      designation: 'Project Guide Web',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 14,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Garima Bothra',
+      designation: 'Project Guide App',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     },
     {
       id: 15,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
-    },
-    {
-      id: 16,
-      name: 'Your Name',
-      designation: 'Designation',
-      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+      name: 'Sriya Reddi',
+      designation: 'Operations Head',
+      avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`,
+      github: 'https://github.com',
+      linkedIn: 'https://linkedin.com'
     }
   ]);
 
@@ -114,6 +138,17 @@ const Team = ({ findOffset }) => {
       id="team-section"
     >
       <SectionHeader>Team</SectionHeader>
+      <div className="flex flex-row justify-center">
+        <TeamCard
+          memberInfo={{
+            id: 0,
+            name: 'Prof. Hari Ram Vishwakarma',
+            designation: 'Faculty coordinator',
+            avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
+          }}
+        />
+      </div>
+
       <div className="flex flex-row justify-center flex-wrap">
         {ACMTeam.map(member => (
           <TeamCard memberInfo={member} key={member.id} />
