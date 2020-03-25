@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { ReactComponent as AcmLogo } from '../../../vectors/AcmLogo.svg';
@@ -58,34 +58,68 @@ const Navbar = ({ offsetPos }) => {
       active: false
     }
   ]);
-  const [customStyles, setCustomStyles] = useState({
-    width: '77.51px',
-    left: '0px'
-  });
-  const [startPos, setStartPos] = useState(0);
+  let [leftsAndWidths] = useState([
+    { left: 0, width: 0 },
+    { left: 0, width: 0 },
+    { left: 0, width: 0 },
+    { left: 0, width: 0 },
+    { left: 0, width: 0 },
+    { left: 0, width: 0 },
+    { left: 0, width: 0 }
+  ]);
 
-  console.log(offsetPos);
-
-  const setHomePos = homePos => {
-    setStartPos(homePos);
+  const setProps = (width, left, index) => {
+    const newLeftsAndWidths = [...leftsAndWidths];
+    newLeftsAndWidths[index].left = left;
+    newLeftsAndWidths[index].width = width;
+    leftsAndWidths = newLeftsAndWidths;
   };
 
-  const setActive = (index, id, text, scrollTo, width, left) => {
-    let newLinks = [...links];
-    newLinks = newLinks.map(link => {
-      link.active = false;
+  const initOffsetPos = () => {
+    const newLinks = links.map((link, index) => {
+      link.offsetY = offsetPos[index];
       return link;
     });
-    newLinks[index] = { id, text, scrollTo, active: true };
     setLinks(newLinks);
-    width = Number(width);
-    left = Number(left);
-    left -= startPos;
-    setCustomStyles({
-      width: `${width}px`,
-      left: `${left}px`
-    });
   };
+
+  const scrollHandler = () => {
+    let highest = 0;
+
+    links.map(link => {
+      if (window.scrollY + 50 > link.offsetY) {
+        if (link.id > highest) {
+          highest = link.id;
+        }
+      }
+      return link;
+    });
+
+    const Links = links.map(link => {
+      link.active = false;
+      if (link.id === highest) {
+        link.active = true;
+      }
+      return link;
+    });
+    setLinks(Links);
+  };
+
+  const currentLink = () => {
+    let currentLinkID;
+    links.forEach((link, index) => {
+      if (link.active) currentLinkID = index;
+    });
+    return currentLinkID;
+  };
+
+  useEffect(() => {
+    initOffsetPos();
+    window.addEventListener('scroll', () => {
+      scrollHandler();
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [offsetPos]);
 
   return (
     <header className="bg-black text-white flex items-center py-4 px-16 justify-between fixed w-full z-50">
@@ -94,33 +128,20 @@ const Navbar = ({ offsetPos }) => {
       </div>
       <div className="flex flex-col">
         <div className="flex flex-row h-8 items-center my-2">
-          {links.map((link, index) => (
-            <NavLink
-              active={link.active}
-              key={link.id}
-              handleClick={(width, left) => {
-                return setActive(
-                  index,
-                  link.id,
-                  link.text,
-                  link.scrollTo,
-                  width,
-                  left
-                );
-              }}
-              scrollTo={link.scrollTo}
-              setHomePos={homePos => setHomePos(homePos)}
-            >
-              {link.text}
-            </NavLink>
-          ))}
+          {links.map((link, index) => {
+            return (
+              <NavLink
+                active={link.active}
+                key={link.id}
+                scrollTo={link.scrollTo}
+                getProps={(width, left) => setProps(width, left, index)}
+              >
+                {link.text}
+              </NavLink>
+            );
+          })}
         </div>
-        <div
-          className="fixed transition duration-200 ease-in-out"
-          style={{ transform: `translateX(${customStyles.left})`, top: '70px' }}
-        >
-          <NavLine customStyles={customStyles} />
-        </div>
+        <NavLine currentLink={currentLink()} customStyles={leftsAndWidths} />
       </div>
     </header>
   );

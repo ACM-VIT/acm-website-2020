@@ -533,8 +533,16 @@ svg {
   margin-left: 8rem;
 }
 
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
 .focus\:outline-none:focus {
   outline: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-scroll {

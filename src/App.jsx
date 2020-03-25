@@ -16,20 +16,18 @@ const App = () => {
   };
 
   return (
-    <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Navbar offsetPos={offsetPos} />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={() => <LandingPage findOffset={findOffset} />}
-          />
-          {/* Start working from here  */}
-          {/* <Route exact path="/events" component={EventsPage} /> */}
-        </Switch>
-      </BrowserRouter>
-    </>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Navbar offsetPos={offsetPos} />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          component={() => <LandingPage findOffset={findOffset} />}
+        />
+        {/* Start working from here  */}
+        {/* <Route exact path="/events" component={EventsPage} /> */}
+      </Switch>
+    </BrowserRouter>
   );
 };
 
