@@ -27,3 +27,29 @@
   margin-right: 0.625rem;
   display: flex;
 }
+
+.blogspage-title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+
+  color: #000000;
+}
+
+.blogspage-medium-image{
+  margin: 2.75rem;
+  margin-right: 20rem;
+}
+
+.blogspage-vector-image{
+  margin: 3.35rem;
+  margin-right: 8rem;
+}
+
+.blogspage-image{
+  display: flex;
+  float: left;
+  padding-right: 3rem;
+  margin-right: 0.625rem;
+}

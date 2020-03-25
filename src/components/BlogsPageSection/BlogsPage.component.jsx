@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-indent */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -10,18 +11,18 @@ const BlogsNet = props => {
   };
 
   return(
-      <div className="w-1/4 m-12 p-4 shadow-card">
+      <div className="w-3/12 m-12 p-4 shadow-card">
         <div className="flex flex-col">
           <div className="flex items-stretch justify-around">
             <div
-              className="bg-red-800 w-64 h-40"
+              className="bg-red-800 w-56 h-40 blogspage-image"
               style={imageStyle}
             />
-            <div className="font-bold text-3xl text-right text-right my-0 w-full">
+            <div className="font-bold blogspage-title text-left w-full h-12">
               {children}
             </div>
           </div>
-          <div className="text-justify">{desc}</div>
+          <div className="text-justify text-sm p-2">{desc}</div>
         </div>
       </div>
   );

@@ -14,9 +14,9 @@ const EventsNet = props => {
 
   return(
     <VerticalTimelineElement iconStyle={{ background: '#0085B9', color: '#0085B9' }}>
-      <div className="w-full h-40 p-2 shadow-card">
+      <div className="w-full h-48 p-2 shadow-card">
             <div
-              className="bg-red-800 eventspage-img h-32 w-32"
+              className="bg-red-800 m-2 eventspage-img h-40 w-32"
               style={imageStyle}
             />
           <div className="text-sm p-2 text-justify">{desc}</div>

@@ -33,7 +33,7 @@ const EventsPage = () => {
   ]);
 
   return(
-    <section className="ml-40 text-center my-12">
+    <section className="ml-48 text-center my-12 absolute">
       <SectionHeader>OUR EVENTS</SectionHeader>
       <VerticalTimeline>
         {events.map(event => (
