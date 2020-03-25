@@ -10,7 +10,7 @@ const EventsCard = props => {
   };
 
   return (
-    <div className="events-box w-2/5 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
+    <div className="w-2/5 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
       <div className="flex flex-col">
         <div className="flex items-end justify-between relative">
           <div

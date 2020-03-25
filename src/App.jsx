@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
+import EventsPageLanding from './pages/EventsPageLanding';
+import BlogsPageLanding from './pages/BlogsPageLanding';
 
 import './App.css';
 
@@ -24,8 +26,8 @@ const App = () => {
           path="/"
           component={() => <LandingPage findOffset={findOffset} />}
         />
-        {/* Start working from here  */}
-        {/* <Route exact path="/events" component={EventsPage} /> */}
+        <Route exact path="/events" component={EventsPageLanding} />
+        <Route exact path="/blogs" component={BlogsPageLanding} />
       </Switch>
     </BrowserRouter>
   );
