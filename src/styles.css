@@ -520,6 +520,10 @@ svg {
   height: 12rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-screen {
   height: 100vh;
 }
