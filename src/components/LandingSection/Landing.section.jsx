@@ -1,4 +1,5 @@
 import React from 'react';
+import Typical from 'react-typical';
 import PropTypes from 'prop-types';
 
 const Landing = ({ findOffset }) => {
@@ -17,7 +18,22 @@ const Landing = ({ findOffset }) => {
       style={backgroundStyling}
       id="landing-section"
     >
-      <h1 className="text-4xl text-white font-bold">Varying one liner</h1>
+      <h1 className="text-4xl text-white uppercase">
+        <Typical
+          steps={[
+            '______because technology matters',
+            3000,
+            "______there's future, there's innovation",
+            3000,
+            '______We do what we dream',
+            3000,
+            '______Encouraging diversity, igniting minds',
+            3000
+          ]}
+          loop={Infinity}
+          wrapper="p"
+        />
+      </h1>
     </section>
   );
 };
