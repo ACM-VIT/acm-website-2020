@@ -6,18 +6,20 @@ const EventsCard = props => {
 
   const imageStyle = {
     backgroundImage: `url(${image})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
   };
 
   return (
     <div className="w-448 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
-      <div className="flex flex-col">
-        <div className="flex items-end justify-between relative">
+      <div className="flex flex-col justify-between items-center">
+        <div className="flex items-end justify-between relative w-full">
           <div
-            className="shift-up bg-red-800 w-40 h-40 rounded-lg absolute flex-shrink-0"
+            className="shift-up w-40 h-40 rounded-lg absolute flex-shrink-0"
             style={imageStyle}
           />
-          <div className="font-bold text-3xl text-right text-right my-4 w-full">
+          <div className="font-black text-2xl text-right text-right my-4 w-full ml-48">
             {children}
           </div>
         </div>

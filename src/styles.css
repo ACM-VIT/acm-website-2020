@@ -444,6 +444,10 @@ svg {
   flex-wrap: wrap;
 }
 
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -458,6 +462,10 @@ svg {
 
 .items-stretch {
   align-items: stretch;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -482,6 +490,10 @@ svg {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .h-3 {
@@ -639,6 +651,11 @@ svg {
   padding-right: 4rem;
 }
 
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -715,16 +732,16 @@ svg {
   font-size: 1.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-}
-
 .text-4xl {
   font-size: 2.25rem;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .w-4 {

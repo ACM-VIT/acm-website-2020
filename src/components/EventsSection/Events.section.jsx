@@ -1,76 +1,120 @@
 /* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';
+import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
 const Events = ({ findOffset }) => {
   const [events] = useState([
     {
       id: 1,
-      name: 'Code2Create',
+      name: 'Competetive Coding Cometh',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
+      image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
+      url: 'http://c3.acmvit.in/',
+      date: '20/07/2019'
     },
     {
       id: 2,
-      name: 'Code2Create',
+      name: 'ML From Scratch',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'The ACM Research team presents to you a session where you take your first step into the world of Machine Learning where they guide you through the fundamentals of ML.',
+      image: `${process.env.PUBLIC_URL}/assets/images/MLScratch.png`,
+      url:
+        'https://www.instagram.com/p/B0ytwPlBRan/?utm_source=ig_web_button_share_sheet',
+      date: '7/08/2019'
     },
     {
       id: 3,
-      name: 'Code2Create',
+      name: 'Learn To Augment',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
+      image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
+      url:
+        'https://www.instagram.com/p/B1JgcK2hVc3/?utm_source=ig_web_button_share_sheet',
+      date: '31/08/2019'
     },
     {
       id: 4,
-      name: 'Code2Create',
+      name: "I'm Hacked",
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'Learn the ins and outs of cyber security to understand the mind of a hacker and build a safer world wide web.',
+      image: `${process.env.PUBLIC_URL}/assets/images/Hacked.png`,
+      url:
+        'https://www.instagram.com/p/B18YBa2hdDA/?utm_source=ig_web_button_share_sheet',
+      date: '4/09/2019'
     },
     {
       id: 5,
-      name: 'Code2Create',
+      name: 'SnapChat Filters',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        "Join us on 'Getting Started With SnapChat Filters' to make your very own snapchat filters.",
+      image: `${process.env.PUBLIC_URL}/assets/images/SnapchatFilters.png`,
+      url:
+        'https://www.instagram.com/p/B2Md0jLhCMu/?utm_source=ig_web_button_share_sheet',
+      date: '11/09/2019'
     },
     {
       id: 6,
-      name: 'Code2Create',
+      name: 'Learn To Compete',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'Learn To Compete is an exclusive competitive coding workshop, designed for the aspiring coders within you.',
+      image: `${process.env.PUBLIC_URL}/assets/images/LearnToCompete.png`,
+      url:
+        'https://www.instagram.com/p/B2HiyflBI-X/?utm_source=ig_web_button_share_sheet',
+      date: '21/09/2019'
     },
     {
       id: 7,
-      name: 'Code2Create',
+      name: 'HacktoberFest',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'With the biggest open source fest upon us, learn how to get yourself involved with one of the biggest events for developers across the world.',
+      image: `${process.env.PUBLIC_URL}/assets/images/HacktoberFest.png`,
+      url:
+        'https://www.instagram.com/p/B3KphmShXgy/?utm_source=ig_web_button_share_sheet',
+      date: '16/10/2019'
     },
     {
       id: 8,
-      name: 'Code2Create',
+      name: 'Reverse Coding',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
+      image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`
     },
     {
       id: 9,
+      name: 'Local Hack Day Build',
+      desc:
+        'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
+      image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
+      url:
+        'https://www.instagram.com/p/B5fUVn5hKYN/?utm_source=ig_web_button_share_sheet',
+      date: '1/12/2019'
+    },
+    {
+      id: 10,
+      name: 'BlockchainEd',
+      desc:
+        'Learn the inner workings of blockchain - the hottest cybersec tech that has led to a whole new era of anonymous cooperation.',
+      image: `${process.env.PUBLIC_URL}/assets/images/BlockchainEd.png`,
+      url:
+        'https://www.instagram.com/p/B73a4S2h3Gj/?utm_source=ig_web_button_share_sheet',
+      date: '29/01/2020'
+    },
+    {
+      id: 11,
       name: 'Code2Create',
       desc:
-        'Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah Lorem Ipsum blah blah lorem ipsum blah blah',
-      image: `${process.env.PUBLIC_URL}/assets/images/ProjectBackdrop.png`
+        'The wait is finally over, find yourself a team and get ready to lock horns with the wittiest and most creative minds across South India.',
+      image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
+      url: 'https://c2c.acmvit.in',
+      date: '7/03/2020'
     }
   ]);
 
@@ -118,10 +162,16 @@ const Events = ({ findOffset }) => {
             node = el;
           }}
         >
-          {events.map(event => (
-            <CarouselCard key={event.id} desc={event.desc} image={event.image}>
-              {event.name}
-            </CarouselCard>
+          {events.reverse().map(event => (
+            <a href={event.url}>
+              <CarouselCard
+                key={event.id}
+                desc={event.desc}
+                image={event.image}
+              >
+                {event.name}
+              </CarouselCard>
+            </a>
           ))}
         </div>
         <div className="w-32 flex-shrink-0 flex justify-center items-center">
@@ -133,6 +183,14 @@ const Events = ({ findOffset }) => {
             <RightArrow />
           </div>
         </div>
+      </div>
+      <div className="text-acm-blue text-2xl px-32 underline">
+        <Link to="/events">
+          <div className="flex items-center flex-no-wrap justify-end">
+            <div>View All Events</div>
+            <RightLink />
+          </div>
+        </Link>
       </div>
     </section>
   );
