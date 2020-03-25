@@ -8,38 +8,10 @@ import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';
 import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
+import { PROJECTS } from '../../DataStore';
+
 const Projects = ({ findOffset }) => {
-  const [projects] = useState([
-    {
-      id: 1,
-      title: 'Octave',
-      description: "Music Webite for ACM's iconic Code2Create.",
-      image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
-      url: 'https://github.com/ACM-VIT/Octave'
-    },
-    {
-      id: 2,
-      title: 'Research Projects',
-      description:
-        'A collection of all projects done by the Research 2019 and 2020 team.',
-      image: `${process.env.PUBLIC_URL}/assets/images/ResearchProjects.png`,
-      url: 'https://github.com/ACM-VIT/Research-Projects-2020'
-    },
-    {
-      id: 3,
-      title: 'C2C Web Portal',
-      description: "Web Portal for ACM's Code2Create.",
-      image: `${process.env.PUBLIC_URL}/assets/images/C2CWeb.png`,
-      url: 'https://github.com/ACM-VIT/c2c-website-2020'
-    },
-    {
-      id: 4,
-      title: 'FreeSlot Web Extension',
-      description: 'A chrome extension to extract timetable from vtop.',
-      image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
-      url: 'https://github.com/ACM-VIT/freeslotWebExtension'
-    }
-  ]);
+  const [projects] = useState(PROJECTS);
 
   let node;
 
