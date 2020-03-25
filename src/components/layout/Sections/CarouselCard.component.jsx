@@ -13,8 +13,8 @@ const CarouselCard = props => {
 
   return (
     <a href={url}>
-      <div className="w-448 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg h-64">
-        <div className="flex flex-col justify-between items-center">
+      <div className="w-448 mx-4 flex-shrink-0 p-8 shadow-card rounded-lg h-full">
+        <div className="flex flex-col justify-between items-center h-full">
           <div className="flex items-end justify-between relative w-full">
             <div
               className="shift-up w-40 h-40 rounded-lg absolute flex-shrink-0"
