@@ -33,7 +33,7 @@ const Blog = ({ findOffset }) => {
     >
       <SectionHeader>Blogs</SectionHeader>
       <div className="flex">
-        <div className="flex-shrink-0 flex justify-center items-center w-32">
+        <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
             role="button"
@@ -64,7 +64,7 @@ const Blog = ({ findOffset }) => {
             return false;
           })}
         </div>
-        <div className="flex-shrink-0 flex justify-center items-center w-32">
+        <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'right', 25, 480, 48)}
             role="button"
@@ -74,8 +74,8 @@ const Blog = ({ findOffset }) => {
           </div>
         </div>
       </div>
-      <div className="text-acm-blue text-2xl underline px-32">
-        <div className="flex items-center flex-no-wrap justify-end">
+      <div className="text-acm-blue text-2xl underline p-0 md:px-32">
+        <div className="flex items-center flex-no-wrap justify-center md:justify-end">
           <Link to="/blogs">
             <div className="flex items-center flex-no-wrap justify-end">
               <div>View More Blogs</div>

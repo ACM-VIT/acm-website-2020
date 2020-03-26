@@ -25,7 +25,7 @@ const About = ({ findOffset }) => {
           <SectionHeader innerHeader={section.inner}>
             {section.title}
           </SectionHeader>
-          <div className="text-xl text-justified my-4 ">{section.text}</div>
+          <div className="text-xl text-justified m-4 mx-8 ">{section.text}</div>
         </div>
       ))}
     </section>
