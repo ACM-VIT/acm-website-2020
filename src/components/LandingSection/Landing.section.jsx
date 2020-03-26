@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical';
+import Typewriter from 'typewriter-effect';
 import PropTypes from 'prop-types';
 
 const Landing = ({ findOffset }) => {
@@ -23,20 +23,21 @@ const Landing = ({ findOffset }) => {
       id="landing-section"
     >
       <h1 className="text-4xl text-white uppercase">
-        <Typical
-          steps={[
-            '______because technology matters',
-            3000,
-            "______there's future, there's innovation",
-            3000,
-            '______We do what we dream',
-            3000,
-            '______Encouraging diversity, igniting minds',
-            3000
-          ]}
-          loop={Infinity}
-          wrapper="p"
-        />
+        <div className="flex">
+          <div>______</div>
+          <Typewriter
+            options={{
+              strings: [
+                'Because technology matters',
+                "There's future, There's innovation",
+                'We do what we dream',
+                'Encouraging diversity, igniting minds'
+              ],
+              autoStart: true,
+              loop: true
+            }}
+          />
+        </div>
       </h1>
     </section>
   );

@@ -74,7 +74,7 @@ const Blog = ({ findOffset }) => {
         <div className="flex items-center flex-no-wrap justify-end">
           <Link to="/blogs">
             <div className="flex items-center flex-no-wrap justify-end">
-              <div>View All Blogs</div>
+              <div>View More Blogs</div>
               <RightLink />
             </div>
           </Link>
