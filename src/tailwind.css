@@ -112,3 +112,114 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: #0085b9;
 }
+
+.App{
+  /* background-color:black; */
+  height:100%;
+  width:100%;
+  position:relative;
+}
+.box{
+  height:200px;
+  width:200px;
+  background-color:red;
+  color:white;
+}
+
+.main{
+  /* background-color:#333333; */
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  color:white;
+}
+
+.footerContent {
+  /* text-align: center; */
+  align-content: center;
+}
+
+.FooterGrid{
+  padding-left:10%;
+  padding-right:10%;
+}
+
+.Contact{
+  /* margin-left: 10%; */
+  /* padding: 10px; */
+  font-size:12px;
+}
+
+.footerContent {
+  background: black;
+  color: white;
+  margin-top: 100px;
+}
+.Footer-Grid {
+ 
+  color: white;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+.sm {
+  height: 30px;
+  width: 30px;
+  margin:0 10px;
+}
+
+.FooterPhoneIcon,.ContactNo,.EmailIcon,.Email{
+  display:inline-block;
+}
+
+.ContactNo{
+  margin:0!important;
+}
+
+.Email{
+  margin:0!important;
+}
+
+.FooterPhoneIcon,.EmailIcon{
+  position:relative;
+  top:5px;
+  height:20px;
+  margin-right:5px;
+}
+
+.socMed,.vitlg{
+  text-align:center;
+  padding-top:50px;
+}
+
+.vitl{
+  width:80%!important;
+}
+
+.acm_logo{
+  text-align:center;
+  padding-top:30px;
+  width:100%!important;
+}
+
+.no-margin-top{
+  margin-top:0!important;
+}
+
+.no-margin-bottom{
+  margin-bottom:0!important;
+}
+
+.center{
+  text-align:center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.no_blue{
+  text-decoration:none!important;
+  color:white!important;
+}

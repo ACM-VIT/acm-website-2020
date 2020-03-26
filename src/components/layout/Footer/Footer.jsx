@@ -7,6 +7,7 @@ import instagram from '../../../vectors/Instagram.svg'
 import facebook from '../../../vectors/Facebook.svg'
 import vit from '../../../vectors/Logos_ACM.png'
 import { ReactComponent as acm } from '../../../vectors/AcmLogo.svg'
+import '../../../tailwind.css'
 
 export default class Footer extends Component {
   render () {
@@ -18,7 +19,11 @@ export default class Footer extends Component {
             <div className='Contact'>
               <img className='EmailIcon' src={email} />
               <p className='Email font18'> outreach.acmvit@gmail.com.</p>
-              <h3 className='font18'>Vellore Institute of Technology<br />Vellore, Tamil-Nadu-632014</h3>
+              <h3 className='font18'>
+                Vellore Institute of Technology
+                <br />
+                Vellore, Tamil-Nadu-632014
+              </h3>
             </div>
 
           </Grid>
