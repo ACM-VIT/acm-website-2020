@@ -42,7 +42,11 @@ const BlogsPage = () => {
           ))}
         </div>
         <div className="flex justify-end mt-8">
-          <a href="https://medium.com/acmvit">
+          <a
+            href="https://medium.com/acmvit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="shadow-card rounded-lg flex justify-evenly items-center w-96 p-4">
               <div className="w-8 h-8" style={mediumLogoStyle} />
               <div className="capitalize">Go to our blog</div>
@@ -54,6 +58,5 @@ const BlogsPage = () => {
     </section>
   );
 };
-
 
 export default BlogsPage;

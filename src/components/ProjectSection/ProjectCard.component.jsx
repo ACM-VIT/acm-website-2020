@@ -13,7 +13,7 @@ const ProjectCard = props => {
   };
 
   return (
-    <a href={url}>
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <div className="w-448 h-full flex-shrink-0 p-8 shadow-card rounded-lg mx-4">
         <div className="w-full h-40" style={imageStyling} />
         <div className="font-bold text-4xl my-4 ">{children}</div>

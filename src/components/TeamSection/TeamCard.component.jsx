@@ -20,7 +20,7 @@ const TeamCard = props => {
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
       />
-      <div>
+      <div className="mt-4">
         <div className="text-center font-extrabold text-lg ">
           {memberInfo.name}
         </div>
@@ -28,10 +28,14 @@ const TeamCard = props => {
       </div>
       {memberInfo.github && (
         <div className="flex justify-center items-center w-full mt-4">
-          <a href={memberInfo.github}>
+          <a href={memberInfo.github} target="_blank" rel="noopener noreferrer">
             <GithubIcon />
           </a>
-          <a href={memberInfo.linkedIn}>
+          <a
+            href={memberInfo.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedinIcon />
           </a>
         </div>
