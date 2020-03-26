@@ -76,7 +76,7 @@ const Navbar = ({ offsetPos }) => {
 
   return (
     <header className="bg-black text-white flex items-center justify-between fixed w-full z-50 py-4 px-16">
-      <a href={`${process.env.PUBLIC_URL}/`}>
+      <a href={`${window.location.origin}/`}>
         <AcmLogo />
       </a>
       <div className="flex flex-col">
