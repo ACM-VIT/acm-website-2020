@@ -6,7 +6,7 @@ import email from '../../../vectors/Email.svg'
 import instagram from '../../../vectors/Instagram.svg'
 import facebook from '../../../vectors/Facebook.svg'
 import vit from '../../../vectors/Logos_ACM.png'
-import { ReactComponent as acm } from '../../../vectors/AcmLogo.svg'
+import acm  from '../../../vectors/ACMFOOTER.png'
 import '../../../tailwind.css'
 
 export default class Footer extends Component {
@@ -28,14 +28,14 @@ export default class Footer extends Component {
 
           </Grid>
 
-          <Grid className='social' item xs={12} md={3}>
+          {/* <Grid className='social' item xs={12} md={3}>
             <div className='socMed'>
               <a className='fb' target='blank' href='https://www.facebook.com/ACM.VITU/'><img alt='fb' className='sm' src={facebook} /></a>
 
               <a className='ig' target='blank' href='https://www.instagram.com/acmvit/?hl=en'><img alt='insta' className='sm' src={instagram} /></a>
 
             </div>
-          </Grid>
+          </Grid> */}
 
           <Grid className='vitLogo' item xs={12} md={3}>
             <div className='vitlg'>
