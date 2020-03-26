@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
 
 import { ReactComponent as Instagram } from '../../vectors/Instagram.svg';
 import { ReactComponent as Facebook } from '../../vectors/Facebook.svg';
@@ -9,21 +8,7 @@ import { ReactComponent as Twitter } from '../../vectors/Twitter.svg';
 
 import SocialLink from './SocialLink.component';
 
-
-{/*const useStyles = makeStyles({
-  root: {
-    position: 'absolute',
-    width: '400px',
-    height: '0px',
-    color: '#0085B9',
-    paddingTop: '3rem',
-    paddingBottom: '3rem',
-  },
-});*/}
-
 const ContactCard = () => {
-
-  {/*const classes = useStyles();*/}
 
   const [socialLinks] = useState([
     { id: 1, logo: <Instagram />, handle: '@acmvit' },
@@ -52,8 +37,8 @@ const ContactCard = () => {
 
   return (
     <div className="flex justify-center mb-4 py-4">
-      <div className="shadow-card w-2/3 rounded-lg flex p-4 py-8">
-        <div className="w-1/3 bg-acm-blue text-white relative shift-left px-6 py-4 shadow-card rounded-lg">
+      <div className="w-1/3 rounded-lg flex p-2 shadow-card py-4 md: w-2/3 rounded-lg flex p-4 py-8">
+        <div className="bg-acm-blue text-white relative shift-left px-6 py-4 shadow-card rounded-lg md:w-1/3">
           <div className="text-4xl">Reach us at</div>
           {socialLinks.map(social => (
             <SocialLink logo={social.logo} key={social.id}>
@@ -62,7 +47,7 @@ const ContactCard = () => {
           ))}
         </div>
         <div>
-          <div className="w-full text-4xl">Contact Us</div>
+          <div className="w-full text-4xl mt-4">Contact Us</div>
           <form autoComplete="off">
             <TextField 
               id="standard-basic" 
