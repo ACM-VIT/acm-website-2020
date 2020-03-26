@@ -6,7 +6,7 @@ const NavLink = props => {
   const { children, active, scrollTo, getProps } = props;
 
   return (
-    <a href={`#${scrollTo}`}>
+    <a href={`${process.env.PUBLIC_URL}/#${scrollTo}`}>
       <div
         ref={el => {
           if (!el) return;
