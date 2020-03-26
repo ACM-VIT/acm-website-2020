@@ -15,11 +15,13 @@ export default class Footer extends Component {
       <div id='footer' className='footerContent'>
         <Grid className='FooterGrid' container spacing={0}>
 
-          <Grid className='Contacts' item xs={12} md={6}>
+          <Grid className='Contacts' item xs={12} md={3}>
             <div className='Contact'>
               <img className='EmailIcon' src={email} />
-              <p className='Email font18'> outreach.acmvit@gmail.com.</p>
+              <p className='Email font18'> outreach.acmvit@gmail.com. </p> 
               <h3 className='font18'>
+                <br />
+                <br />
                 Vellore Institute of Technology
                 <br />
                 Vellore, Tamil-Nadu-632014
