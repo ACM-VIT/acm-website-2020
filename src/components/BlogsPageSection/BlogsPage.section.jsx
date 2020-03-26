@@ -26,7 +26,7 @@ const BlogsPage = () => {
   };
 
   return (
-    <section className="text-center absolute w-full pb-40">
+    <section className="text-center w-full pb-40">
       <SectionHeader>Our Blogs</SectionHeader>
       <div className="container mx-auto">
         <div className="flex flex-row justify-center flex-wrap items-stretch">

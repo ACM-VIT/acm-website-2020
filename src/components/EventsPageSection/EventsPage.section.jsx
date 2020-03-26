@@ -8,14 +8,21 @@ import 'react-vertical-timeline-component/style.min.css';
 import { EVENTS } from '../../DataStore';
 
 const EventsPage = () => {
-  const [events] = useState(EVENTS)
+  const [events] = useState(EVENTS);
 
-  return(
-    <section className="ml-48 text-center my-12 absolute">
+  return (
+    <section className="ml-48 text-center my-12">
       <SectionHeader>OUR EVENTS</SectionHeader>
       <VerticalTimeline>
         {events.map(event => (
-          <EventsNet key={event.id} name={event.name} desc={event.desc} image={event.image} url={event.url} date={event.date} />
+          <EventsNet
+            key={event.id}
+            name={event.name}
+            desc={event.desc}
+            image={event.image}
+            url={event.url}
+            date={event.date}
+          />
         ))}
       </VerticalTimeline>
     </section>
