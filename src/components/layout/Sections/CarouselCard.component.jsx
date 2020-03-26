@@ -14,14 +14,14 @@ const CarouselCard = props => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="w-448 flex-shrink-0 shadow-card rounded-lg h-full mx-4 p-8">
+      <div className="w-64 md:w-448 flex-shrink-0 shadow-card rounded-lg h-full mx-4 p-8">
         <div className="flex flex-col justify-between items-center h-full">
-          <div className="flex items-end justify-between relative w-full">
+          <div className="flex flex-col md:flex-row items-end justify-center md:justify-between relative w-full">
             <div
-              className="shift-up w-40 h-40 rounded-lg absolute flex-shrink-0"
+              className="shift-up w-full md:w-40 h-40 rounded-lg md:absolute flex-shrink-0"
               style={imageStyle}
             />
-            <div className="font-black text-2xl text-right text-right w-full my-4 ml-48">
+            <div className="font-black text-2xl text-center md:text-right w-full my-4 md:ml-48">
               {children}
             </div>
           </div>

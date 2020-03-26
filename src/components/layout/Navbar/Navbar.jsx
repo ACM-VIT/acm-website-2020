@@ -75,7 +75,7 @@ const Navbar = ({ offsetPos }) => {
   }, [offsetPos]);
 
   return (
-    <header className="w-screen overflow-x-hidden bg-black text-white flex items-center justify-between fixed w-full top-0 z-50 py-4 px-16">
+    <header className="hidden md:flex w-screen overflow-x-hidden bg-black text-white items-center justify-between fixed w-full top-0 z-50 py-4 px-16">
       <a href={`${window.location.origin}/`}>
         <AcmLogo />
       </a>

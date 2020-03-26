@@ -5,7 +5,11 @@ module.exports = {
       md: '1140px',
       lg: '1600px'
     },
-    extend: {}
+    extend: {
+      width: {
+        448: '28rem'
+      }
+    }
   },
   variants: {},
   plugins: []

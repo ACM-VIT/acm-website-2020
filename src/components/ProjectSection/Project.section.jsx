@@ -32,7 +32,7 @@ const Projects = ({ findOffset }) => {
     >
       <SectionHeader>Projects</SectionHeader>
       <div className="flex">
-        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+        <div className="w-32 flex-shrink-0 hidden md:flex justify-center items-center">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
             role="button"
@@ -59,7 +59,7 @@ const Projects = ({ findOffset }) => {
             </ProjectCard>
           ))}
         </div>
-        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+        <div className="w-32 flex-shrink-0 hidden md:flex justify-center items-center">
           <div
             onClick={() => scrollHorizontally(node, 'right', 25, 480, 48)}
             role="button"
@@ -69,8 +69,8 @@ const Projects = ({ findOffset }) => {
           </div>
         </div>
       </div>
-      <div className="text-acm-blue text-2xl underline px-32">
-        <div className="flex items-center flex-no-wrap justify-end">
+      <div className="text-acm-blue text-2xl underline p-0 md:px-32">
+        <div className="flex items-center flex-no-wrap justify-center md:justify-end">
           <a
             href="https://github.com/acm-vit"
             target="_blank"

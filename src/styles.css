@@ -223,6 +223,10 @@ button:-moz-focusring {
  * Add the correct display in IE 10.
  */
 
+[hidden] {
+  display: none;
+}
+
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -439,6 +443,10 @@ img {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -602,10 +610,6 @@ img {
   margin-bottom: 8rem;
 }
 
-.ml-48 {
-  margin-left: 12rem;
-}
-
 .focus\:outline-none:focus {
   outline: 0;
 }
@@ -620,6 +624,10 @@ img {
 
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .p-1 {
@@ -667,11 +675,6 @@ img {
   padding-right: 4rem;
 }
 
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -688,10 +691,6 @@ img {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -706,10 +705,6 @@ img {
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-justify {
@@ -768,12 +763,12 @@ img {
   width: 8rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-48 {
   width: 12rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-1\/3 {
@@ -856,10 +851,6 @@ img {
   width: 0 !important;
 }
 
-.w-448 {
-  width: 28rem;
-}
-
 .w-96 {
   width: 21rem;
 }
@@ -895,14 +886,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Styling of overlay */
 
-.App{
+.App {
   /* background-color:black; */
-  height:100%;
-  width:100%;
-  position:relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
-div.vitlg{
+div.vitlg {
   padding: 0 !important;
 }
 
@@ -915,7 +906,8 @@ div.vitlg{
   align-content: center;
 } */
 
-.vitlo, .acm_logo {
+.vitlo,
+.acm_logo {
   padding: 0px !important;
   height: auto;
   width: 100% !important;
@@ -932,15 +924,15 @@ div.vitlg{
   padding: 50px 50px !important;
 }
 
-.FooterGrid{
-  padding-left:5% !important;
-  padding-right:5% !important;
+.FooterGrid {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
 }
 
-.Contact{
+.Contact {
   /* margin-left: 10%; */
   /* padding: 10px; */
-  font-size:20px !important;
+  font-size: 20px !important;
   padding-top: 30px !important;
   text-align: center !important;
   /* padding-top: 20%; */
@@ -963,21 +955,21 @@ div.vitlg{
 .sm {
   height: 30px;
   width: 30px;
-  margin:0 10px;
+  margin: 0 10px;
 }
 
-.EmailIcon{
-  display:inline-block;
+.EmailIcon {
+  display: inline-block;
   vertical-align: text-top !important;
   font-weight: bold;
-  margin:0!important;
+  margin: 0 !important;
 }
 
 .Email {
-  display:inline-block;
+  display: inline-block;
   vertical-align: text-top !important;
   font-weight: bold;
-  margin:0!important;
+  margin: 0 !important;
   padding-left: 10px !important;
 }
 
@@ -1033,11 +1025,56 @@ div.vitlg{
   font-weight: bold;
 } */
 
-.no_blue, p.font18.bold.center{
+.no_blue,
+p.font18.bold.center {
   margin-top: 50px !important;
-  text-decoration:none!important;
-  color:white!important;
+  text-decoration: none !important;
+  color: white !important;
   font-size: 20px !important;
   font-weight: bold;
-  align-content:center !important;
+  align-content: center !important;
+}
+
+@media (min-width: 1140px) {
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:ml-48 {
+    margin-left: 12rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:absolute {
+    position: absolute;
+  }
+
+  .md\:text-right {
+    text-align: right;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
+  }
+
+  .md\:w-448 {
+    width: 28rem;
+  }
 }
