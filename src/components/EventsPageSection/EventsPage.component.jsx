@@ -9,7 +9,9 @@ const EventsNet = props => {
 
   const imageStyle = {
     backgroundImage: `url(${image})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
   };
 
   return(
