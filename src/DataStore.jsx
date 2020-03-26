@@ -98,6 +98,33 @@ const ABOUT = [
   }
 ];
 
+const FACULTY = [
+  {
+    id: 1,
+    name: 'Prof. Balakrushna Tripathy',
+    designation: 'Dean of School of Information Technology & Engineering',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/DeanSite.png`
+  },
+  {
+    id: 2,
+    name: 'Dr. Aswani Kumar Cherukuri',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty1.png`
+  },
+  {
+    id: 3,
+    name: 'Prof. H.R. Vishwakarma',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty2.png`
+  },
+  {
+    id: 4,
+    name: 'Dr. Divya Udayan J.',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty3.jpeg`
+  }
+];
+
 const TEAM = [
   {
     id: 1,
@@ -516,6 +543,7 @@ const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
 
 export {
   ABOUT,
+  FACULTY,
   TEAM,
   EVENTS,
   BLOGS,

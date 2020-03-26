@@ -2,6 +2,7 @@
   "name": "acm-website-2020",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://acm-vit.github.io/acm-website-2020",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",

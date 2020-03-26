@@ -15,19 +15,19 @@ const TeamCard = props => {
   };
 
   return (
-    <div className="box-border shadow-card relative rounded-lg flex flex-col justify-between items-center w-2/12 m-6 py-8 px-4">
+    <div className="box-border shadow-card rounded-lg flex flex-col justify-around items-center w-48 m-6 py-8 px-4">
       <div
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
       />
-      <div className="my-4">
+      <div>
         <div className="text-center font-extrabold text-lg ">
           {memberInfo.name}
         </div>
         <div className="text-center text-sm">{memberInfo.designation}</div>
       </div>
       {memberInfo.github && (
-        <div className="flex justify-center items-center w-full">
+        <div className="flex justify-center items-center w-full mt-4">
           <a href={memberInfo.github}>
             <GithubIcon />
           </a>

@@ -6,10 +6,11 @@ import TeamCard from './TeamCard.component';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 
 // Data
-import { TEAM } from '../../DataStore';
+import { FACULTY, TEAM } from '../../DataStore';
 
 const Team = ({ findOffset }) => {
   const [ACMTeam] = useState(TEAM);
+  const [faculties] = useState(FACULTY);
 
   return (
     <section
@@ -23,14 +24,9 @@ const Team = ({ findOffset }) => {
     >
       <SectionHeader>Team</SectionHeader>
       <div className="flex flex-row justify-center">
-        <TeamCard
-          memberInfo={{
-            id: 0,
-            name: 'Prof. Hari Ram Vishwakarma',
-            designation: 'Faculty coordinator',
-            avatarURL: `${process.env.PUBLIC_URL}/assets/images/MysteryMan.png`
-          }}
-        />
+        {faculties.map(faculty => (
+          <TeamCard memberInfo={faculty} key={faculty.id} />
+        ))}
       </div>
 
       <div className="flex flex-row justify-center flex-wrap">
