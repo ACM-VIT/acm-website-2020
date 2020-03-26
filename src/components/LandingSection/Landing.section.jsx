@@ -3,18 +3,22 @@ import Typical from 'react-typical';
 import PropTypes from 'prop-types';
 
 const Landing = ({ findOffset }) => {
+  // Background image styles
   const backgroundStyling = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/LandingBackground.png)`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
   };
 
   return (
     <section
       ref={el => {
         if (!el) return;
+        // Get element's offset Y value
         findOffset(el.getBoundingClientRect().y);
       }}
-      className="h-screen bg-gray-500 flex justify-center items-center bg-landing"
+      className="h-screen flex justify-center items-center bg-landing"
       style={backgroundStyling}
       id="landing-section"
     >

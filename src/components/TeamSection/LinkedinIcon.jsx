@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const LinkedinIcon = () => {
   const [hover, setHover] = useState(false);
 
+  // Triggered on hover
   const toggleHover = () => {
     setHover(!hover);
   };

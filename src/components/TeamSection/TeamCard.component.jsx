@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Components
 import LinkedinIcon from './LinkedinIcon';
 import GithubIcon from './GithubIcon';
 
 const TeamCard = props => {
   const { memberInfo } = props;
 
+  // Avatar styles
   const dpStyles = {
     backgroundImage: `url(${memberInfo.avatarURL})`,
     backgroundSize: '8rem 8rem'

@@ -2,38 +2,30 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+// Components
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import ProjectCard from './ProjectCard.component';
-import RightArrow from './RightArrow';
-import LeftArrow from './LeftArrow';
+import RightArrow from '../layout/Sections/RightArrow';
+import LeftArrow from '../layout/Sections/LeftArrow';
 import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
+// Utility functions
+import scrollHorizontally from '../../utils/scrollHorizontally';
+
+// Data
 import { PROJECTS } from '../../DataStore';
 
 const Projects = ({ findOffset }) => {
   const [projects] = useState(PROJECTS);
 
+  // Component variables
   let node;
-
-  const scrollHorizontally = (element, direction, speed, distance, step) => {
-    let scrollAmount = 0;
-    const slideTimer = setInterval(() => {
-      if (direction === 'right') {
-        element.scrollLeft += step;
-      } else {
-        element.scrollLeft -= step;
-      }
-      scrollAmount += step;
-      if (scrollAmount >= distance) {
-        window.clearInterval(slideTimer);
-      }
-    }, speed);
-  };
 
   return (
     <section
       ref={el => {
         if (!el) return;
+        // Get element's offset Y value
         findOffset(el.getBoundingClientRect().y - 180);
       }}
       className="text-center my-12"
@@ -78,7 +70,7 @@ const Projects = ({ findOffset }) => {
           </div>
         </div>
       </div>
-      <div className="text-acm-blue text-2xl px-32 underline">
+      <div className="text-acm-blue text-2xl underline px-32">
         <div className="flex items-center flex-no-wrap justify-end">
           <a href="https://github.com/acm-vit">
             <div className="flex items-center flex-no-wrap justify-end">
