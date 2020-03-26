@@ -250,50 +250,41 @@ const TEAM = [
 
 const EVENTS = [
   {
-    id: 11,
-    name: 'Code2Create',
+    id: 10,
+    name: 'Code2Create 4.0',
     desc:
       'The wait is finally over, find yourself a team and get ready to lock horns with the wittiest and most creative minds across South India.',
     image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
     url: 'https://c2c.acmvit.in',
-    date: '7/03/2020'
-  },
-  {
-    id: 10,
-    name: 'BlockchainEd',
-    desc:
-      'Learn the inner workings of blockchain - the hottest cybersec tech that has led to a whole new era of anonymous cooperation.',
-    image: `${process.env.PUBLIC_URL}/assets/images/BlockchainEd.png`,
-    url:
-      'https://www.instagram.com/p/B73a4S2h3Gj/?utm_source=ig_web_button_share_sheet',
-    date: '29/01/2020'
+    date: '7th - 9th March 2020'
   },
   {
     id: 9,
-    name: 'Local Hack Day Build',
+    name: 'Code Your Dreams',
+    desc:
+      'An initiative by ACM-VIT in collaboration with NGOs to use the "Hour of Code" as an opportunity to enlighten the little minds at various schools about computers and coding.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
+    url:
+      'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
+    date: '15th December 2019'
+  },
+  {
+    id: 8,
+    name: 'Local Hack Day Build(by MLH)',
     desc:
       'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
     image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
     url:
       'https://www.instagram.com/p/B5fUVn5hKYN/?utm_source=ig_web_button_share_sheet',
-    date: '1/12/2019'
-  },
-  {
-    id: 8,
-    name: 'Reverse Coding',
-    desc:
-      'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
-    image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`
+    date: '8th December 2019'
   },
   {
     id: 7,
-    name: 'HacktoberFest',
+    name: 'Reverse Coding',
     desc:
-      'With the biggest open source fest upon us, learn how to get yourself involved with one of the biggest events for developers across the world.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HacktoberFest.png`,
-    url:
-      'https://www.instagram.com/p/B3KphmShXgy/?utm_source=ig_web_button_share_sheet',
-    date: '16/10/2019'
+      'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
+    image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
+    date: '(Offline Round) 16th October 2019 & (Online Round) 20th October 2019'
   },
   {
     id: 6,
@@ -303,57 +294,57 @@ const EVENTS = [
     image: `${process.env.PUBLIC_URL}/assets/images/LearnToCompete.png`,
     url:
       'https://www.instagram.com/p/B2HiyflBI-X/?utm_source=ig_web_button_share_sheet',
-    date: '21/09/2019'
+    date: '21st September 2019'
   },
   {
     id: 5,
-    name: 'SnapChat Filters',
+    name: 'Learn To Augment',
     desc:
-      "Join us on 'Getting Started With SnapChat Filters' to make your very own snapchat filters.",
-    image: `${process.env.PUBLIC_URL}/assets/images/SnapchatFilters.png`,
+      "Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.",
+    image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
     url:
-      'https://www.instagram.com/p/B2Md0jLhCMu/?utm_source=ig_web_button_share_sheet',
-    date: '11/09/2019'
+      'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
+    date: '31st August 2019'
   },
   {
     id: 4,
-    name: "I'm Hacked",
+    name: "Competitive Coding Cometh(by Coding Blocks)",
     desc:
-      'Learn the ins and outs of cyber security to understand the mind of a hacker and build a safer world wide web.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Hacked.png`,
+      'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
+    image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
     url:
-      'https://www.instagram.com/p/B18YBa2hdDA/?utm_source=ig_web_button_share_sheet',
-    date: '4/09/2019'
+      'https://c3.acmvit.in/',
+    date: '20th July 2019'
   },
   {
     id: 3,
-    name: 'Learn To Augment',
+    name: 'Code2Create 3.0',
     desc:
-      'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
-    image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
+      'Code2Create is back with its third rendition, and it is bigger and greater than ever before!',
+    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
     url:
-      'https://www.instagram.com/p/B1JgcK2hVc3/?utm_source=ig_web_button_share_sheet',
-    date: '31/08/2019'
+      'https://c2c.acmvit.in',
+    date: '22nd - 24th March 2019'
   },
 
   {
     id: 2,
-    name: 'ML From Scratch',
+    name: 'Code Your Dreams',
     desc:
-      'The ACM Research team presents to you a session where you take your first step into the world of Machine Learning where they guide you through the fundamentals of ML.',
-    image: `${process.env.PUBLIC_URL}/assets/images/MLScratch.png`,
+      'An initiative by ACM-VIT in collaboration with NGOs to use the "Hour of Code" as an opportunity to enlighten the little minds at various schools about computers and coding',
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
     url:
-      'https://www.instagram.com/p/B0ytwPlBRan/?utm_source=ig_web_button_share_sheet',
-    date: '7/08/2019'
+      'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
+    date: '26th, 27th February 2019 and 1st March 2019'
   },
   {
     id: 1,
-    name: 'Competetive Coding Cometh',
+    name: 'Codart',
     desc:
-      'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
-    image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
-    url: 'http://c3.acmvit.in/',
-    date: '20/07/2019'
+      'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Codart.png`,
+    url: 'https://codart.acmvit.in/',
+    date: '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
   }
 ];
 

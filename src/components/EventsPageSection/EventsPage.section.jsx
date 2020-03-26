@@ -15,7 +15,7 @@ const EventsPage = () => {
       <SectionHeader>OUR EVENTS</SectionHeader>
       <VerticalTimeline>
         {events.map(event => (
-          <EventsNet key={event.id} desc={event.desc} image={event.image} url={event.url} />
+          <EventsNet key={event.id} name={event.name} desc={event.desc} image={event.image} url={event.url} date={event.date} />
         ))}
       </VerticalTimeline>
     </section>
