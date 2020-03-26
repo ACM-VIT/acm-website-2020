@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -72,7 +71,11 @@ const Projects = ({ findOffset }) => {
       </div>
       <div className="text-acm-blue text-2xl underline px-32">
         <div className="flex items-center flex-no-wrap justify-end">
-          <a href="https://github.com/acm-vit">
+          <a
+            href="https://github.com/acm-vit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="flex items-center flex-no-wrap justify-end">
               <div>View All Projects</div>
               <RightLink />

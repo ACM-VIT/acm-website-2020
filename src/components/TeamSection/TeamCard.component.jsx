@@ -28,10 +28,14 @@ const TeamCard = props => {
       </div>
       {memberInfo.github && (
         <div className="flex justify-center items-center w-full mt-4">
-          <a href={memberInfo.github}>
+          <a href={memberInfo.github} target="_blank" rel="noopener noreferrer">
             <GithubIcon />
           </a>
-          <a href={memberInfo.linkedIn}>
+          <a
+            href={memberInfo.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <LinkedinIcon />
           </a>
         </div>

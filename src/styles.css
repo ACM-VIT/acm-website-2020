@@ -97,6 +97,10 @@ strong {
  * Remove the border on images inside links in IE 10.
  */
 
+img {
+  border-style: none;
+}
+
 /* Forms
    ========================================================================== */
 
@@ -231,6 +235,7 @@ button:-moz-focusring {
 
 
 h1,
+h3,
 p {
   margin: 0;
 }
@@ -316,12 +321,17 @@ html {
  * https://github.com/tailwindcss/tailwindcss/issues/362
  */
 
+img {
+  border-style: solid;
+}
+
 button,
 [role="button"] {
   cursor: pointer;
 }
 
-h1 {
+h1,
+h3 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -365,7 +375,7 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-
+img,
 svg {
   display: block;
   vertical-align: middle;
@@ -377,6 +387,11 @@ svg {
  *
  * https://github.com/mozdevs/cssremedy/issues/14
  */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .container {
   width: 100%;
@@ -402,10 +417,6 @@ svg {
 
 .bg-black {
   background-color: #000;
-}
-
-.bg-red-800 {
-  background-color: #9b2c2c;
 }
 
 .rounded-lg {
@@ -442,10 +453,6 @@ svg {
 
 .flex-no-wrap {
   flex-wrap: nowrap;
-}
-
-.items-start {
-  align-items: flex-start;
 }
 
 .items-end {
@@ -500,10 +507,6 @@ svg {
   height: 0.75rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -538,10 +541,6 @@ svg {
 
 .m-6 {
   margin: 1.5rem;
-}
-
-.m-12 {
-  margin: 3rem;
 }
 
 .my-2 {
@@ -656,16 +655,8 @@ svg {
   padding-right: 8rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pr-24 {
-  padding-right: 6rem;
 }
 
 .pt-32 {
@@ -778,10 +769,6 @@ svg {
 
 .w-3\/4 {
   width: 75%;
-}
-
-.w-3\/12 {
-  width: 25%;
 }
 
 .w-full {
