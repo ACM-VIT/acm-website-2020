@@ -103,6 +103,34 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 2em;
 }
 
+.vertical-timeline::before{content:'';
+  position:absolute;
+  top:0;
+  left:18px;
+  height:100%;
+  width:4px;
+  background:#0085B9;
+}
+
+.vertical-timeline-element-icon{position:absolute;
+  top:0;
+  left:0;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  box-shadow:0 0 0 4px #0085B9,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05);
+}
+
+.vertical-timeline-element-content-arrow{content:'';
+  position:absolute;
+  top:16px;
+  right:100%;
+  height:0;
+  width:0;
+  border:7px solid transparent;
+  border-right:7px solid #0085B9;
+}
+
 /* Individual item */
 .bm-item {
   display: inline-block;
