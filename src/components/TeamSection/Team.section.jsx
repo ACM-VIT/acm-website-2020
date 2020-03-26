@@ -23,7 +23,7 @@ const Team = ({ findOffset }) => {
       id="team-section"
     >
       <SectionHeader>Team</SectionHeader>
-      <div className="flex flex-row justify-center">
+      <div className="flex flex-row justify-center flex-wrap">
         {faculties.map(faculty => (
           <TeamCard memberInfo={faculty} key={faculty.id} />
         ))}

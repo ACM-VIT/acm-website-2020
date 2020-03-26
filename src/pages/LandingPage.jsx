@@ -11,7 +11,7 @@ import Contact from '../components/ContactSection/Contact.section';
 
 const LandingPage = ({ findOffset }) => {
   return (
-    <div className="overflow-x-hidden w-screen">
+    <div className="w-screen">
       <Landing findOffset={offsetY => findOffset(offsetY, 0)} />
       <About findOffset={offsetY => findOffset(offsetY, 1)} />
       <Team findOffset={offsetY => findOffset(offsetY, 2)} />

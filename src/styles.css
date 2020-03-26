@@ -223,10 +223,6 @@ button:-moz-focusring {
  * Add the correct display in IE 10.
  */
 
-[hidden] {
-  display: none;
-}
-
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -443,10 +439,6 @@ img {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -549,10 +541,6 @@ img {
 
 .m-6 {
   margin: 1.5rem;
-}
-
-.m-8 {
-  margin: 2rem;
 }
 
 .my-2 {
@@ -914,30 +902,57 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position:relative;
 }
 
-/* .main{
-  background-color:#333333;
-  width:100%;
-  position:absolute;
-  bottom:0px;
-  color:white;
+div.vitlg{
+  padding: 0 !important;
+}
+
+/* .vitLogo, .acmLogo, . {
+  height: 400px !important;
 } */
 
-.footerContent {
-  /* text-align: center; */
+/* .footerContent {
+  text-align: center;
   align-content: center;
+} */
+
+.vitlo, .acm_logo {
+  padding: 0px !important;
+  height: auto;
+  width: 100% !important;
+  /* width: 100% !important; */
+  text-align: center !important;
+  /* object-fit: cover !important; */
+}
+
+.acmLogo {
+  padding: 50px 50px !important;
+}
+
+.vitLogo {
+  padding: 50px 50px !important;
 }
 
 .FooterGrid{
-  padding-left:10%;
-  padding-right:10%;
+  padding-left:5% !important;
+  padding-right:5% !important;
 }
 
 .Contact{
   /* margin-left: 10%; */
   /* padding: 10px; */
   font-size:20px !important;
-  padding-top: 20%;
+  padding-top: 30px !important;
+  text-align: center !important;
+  /* padding-top: 20%; */
 }
+
+/* .vitl {
+  padding: 0 !important;
+  height: auto !important;
+  width: 100% !important;
+  padding: 0;
+
+}  */
 
 .footerContent {
   background: black;
@@ -951,38 +966,55 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin:0 10px;
 }
 
-.EmailIcon,.Email{
+.EmailIcon{
   display:inline-block;
   vertical-align: text-top !important;
+  font-weight: bold;
+  margin:0!important;
 }
+
+.Email {
+  display:inline-block;
+  vertical-align: text-top !important;
+  font-weight: bold;
+  margin:0!important;
+  padding-left: 10px !important;
+}
+
+/* .ContactNo{
+  margin:0!important;
+} */
 
 /* 
 .Email{
   margin:0!important;
 } */
 
-.EmailIcon{
+/* .FooterPhoneIcon,.EmailIcon{
   position:relative;
   top:5px;
   height:20px;
   margin-right:5px;
-}
+} */
 
-.socMed,.vitlg{
+/* .socMed,.vitlg{
   text-align:center;
   padding-top:50px;
-}
+} */
 
-.vitl{
-  width:80%!important;
-}
-
-.acm_logo{
-  text-align:center;
-  padding-top:30px;
+/* .vitlg{
   width:100%!important;
+  text-align: center !important;
+
+} */
+
+/* 
+.acmlg{
+  text-align:center !important;
+  padding-top:30px; 
+  width:100%!important; 
   height: auto !important;
-}
+} */
 
 /* .no-margin-top{
   margin-top:0!important;
@@ -992,15 +1024,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin-bottom:0!important;
 } */
 
+/* 
 .center{
-  text-align:center;
+   align-content:center !important; 
 }
 
 .bold{
   font-weight: bold;
-}
+} */
 
-.no_blue{
+.no_blue, p.font18.bold.center{
+  margin-top: 50px !important;
   text-decoration:none!important;
   color:white!important;
+  font-size: 20px !important;
+  font-weight: bold;
+  align-content:center !important;
 }
