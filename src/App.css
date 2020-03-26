@@ -5,4 +5,5 @@ html {
   margin: 0;
   cursor: default;
   scroll-behavior: smooth;
+  overflow-x: hidden
 }
