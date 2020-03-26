@@ -198,17 +198,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin:0 10px;
 }
 
-.FooterPhoneIcon,.ContactNo,.EmailIcon,.Email{
+.ContactNo,.EmailIcon,.Email{
   display:inline-block;
+  vertical-align: text-top !important;
 }
 
 .ContactNo{
   margin:0!important;
 }
-
+/* 
 .Email{
   margin:0!important;
-}
+} */
 
 .FooterPhoneIcon,.EmailIcon{
   position:relative;
@@ -230,15 +231,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align:center;
   padding-top:30px;
   width:100%!important;
+  height: auto !important;
 }
 
-.no-margin-top{
+/* .no-margin-top{
   margin-top:0!important;
 }
 
 .no-margin-bottom{
   margin-bottom:0!important;
-}
+} */
 
 .center{
   text-align:center;

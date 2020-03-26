@@ -15,6 +15,30 @@ export default class Footer extends Component {
       <div id='footer' className='footerContent'>
         <Grid className='FooterGrid' container spacing={0}>
 
+          
+
+          {/* <Grid className='social' item xs={12} md={3}>
+            <div className='socMed'>
+              <a className='fb' target='blank' href='https://www.facebook.com/ACM.VITU/'><img alt='fb' className='sm' src={facebook} /></a>
+
+              <a className='ig' target='blank' href='https://www.instagram.com/acmvit/?hl=en'><img alt='insta' className='sm' src={instagram} /></a>
+
+            </div>
+          </Grid> */}
+          <Grid className='acmLogo' item xs={12} md={3}>
+            <div className='acm_logo_div'>
+              <a href='https://acmvit.in' target='_blank' rel='noopener noreferrer'><img className='acm_logo' src={acm} alt='acm logo' /></a>
+            </div>
+            {/* <a href="https://acmvit.in" target="_blank" rel="noopener noreferrer" className="no_blue"><p className="font18 bold center">Developed by ACM-VIT</p></a> */}
+          </Grid>
+
+          <Grid className='vitLogo' item xs={12} md={3}>
+            <div className='vitlg'>
+              <a href='https://vit.ac.in' target='_blank' rel='noopener noreferrer'><img className='vitl' src={vit} alt='vit logo' /></a>
+            </div>
+            {/* <a href="https://acmvit.in" target="_blank" rel="noopener noreferrer" className="no_blue"><p className="font18 bold center">Developed by ACM-VIT</p></a> */}
+          </Grid>
+
           <Grid className='Contacts' item xs={12} md={3}>
             <div className='Contact'>
               <img className='EmailIcon' src={email} />
@@ -28,29 +52,6 @@ export default class Footer extends Component {
               </h3>
             </div>
 
-          </Grid>
-
-          {/* <Grid className='social' item xs={12} md={3}>
-            <div className='socMed'>
-              <a className='fb' target='blank' href='https://www.facebook.com/ACM.VITU/'><img alt='fb' className='sm' src={facebook} /></a>
-
-              <a className='ig' target='blank' href='https://www.instagram.com/acmvit/?hl=en'><img alt='insta' className='sm' src={instagram} /></a>
-
-            </div>
-          </Grid> */}
-
-          <Grid className='vitLogo' item xs={12} md={3}>
-            <div className='vitlg'>
-              <a href='https://vit.ac.in' target='_blank' rel='noopener noreferrer'><img className='vitl' src={vit} alt='vit logo' /></a>
-            </div>
-            {/* <a href="https://acmvit.in" target="_blank" rel="noopener noreferrer" className="no_blue"><p className="font18 bold center">Developed by ACM-VIT</p></a> */}
-          </Grid>
-
-          <Grid className='acmLogo' item xs={12} md={3}>
-            <div className='acm_logo_div'>
-              <a href='https://acmvit.in' target='_blank' rel='noopener noreferrer'><img className='acm_logo' src={acm} alt='acm logo' /></a>
-            </div>
-            {/* <a href="https://acmvit.in" target="_blank" rel="noopener noreferrer" className="no_blue"><p className="font18 bold center">Developed by ACM-VIT</p></a> */}
           </Grid>
 
         </Grid>
