@@ -3,8 +3,8 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid'
 import email from '../../../vectors/Email.svg'
-import instagram from '../../../vectors/Instagram.svg'
-import facebook from '../../../vectors/Facebook.svg'
+// import instagram from '../../../vectors/Instagram.svg'
+// import facebook from '../../../vectors/Facebook.svg'
 import vit from '../../../vectors/Logos_ACM.png'
 import acm  from '../../../vectors/ACMFOOTER.png'
 import '../../../tailwind.css'
@@ -15,7 +15,7 @@ export default class Footer extends Component {
       <div id='footer' className='footerContent'>
         <Grid className='FooterGrid' container spacing={0}>
 
-          <Grid className='Contacts' item xs={12} md={3}>
+          <Grid className='Contacts' item xs={12} md={6}>
             <div className='Contact'>
               <img className='EmailIcon' src={email} />
               <p className='Email font18'> outreach.acmvit@gmail.com.</p>

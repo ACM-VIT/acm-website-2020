@@ -11038,13 +11038,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color:white;
 }
 
-.main{
-  /* background-color:#333333; */
+/* .main{
+  background-color:#333333;
   width:100%;
   position:absolute;
   bottom:0px;
   color:white;
-}
+} */
 
 .footerContent {
   /* text-align: center; */
