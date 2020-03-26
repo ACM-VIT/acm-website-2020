@@ -6,7 +6,7 @@ const NavLink = props => {
   const { children, active, scrollTo, getProps } = props;
 
   return (
-    <a href={`${process.env.PUBLIC_URL}/#${scrollTo}`}>
+    <a href={`${window.location.origin}/#${scrollTo}`}>
       <div
         ref={el => {
           if (!el) return;
@@ -17,6 +17,8 @@ const NavLink = props => {
           );
         }}
         className={`cursor-pointer hover:text-blue-300 focus:outline-none mx-4 ${active &&
+          window.location.href !== `${window.location.origin}/blogs` &&
+          window.location.href !== `${window.location.origin}/events` &&
           'text-acm-blue'}`}
         role="button"
         tabIndex="-1"

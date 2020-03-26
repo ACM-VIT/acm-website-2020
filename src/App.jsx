@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+// Components
 import Navbar from './components/layout/Navbar/Navbar';
 import HamburgerNavbar from './components/HamburgerNavSection/HamburgerNav';
 import LandingPage from './pages/LandingPage';
 import EventsPageLanding from './pages/EventsPageLanding';
 import BlogsPageLanding from './pages/BlogsPageLanding';
 
+// Data
+import { OFFSET_POS } from './DataStore';
+
+// Stylesheet
 import './App.css';
 
 const App = () => {
-  const [offsetPos, setOffsetPos] = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [offsetPos, setOffsetPos] = useState(OFFSET_POS);
 
+  // Sets offset Y of all sections
   const findOffset = (offsetY, index) => {
     const newOffsetPos = offsetPos;
     newOffsetPos[index] = offsetY;

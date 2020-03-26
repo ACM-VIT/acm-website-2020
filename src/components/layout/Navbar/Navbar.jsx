@@ -76,9 +76,9 @@ const Navbar = ({ offsetPos }) => {
 
   return (
     <header className="bg-black text-white flex items-center justify-between fixed w-full z-50 py-4 px-16">
-      <div>
+      <a href={`${process.env.PUBLIC_URL}/`}>
         <AcmLogo />
-      </div>
+      </a>
       <div className="flex flex-col">
         <div className="flex flex-row h-8 items-center my-2">
           {links.map((link, index) => {
@@ -94,7 +94,13 @@ const Navbar = ({ offsetPos }) => {
             );
           })}
         </div>
-        <NavLine currentLink={currentLink()} customStyles={leftsAndWidths} />
+        {window.location.href !== `${window.location.origin}/blogs` &&
+          window.location.href !== `${window.location.origin}/events` && (
+            <NavLine
+              currentLink={currentLink()}
+              customStyles={leftsAndWidths}
+            />
+          )}
       </div>
     </header>
   );

@@ -512,4 +512,15 @@ const LEFTS_AND_WIDTHS = [
   { left: 0, width: 0 }
 ];
 
-export { ABOUT, TEAM, EVENTS, BLOGS, PROJECTS, LINKS, LEFTS_AND_WIDTHS };
+const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
+
+export {
+  ABOUT,
+  TEAM,
+  EVENTS,
+  BLOGS,
+  PROJECTS,
+  LINKS,
+  LEFTS_AND_WIDTHS,
+  OFFSET_POS
+};
