@@ -6,7 +6,7 @@ const SectionHeader = props => {
 
   return (
     <header
-      className={`text-acm-blue text-4xl uppercase text-center font-bold my-8 ${!innerHeader &&
+      className={`text-acm-blue text-4xl uppercase text-center font-bold w-full my-8 ${!innerHeader &&
         'pt-32'}`}
     >
       {children}

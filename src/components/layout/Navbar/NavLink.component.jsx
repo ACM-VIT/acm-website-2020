@@ -6,19 +6,20 @@ const NavLink = props => {
   const { children, active, scrollTo, getProps } = props;
 
   return (
-    <a href={`#${scrollTo}`}>
+    <a href={`${process.env.PUBLIC_URL}/#${scrollTo}`}>
       <div
         ref={el => {
           if (!el) return;
+          // Get width and offsetX of the link
           getProps(
             el.getBoundingClientRect().width,
             el.getBoundingClientRect().x
           );
         }}
-        className={`mx-4 cursor-pointer hover:text-blue-300 focus:outline-none ${active &&
+        className={`cursor-pointer hover:text-blue-300 focus:outline-none mx-4 ${active &&
           'text-acm-blue'}`}
         role="button"
-        tabIndex="0"
+        tabIndex="-1"
       >
         {children}
       </div>

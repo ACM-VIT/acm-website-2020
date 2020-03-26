@@ -2,72 +2,19 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+// Components
 import { ReactComponent as AcmLogo } from '../../../vectors/AcmLogo.svg';
 import NavLink from './NavLink.component';
 import NavLine from './NavLine.component';
 
-const Navbar = ({ offsetPos }) => {
-  const [links, setLinks] = useState([
-    {
-      id: 1,
-      text: 'Home',
-      scrollTo: 'landing-section',
-      offsetY: 0,
-      active: true
-    },
-    {
-      id: 2,
-      text: 'About',
-      scrollTo: 'about-section',
-      offsetY: 0,
-      active: false
-    },
-    {
-      id: 3,
-      text: 'Team',
-      scrollTo: 'team-section',
-      offsetY: 0,
-      active: false
-    },
-    {
-      id: 4,
-      text: 'Events',
-      scrollTo: 'events-section',
-      offsetY: 0,
-      active: false
-    },
-    {
-      id: 5,
-      text: 'Blogs',
-      scrollTo: 'blogs-section',
-      offsetY: 0,
-      active: false
-    },
-    {
-      id: 6,
-      text: 'Projects',
-      scrollTo: 'projects-section',
-      offsetY: 0,
-      active: false
-    },
-    {
-      id: 7,
-      text: 'Contact Us',
-      scrollTo: 'contact-section',
-      offsetY: 0,
-      active: false
-    }
-  ]);
-  let [leftsAndWidths] = useState([
-    { left: 0, width: 0 },
-    { left: 0, width: 0 },
-    { left: 0, width: 0 },
-    { left: 0, width: 0 },
-    { left: 0, width: 0 },
-    { left: 0, width: 0 },
-    { left: 0, width: 0 }
-  ]);
+// Data
+import { LINKS, LEFTS_AND_WIDTHS } from '../../../DataStore';
 
+const Navbar = ({ offsetPos }) => {
+  const [links, setLinks] = useState(LINKS);
+  let [leftsAndWidths] = useState(LEFTS_AND_WIDTHS);
+
+  // Set offsetX and widths for each navlink
   const setProps = (width, left, index) => {
     const newLeftsAndWidths = [...leftsAndWidths];
     newLeftsAndWidths[index].left = left;
@@ -75,6 +22,7 @@ const Navbar = ({ offsetPos }) => {
     leftsAndWidths = newLeftsAndWidths;
   };
 
+  // Set offsetY for every section in state
   const initOffsetPos = () => {
     const newLinks = links.map((link, index) => {
       link.offsetY = offsetPos[index];
@@ -83,9 +31,11 @@ const Navbar = ({ offsetPos }) => {
     setLinks(newLinks);
   };
 
+  // Handle navbar events on scroll
   const scrollHandler = () => {
     let highest = 0;
 
+    // Set the currently active link
     links.map(link => {
       if (window.scrollY + 50 > link.offsetY) {
         if (link.id > highest) {
@@ -95,6 +45,7 @@ const Navbar = ({ offsetPos }) => {
       return link;
     });
 
+    // Highlight the currently active link
     const Links = links.map(link => {
       link.active = false;
       if (link.id === highest) {
@@ -105,6 +56,7 @@ const Navbar = ({ offsetPos }) => {
     setLinks(Links);
   };
 
+  // Finds the currently active link
   const currentLink = () => {
     let currentLinkID;
     links.forEach((link, index) => {
@@ -115,6 +67,7 @@ const Navbar = ({ offsetPos }) => {
 
   useEffect(() => {
     initOffsetPos();
+    // Scroll event listener
     window.addEventListener('scroll', () => {
       scrollHandler();
     });
@@ -122,7 +75,7 @@ const Navbar = ({ offsetPos }) => {
   }, [offsetPos]);
 
   return (
-    <header className="bg-black text-white flex items-center py-4 px-16 justify-between fixed w-full z-50">
+    <header className="bg-black text-white flex items-center justify-between fixed w-full z-50 py-4 px-16">
       <div>
         <AcmLogo />
       </div>

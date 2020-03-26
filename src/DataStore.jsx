@@ -450,4 +450,66 @@ const PROJECTS = [
   }
 ];
 
-export { ABOUT, TEAM, EVENTS, BLOGS, PROJECTS };
+const LINKS = [
+  {
+    id: 1,
+    text: 'Home',
+    scrollTo: 'landing-section',
+    offsetY: 0,
+    active: true
+  },
+  {
+    id: 2,
+    text: 'About',
+    scrollTo: 'about-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 3,
+    text: 'Team',
+    scrollTo: 'team-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 4,
+    text: 'Events',
+    scrollTo: 'events-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 5,
+    text: 'Blogs',
+    scrollTo: 'blogs-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 6,
+    text: 'Projects',
+    scrollTo: 'projects-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 7,
+    text: 'Contact Us',
+    scrollTo: 'contact-section',
+    offsetY: 0,
+    active: false
+  }
+];
+
+const LEFTS_AND_WIDTHS = [
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 }
+];
+
+export { ABOUT, TEAM, EVENTS, BLOGS, PROJECTS, LINKS, LEFTS_AND_WIDTHS };

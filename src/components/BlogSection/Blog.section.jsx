@@ -1,40 +1,31 @@
-/* eslint-disable no-param-reassign */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+// Components
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
-import RightArrow from './RightArrow';
-import LeftArrow from './LeftArrow';
+import RightArrow from '../layout/Sections/RightArrow';
+import LeftArrow from '../layout/Sections/LeftArrow';
 import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
+// Utility functions
+import scrollHorizontally from '../../utils/scrollHorizontally';
+
+// Data
 import { BLOGS } from '../../DataStore';
 
 const Blog = ({ findOffset }) => {
   const [blogs] = useState(BLOGS);
 
+  // Component variables
   let node;
-
-  const scrollHorizontally = (element, direction, speed, distance, step) => {
-    let scrollAmount = 0;
-    const slideTimer = setInterval(() => {
-      if (direction === 'right') {
-        element.scrollLeft += step;
-      } else {
-        element.scrollLeft -= step;
-      }
-      scrollAmount += step;
-      if (scrollAmount >= distance) {
-        window.clearInterval(slideTimer);
-      }
-    }, speed);
-  };
 
   return (
     <section
       ref={el => {
         if (!el) return;
+        // Get element's offset Y value
         findOffset(el.getBoundingClientRect().y - 180);
       }}
       className="text-center my-12"
@@ -42,7 +33,7 @@ const Blog = ({ findOffset }) => {
     >
       <SectionHeader>Blogs</SectionHeader>
       <div className="flex">
-        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+        <div className="flex-shrink-0 flex justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
             role="button"
@@ -69,7 +60,7 @@ const Blog = ({ findOffset }) => {
             </CarouselCard>
           ))}
         </div>
-        <div className="w-32 flex-shrink-0 flex justify-center items-center">
+        <div className="flex-shrink-0 flex justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'right', 25, 480, 48)}
             role="button"
@@ -79,11 +70,11 @@ const Blog = ({ findOffset }) => {
           </div>
         </div>
       </div>
-      <div className="text-acm-blue text-2xl px-32 underline">
+      <div className="text-acm-blue text-2xl underline px-32">
         <div className="flex items-center flex-no-wrap justify-end">
           <Link to="/blogs">
             <div className="flex items-center flex-no-wrap justify-end">
-              <div>View All Blogs</div>
+              <div>View More Blogs</div>
               <RightLink />
             </div>
           </Link>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const ProjectCard = props => {
   const { children, description, image, url } = props;
 
+  // Image styles
   const imageStyling = {
     backgroundImage: `url(${image})`,
     backgroundSize: 'cover',
@@ -13,9 +14,9 @@ const ProjectCard = props => {
 
   return (
     <a href={url}>
-      <div className="w-448 h-full mx-4 flex-shrink-0 p-8 shadow-card rounded-lg">
-        <div className="bg-red-800 w-full h-40" style={imageStyling} />
-        <div className="my-4 font-bold text-4xl">{children}</div>
+      <div className="w-448 h-full flex-shrink-0 p-8 shadow-card rounded-lg mx-4">
+        <div className="w-full h-40" style={imageStyling} />
+        <div className="font-bold text-4xl my-4 ">{children}</div>
         <div className="text-justify">{description}</div>
       </div>
     </a>

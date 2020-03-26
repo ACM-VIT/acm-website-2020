@@ -10928,41 +10928,21 @@ video {
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 .w-448 {
   width: 28rem;
 }
 
+.w-96 {
+  width: 21rem;
+}
+
 .eventspage-img {
   float: left;
   margin-right: 0.625rem;
   display: flex;
-}
-
-.blogspage-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 26px;
-  color: #000000;
-}
-
-.blogspage-medium-image {
-  margin: 2.75rem;
-  margin-right: 20rem;
-}
-
-.blogspage-vector-image {
-  margin: 3.35rem;
-  margin-right: 8rem;
-}
-
-.blogspage-image {
-  display: flex;
-  float: left;
-  margin-right: 0.625rem;
 }
 
 /* Position and sizing of burger button */
@@ -10985,7 +10965,7 @@ video {
 /* Color/shape of burger icon bars on hover*/
 
 .bm-burger-bars-hover {
-  background: #0085B9;
+  background: #0085b9;
 }
 
 /* Position and sizing of clickable cross button */
@@ -11014,7 +10994,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 
 .bm-menu {
-  background: #0085B9;
+  background: #0085b9;
   padding: 9em 1.5em 0;
   font-size: 1.15em;
 }
@@ -11041,7 +11021,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 
 .bm-overlay {
-  background: #0085B9;
+  background: #0085b9;
 }
 
 @media (min-width: 870px) {

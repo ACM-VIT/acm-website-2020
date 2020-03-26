@@ -35,7 +35,8 @@ const BlogsNet = props => {
 BlogsNet.propTypes = {
   children: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  url:  PropTypes.string.isRequired
 };
 
 
