@@ -82,16 +82,32 @@ const Navbar = ({ offsetPos }) => {
       <div className="flex flex-col">
         <div className="flex flex-row h-8 items-center my-2">
           {links.map((link, index) => {
-            return (
-              <NavLink
-                active={link.active}
-                key={link.id}
-                scrollTo={link.scrollTo}
-                getProps={(width, left) => setProps(width, left, index)}
-              >
-                {link.text}
-              </NavLink>
-            );
+            if (
+              window.location.href !== `${window.location.origin}/blogs` &&
+              window.location.href !== `${window.location.origin}/events`
+            )
+              return (
+                <NavLink
+                  active={link.active}
+                  key={link.id}
+                  scrollTo={link.scrollTo}
+                  getProps={(width, left) => setProps(width, left, index)}
+                >
+                  {link.text}
+                </NavLink>
+              );
+            if (index < 1)
+              return (
+                <NavLink
+                  active={link.active}
+                  key={link.id}
+                  scrollTo={link.scrollTo}
+                  getProps={(width, left) => setProps(width, left, index)}
+                >
+                  {link.text}
+                </NavLink>
+              );
+            return false;
           })}
         </div>
         {window.location.href !== `${window.location.origin}/blogs` &&

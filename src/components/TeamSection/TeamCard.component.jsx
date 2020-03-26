@@ -20,7 +20,7 @@ const TeamCard = props => {
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
       />
-      <div>
+      <div className="mt-4">
         <div className="text-center font-extrabold text-lg ">
           {memberInfo.name}
         </div>

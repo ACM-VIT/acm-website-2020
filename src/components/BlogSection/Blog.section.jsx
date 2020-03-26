@@ -49,16 +49,20 @@ const Blog = ({ findOffset }) => {
             node = el;
           }}
         >
-          {blogs.map(blog => (
-            <CarouselCard
-              key={blog.id}
-              desc={blog.desc}
-              image={blog.image}
-              url={blog.url}
-            >
-              {blog.name}
-            </CarouselCard>
-          ))}
+          {blogs.map((blog, index) => {
+            if (index < 6)
+              return (
+                <CarouselCard
+                  key={blog.id}
+                  desc={blog.desc}
+                  image={blog.image}
+                  url={blog.url}
+                >
+                  {blog.name}
+                </CarouselCard>
+              );
+            return false;
+          })}
         </div>
         <div className="flex-shrink-0 flex justify-center items-center w-32">
           <div

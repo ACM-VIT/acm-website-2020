@@ -481,7 +481,7 @@ const LINKS = [
   {
     id: 1,
     text: 'Home',
-    scrollTo: 'landing-section',
+    scrollTo: '',
     offsetY: 0,
     active: true
   },
