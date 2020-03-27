@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const BlogCard = props => {
   const { desc, children, image, url } = props;
 
+  // Image styling
   const imageStyle = {
     backgroundImage: `url(${image})`,
     backgroundSize: 'cover',
@@ -28,8 +29,8 @@ const BlogCard = props => {
 
 BlogCard.propTypes = {
   children: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 };
 

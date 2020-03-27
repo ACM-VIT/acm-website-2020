@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 // Components
-import BlogCard from './BlogsPageCard.component';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
+import BlogCard from './BlogsPageCard.component';
 
 // Data
 import { BLOGS } from '../../DataStore';

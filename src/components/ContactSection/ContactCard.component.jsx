@@ -14,8 +14,8 @@ import sendMail from '../../utils/request';
 import { SOCIAL_LINKS, CONTACT_DETAILS } from '../../DataStore';
 
 const ContactCard = () => {
-  const [socialLinks] = useState(SOCIAL_LINKS);
   const [contactDetails, setContactDetails] = useState(CONTACT_DETAILS);
+  const [socialLinks] = useState(SOCIAL_LINKS);
 
   // Destructuring
   const { name, email, message } = contactDetails;
