@@ -18,10 +18,6 @@
   top: -6rem;
 }
 
-.shift-left {
-  left: -6rem;
-}
-
 .hide-scrollbar {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
