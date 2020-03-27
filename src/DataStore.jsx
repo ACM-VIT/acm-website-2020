@@ -1,9 +1,236 @@
 import React from 'react';
 
+// Components
 import { ReactComponent as Instagram } from './vectors/Instagram.svg';
 import { ReactComponent as Facebook } from './vectors/Facebook.svg';
 import { ReactComponent as Email } from './vectors/Email.svg';
 import { ReactComponent as Twitter } from './vectors/Twitter.svg';
+
+const LEFTS_AND_WIDTHS = [
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 },
+  { left: 0, width: 0 }
+];
+
+const CONTACT_DETAILS = {
+  name: '',
+  email: '',
+  message: ''
+};
+
+const GALLERY_IMAGES = [
+  {
+    id: 1,
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+  },
+  {
+    id: 2,
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+  },
+  {
+    id: 3,
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/'
+  }
+];
+
+const LANDING_LINES = [
+  'Because technology matters',
+  "There's future, There's innovation",
+  'We do what we dream',
+  'Encouraging diversity, igniting minds'
+];
+
+const SOCIAL_LINKS = [
+  {
+    id: 1,
+    logo: <Instagram />,
+    handle: '@acmvit',
+    url: 'https://www.instagram.com/acmvit'
+  },
+  {
+    id: 2,
+    logo: <Facebook />,
+    handle: '@ACM.VITU',
+    url: 'https://facebook.com/ACM.VITU'
+  },
+  {
+    id: 3,
+    logo: <Email />,
+    handle: '@acmvit',
+    url:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreach.acmvit@gmail.com'
+  },
+  {
+    id: 4,
+    logo: <Twitter />,
+    handle: '@ACM_VIT',
+    url: 'https://twitter.com/ACM_VIT'
+  }
+];
+
+const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
+
+const PROJECTS = [
+  {
+    id: 1,
+    title: 'Octave',
+    description: "Music Webite for ACM's iconic Code2Create.",
+    image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
+    url: 'https://github.com/ACM-VIT/Octave'
+  },
+  {
+    id: 2,
+    title: 'Research Projects',
+    description:
+      'A collection of all projects done by the Research 2019 and 2020 team.',
+    image: `${process.env.PUBLIC_URL}/assets/images/ResearchProjects.png`,
+    url: 'https://github.com/ACM-VIT/Research-Projects-2020'
+  },
+  {
+    id: 3,
+    title: 'C2C Web Portal',
+    description: "Web Portal for ACM's Code2Create.",
+    image: `${process.env.PUBLIC_URL}/assets/images/C2CWeb.png`,
+    url: 'https://github.com/ACM-VIT/c2c-website-2020'
+  },
+  {
+    id: 4,
+    title: 'FreeSlot Extension',
+    description: 'A chrome extension to extract timetable from vtop.',
+    image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
+    url: 'https://github.com/ACM-VIT/freeslotWebExtension'
+  }
+];
+
+const FACULTY = [
+  {
+    id: 1,
+    name: 'Prof. Balakrushna Tripathy',
+    designation: 'Dean of School of Information Technology & Engineering',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/DeanSite.png`
+  },
+  {
+    id: 2,
+    name: 'Dr. Aswani Kumar Cherukuri',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty1.png`
+  },
+  {
+    id: 3,
+    name: 'Prof. H.R. Vishwakarma',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty2.png`
+  },
+  {
+    id: 4,
+    name: 'Dr. Divya Udayan J.',
+    designation: 'Faculty Coordinator',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty3.jpeg`
+  }
+];
+
+const EVENTS = [
+  {
+    id: 10,
+    name: 'Code2Create 4.0',
+    desc:
+      'The wait is finally over, find yourself a team and get ready to lock horns with the wittiest and most creative minds across South India.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
+    url: 'https://c2c.acmvit.in',
+    date: '7th - 9th March 2020'
+  },
+  {
+    id: 9,
+    name: 'Code Your Dreams',
+    desc:
+      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HourOfCode.png`,
+    url: 'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
+    date: '15th December 2019'
+  },
+  {
+    id: 8,
+    name: 'Local Hack Day',
+    desc:
+      'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
+    image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
+    url:
+      'https://www.instagram.com/p/B5fUVn5hKYN/?utm_source=ig_web_button_share_sheet',
+    date: '8th December 2019'
+  },
+  {
+    id: 7,
+    name: 'Reverse Coding',
+    desc:
+      'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
+    image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
+    date: '(Offline Round) 16th October 2019 & (Online Round) 20th October 2019'
+  },
+  {
+    id: 6,
+    name: 'Learn To Compete',
+    desc:
+      'Learn To Compete is an exclusive competitive coding workshop, designed for the aspiring coders within you.',
+    image: `${process.env.PUBLIC_URL}/assets/images/LearnToCompete.png`,
+    url:
+      'https://www.instagram.com/p/B2HiyflBI-X/?utm_source=ig_web_button_share_sheet',
+    date: '21st September 2019'
+  },
+  {
+    id: 5,
+    name: 'Learn To Augment',
+    desc:
+      'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
+    image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
+    url: 'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
+    date: '31st August 2019'
+  },
+  {
+    id: 4,
+    name: 'Competitive Coding Cometh(by Coding Blocks)',
+    desc:
+      'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
+    image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
+    url: 'https://c3.acmvit.in/',
+    date: '20th July 2019'
+  },
+  {
+    id: 3,
+    name: 'Code2Create 3.0',
+    desc:
+      'Code2Create is back with its third rendition, and it is bigger and greater than ever before!',
+    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
+    url: 'https://c2c.acmvit.in',
+    date: '22nd - 24th March 2019'
+  },
+
+  {
+    id: 2,
+    name: 'Code Your Dreams',
+    desc:
+      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HourOfCode.png`,
+    url: 'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
+    date: '26th, 27th February 2019 and 1st March 2019'
+  },
+  {
+    id: 1,
+    name: 'Codart',
+    desc:
+      'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
+    image: `${process.env.PUBLIC_URL}/assets/images/CodeArt.png`,
+    url: 'https://codart.acmvit.in/',
+    date:
+      '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
+  }
+];
 
 const ABOUT = [
   {
@@ -103,30 +330,143 @@ const ABOUT = [
   }
 ];
 
-const FACULTY = [
+const LINKS = [
   {
     id: 1,
-    name: 'Prof. Balakrushna Tripathy',
-    designation: 'Dean of School of Information Technology & Engineering',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/DeanSite.png`
+    text: 'Home',
+    scrollTo: '',
+    offsetY: 0,
+    active: true
   },
   {
     id: 2,
-    name: 'Dr. Aswani Kumar Cherukuri',
-    designation: 'Faculty Coordinator',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty1.png`
+    text: 'About',
+    scrollTo: 'about-section',
+    offsetY: 0,
+    active: false
   },
   {
     id: 3,
-    name: 'Prof. H.R. Vishwakarma',
-    designation: 'Faculty Coordinator',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty2.png`
+    text: 'Team',
+    scrollTo: 'team-section',
+    offsetY: 0,
+    active: false
   },
   {
     id: 4,
-    name: 'Dr. Divya Udayan J.',
-    designation: 'Faculty Coordinator',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Faculty3.jpeg`
+    text: 'Events',
+    scrollTo: 'events-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 5,
+    text: 'Blogs',
+    scrollTo: 'blogs-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 6,
+    text: 'Projects',
+    scrollTo: 'projects-section',
+    offsetY: 0,
+    active: false
+  },
+  {
+    id: 7,
+    text: 'Contact Us',
+    scrollTo: 'contact-section',
+    offsetY: 0,
+    active: false
+  }
+];
+
+const BLOGS = [
+  {
+    id: 1,
+    name: 'Li-Fi:The Future Of Internet',
+    desc:
+      'Imagine a time when each of the lightbulbs in your house is a source of Internet. Imagine a scenario where, standing...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/li-fi-the-future-of-internet-e573eab6bd0d'
+  },
+  {
+    id: 2,
+    name: 'Lottie Animations',
+    desc:
+      'Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url:
+      'https://medium.com/acmvit/getting-started-with-lottie-animations-android-2c225ad2c467'
+  },
+  {
+    id: 3,
+    name: 'How to project an image...',
+    desc:
+      'We all have come across and used web apps where we can insert our pictures into other background images like...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url:
+      'https://medium.com/acmvit/how-to-project-an-image-in-perspective-view-of-a-background-image-opencv-python-d101bdf966bc'
+  },
+  {
+    id: 4,
+    name: 'Bring out your Inner Technocrat',
+    desc:
+      'Remember the good old days when human interactions happened in real life and not via a screen? The...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url:
+      'https://medium.com/acmvit/bring-out-your-inner-technocrat-b7da5f50190c'
+  },
+  {
+    id: 5,
+    name: 'The Infinite Art Machine',
+    desc:
+      'From time immemorial, humans have tried to be creative. We started with cave paintings and now...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/the-infinite-art-machine-3a2decab85d9'
+  },
+  {
+    id: 6,
+    name: 'The Future Of Software Bugs',
+    desc:
+      'A software bug is an error, a flaw or a fault in a computer program or software system that causes the app...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/the-future-of-software-bugs-4f8891184bdf'
+  },
+  {
+    id: 7,
+    name: 'Bash — Geek Mode On',
+    desc:
+      'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
+  },
+  {
+    id: 8,
+    name: 'Bash — Geek Mode On',
+    desc:
+      'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
+  },
+  {
+    id: 9,
+    name: 'Hyperloop',
+    desc:
+      'Since the very beginning of civilization, people have been discovering and inventing new ways of transportation...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url:
+      'https://medium.com/acmvit/hyperloop-future-of-ultra-high-speed-transport-system-457b09cc86cd'
+  },
+  {
+    id: 10,
+    name: 'Chirp',
+    desc:
+      'Chirp SDKs take data, convert it into sound, which nearby devices decode seamlessly back into data. It...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url:
+      'https://medium.com/acmvit/getting-started-with-chirp-android-aff372cf2761'
   }
 ];
 
@@ -253,354 +593,18 @@ const TEAM = [
   }
 ];
 
-const EVENTS = [
-  {
-    id: 10,
-    name: 'Code2Create 4.0',
-    desc:
-      'The wait is finally over, find yourself a team and get ready to lock horns with the wittiest and most creative minds across South India.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
-    url: 'https://c2c.acmvit.in',
-    date: '7th - 9th March 2020'
-  },
-  {
-    id: 9,
-    name: 'Code Your Dreams',
-    desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
-    url: 'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
-    date: '15th December 2019'
-  },
-  {
-    id: 8,
-    name: 'Local Hack Day',
-    desc:
-      'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
-    image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
-    url:
-      'https://www.instagram.com/p/B5fUVn5hKYN/?utm_source=ig_web_button_share_sheet',
-    date: '8th December 2019'
-  },
-  {
-    id: 7,
-    name: 'Reverse Coding',
-    desc:
-      'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
-    image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
-    date: '(Offline Round) 16th October 2019 & (Online Round) 20th October 2019'
-  },
-  {
-    id: 6,
-    name: 'Learn To Compete',
-    desc:
-      'Learn To Compete is an exclusive competitive coding workshop, designed for the aspiring coders within you.',
-    image: `${process.env.PUBLIC_URL}/assets/images/LearnToCompete.png`,
-    url:
-      'https://www.instagram.com/p/B2HiyflBI-X/?utm_source=ig_web_button_share_sheet',
-    date: '21st September 2019'
-  },
-  {
-    id: 5,
-    name: 'Learn To Augment',
-    desc:
-      'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
-    image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
-    url: 'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
-    date: '31st August 2019'
-  },
-  {
-    id: 4,
-    name: 'Competitive Coding Cometh(by Coding Blocks)',
-    desc:
-      'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
-    image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
-    url: 'https://c3.acmvit.in/',
-    date: '20th July 2019'
-  },
-  {
-    id: 3,
-    name: 'Code2Create 3.0',
-    desc:
-      'Code2Create is back with its third rendition, and it is bigger and greater than ever before!',
-    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
-    url: 'https://c2c.acmvit.in',
-    date: '22nd - 24th March 2019'
-  },
-
-  {
-    id: 2,
-    name: 'Code Your Dreams',
-    desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
-    url: 'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
-    date: '26th, 27th February 2019 and 1st March 2019'
-  },
-  {
-    id: 1,
-    name: 'Codart',
-    desc:
-      'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Codart2.png`,
-    url: 'https://codart.acmvit.in/',
-    date:
-      '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
-  }
-];
-
-const BLOGS = [
-  {
-    id: 1,
-    name: 'Li-Fi:The Future Of Internet',
-    desc:
-      'Imagine a time when each of the lightbulbs in your house is a source of Internet. Imagine a scenario where, standing...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/li-fi-the-future-of-internet-e573eab6bd0d'
-  },
-  {
-    id: 2,
-    name: 'Lottie Animations',
-    desc:
-      'Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url:
-      'https://medium.com/acmvit/getting-started-with-lottie-animations-android-2c225ad2c467'
-  },
-  {
-    id: 3,
-    name: 'How to project an image...',
-    desc:
-      'We all have come across and used web apps where we can insert our pictures into other background images like...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url:
-      'https://medium.com/acmvit/how-to-project-an-image-in-perspective-view-of-a-background-image-opencv-python-d101bdf966bc'
-  },
-  {
-    id: 4,
-    name: 'Bring out your Inner Technocrat',
-    desc:
-      'Remember the good old days when human interactions happened in real life and not via a screen? The...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url:
-      'https://medium.com/acmvit/bring-out-your-inner-technocrat-b7da5f50190c'
-  },
-  {
-    id: 5,
-    name: 'The Infinite Art Machine',
-    desc:
-      'From time immemorial, humans have tried to be creative. We started with cave paintings and now...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/the-infinite-art-machine-3a2decab85d9'
-  },
-  {
-    id: 6,
-    name: 'The Future Of Software Bugs',
-    desc:
-      'A software bug is an error, a flaw or a fault in a computer program or software system that causes the app...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/the-future-of-software-bugs-4f8891184bdf'
-  },
-  {
-    id: 7,
-    name: 'Bash — Geek Mode On',
-    desc:
-      'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
-  },
-  {
-    id: 8,
-    name: 'Bash — Geek Mode On',
-    desc:
-      'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
-  },
-  {
-    id: 9,
-    name: 'Hyperloop',
-    desc:
-      'Since the very beginning of civilization, people have been discovering and inventing new ways of transportation...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url:
-      'https://medium.com/acmvit/hyperloop-future-of-ultra-high-speed-transport-system-457b09cc86cd'
-  },
-  {
-    id: 10,
-    name: 'Chirp',
-    desc:
-      'Chirp SDKs take data, convert it into sound, which nearby devices decode seamlessly back into data. It...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url:
-      'https://medium.com/acmvit/getting-started-with-chirp-android-aff372cf2761'
-  }
-];
-
-const PROJECTS = [
-  {
-    id: 1,
-    title: 'Octave',
-    description: "Music Webite for ACM's iconic Code2Create.",
-    image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
-    url: 'https://github.com/ACM-VIT/Octave'
-  },
-  {
-    id: 2,
-    title: 'Research Projects',
-    description:
-      'A collection of all projects done by the Research 2019 and 2020 team.',
-    image: `${process.env.PUBLIC_URL}/assets/images/ResearchProjects.png`,
-    url: 'https://github.com/ACM-VIT/Research-Projects-2020'
-  },
-  {
-    id: 3,
-    title: 'C2C Web Portal',
-    description: "Web Portal for ACM's Code2Create.",
-    image: `${process.env.PUBLIC_URL}/assets/images/C2CWeb.png`,
-    url: 'https://github.com/ACM-VIT/c2c-website-2020'
-  },
-  {
-    id: 4,
-    title: 'FreeSlot Extension',
-    description: 'A chrome extension to extract timetable from vtop.',
-    image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
-    url: 'https://github.com/ACM-VIT/freeslotWebExtension'
-  }
-];
-
-const LINKS = [
-  {
-    id: 1,
-    text: 'Home',
-    scrollTo: '',
-    offsetY: 0,
-    active: true
-  },
-  {
-    id: 2,
-    text: 'About',
-    scrollTo: 'about-section',
-    offsetY: 0,
-    active: false
-  },
-  {
-    id: 3,
-    text: 'Team',
-    scrollTo: 'team-section',
-    offsetY: 0,
-    active: false
-  },
-  {
-    id: 4,
-    text: 'Events',
-    scrollTo: 'events-section',
-    offsetY: 0,
-    active: false
-  },
-  {
-    id: 5,
-    text: 'Blogs',
-    scrollTo: 'blogs-section',
-    offsetY: 0,
-    active: false
-  },
-  {
-    id: 6,
-    text: 'Projects',
-    scrollTo: 'projects-section',
-    offsetY: 0,
-    active: false
-  },
-  {
-    id: 7,
-    text: 'Contact Us',
-    scrollTo: 'contact-section',
-    offsetY: 0,
-    active: false
-  }
-];
-
-const LEFTS_AND_WIDTHS = [
-  { left: 0, width: 0 },
-  { left: 0, width: 0 },
-  { left: 0, width: 0 },
-  { left: 0, width: 0 },
-  { left: 0, width: 0 },
-  { left: 0, width: 0 },
-  { left: 0, width: 0 }
-];
-
-const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
-
-const SOCIAL_LINKS = [
-  {
-    id: 1,
-    logo: <Instagram />,
-    handle: '@acmvit',
-    url: 'https://www.instagram.com/acmvit'
-  },
-  {
-    id: 2,
-    logo: <Facebook />,
-    handle: '@ACM.VITU',
-    url: 'https://facebook.com/ACM.VITU'
-  },
-  {
-    id: 3,
-    logo: <Email />,
-    handle: '@acmvit',
-    url:
-      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreach.acmvit@gmail.com'
-  },
-  {
-    id: 4,
-    logo: <Twitter />,
-    handle: '@ACM_VIT',
-    url: 'https://twitter.com/ACM_VIT'
-  }
-];
-
-const CONTACT_DETAILS = {
-  name: '',
-  email: '',
-  message: ''
-};
-
-const LANDING_LINES = [
-  'Because technology matters',
-  "There's future, There's innovation",
-  'We do what we dream',
-  'Encouraging diversity, igniting minds'
-];
-
-const GALLERY_IMAGES = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/'
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/'
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/'
-  }
-];
-
 export {
-  ABOUT,
-  FACULTY,
-  TEAM,
-  EVENTS,
-  BLOGS,
-  PROJECTS,
-  LINKS,
   LEFTS_AND_WIDTHS,
-  OFFSET_POS,
-  SOCIAL_LINKS,
   CONTACT_DETAILS,
+  GALLERY_IMAGES,
   LANDING_LINES,
-  GALLERY_IMAGES
+  SOCIAL_LINKS,
+  OFFSET_POS,
+  PROJECTS,
+  FACULTY,
+  EVENTS,
+  ABOUT,
+  LINKS,
+  BLOGS,
+  TEAM
 };

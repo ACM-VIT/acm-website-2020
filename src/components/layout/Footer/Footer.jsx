@@ -63,14 +63,14 @@ const Footer = () => {
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
         <div
-          className="w-full md:w-1/2 rounded-lg overflow-hidden"
+          className="w-1/2 sm:w-1/3 md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center"
           onClick={toggleOpen}
           role="button"
           tabIndex={0}
         >
           <AliceCarousel
-            mouseTrackingEnabled
             autoPlayInterval={4000}
+            mouseTrackingEnabled
             buttonsDisabled
             dotsDisabled
             autoPlay
@@ -80,6 +80,7 @@ const Footer = () => {
                 src={image.thumbnail}
                 onDragStart={handleOnDragStart}
                 alt="Slideshow"
+                key={image.id}
               />
             ))}
           </AliceCarousel>
@@ -91,8 +92,8 @@ const Footer = () => {
         }`}
       >
         <div className="bg-black w-full h-full flex justify-center items-center cursor-default">
-          <div className="w-2/3 md:w-1/2 bg-white text-black relative p-4">
-            <div className="absolute right-0 mr-4">
+          <div className="w-full md:w-1/2 bg-white text-black relative p-4 flex flex-col justify-center items-center">
+            <div className="absolute right-0 top-0 mt-4 mr-4">
               <img
                 src={`${process.env.PUBLIC_URL}/assets/images/Close.png`}
                 alt="Close"
