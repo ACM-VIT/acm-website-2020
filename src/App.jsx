@@ -1,5 +1,8 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { transitions, positions, Provider as AlertProvider } from 'react-alert';
+import AlertTemplate from 'react-alert-template-basic';
 
 // Components
 import Navbar from './components/layout/Navbar/Navbar';
@@ -25,16 +28,26 @@ const App = () => {
     setOffsetPos(newOffsetPos);
   };
 
+  // Alert options
+  const options = {
+    position: positions.BOTTOM_CENTER,
+    timeout: 5000,
+    offset: '30px',
+    transition: transitions.SCALE
+  };
+
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar offsetPos={offsetPos} />
       <HamburgerNavbar offsetPos={offsetPos} />
       <Switch>
-        <Route
-          exact
-          path="/"
-          component={() => <LandingPage findOffset={findOffset} />}
-        />
+        <AlertProvider template={AlertTemplate} {...options}>
+          <Route
+            exact
+            path="/"
+            component={() => <LandingPage findOffset={findOffset} />}
+          />
+        </AlertProvider>
         <Route exact path="/events" component={EventsPageLanding} />
         <Route exact path="/blogs" component={BlogsPageLanding} />
       </Switch>

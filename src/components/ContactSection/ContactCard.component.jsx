@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useAlert } from 'react-alert';
 import TextField from '@material-ui/core/TextField';
 
 // Components
@@ -18,6 +19,7 @@ const ContactCard = () => {
   });
 
   const { name, email, message } = contactDetails;
+  const alert = useAlert();
 
   const onChange = e => {
     setContactDetails({ ...contactDetails, [e.target.name]: e.target.value });
@@ -39,12 +41,14 @@ const ContactCard = () => {
         email: contactDetails.email,
         message: contactDetails.message
       })
-      .then(response => {
+      .then(() => {
         // eslint-disable-next-line no-alert
-        alert(response.data.message);
+        alert.show('Message sent');
         setContactDetails(emptyContacts);
       })
       .catch(error => {
+        // eslint-disable-next-line no-console
+        alert.show('Incorrect values provided, please check your inputs.');
         // eslint-disable-next-line no-console
         console.log(error);
       });
