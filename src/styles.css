@@ -459,6 +459,10 @@ img {
   background-color: #fff;
 }
 
+.bg-acm-blue {
+  background-color: #0085b9;;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -807,6 +811,10 @@ img {
   color: #fff;
 }
 
+.text-acm-blue {
+  color: #0085b9;;
+}
+
 .hover\:text-blue-300:hover {
   color: #90cdf4;
 }
@@ -925,14 +933,6 @@ img {
 @import '~react-alice-carousel/lib/alice-carousel.css';
 
 @import '~react-vertical-timeline-component/style.min.css';
-
-.text-acm-blue {
-  color: #0085b9;
-}
-
-.bg-acm-blue {
-  background-color: #0085b9;
-}
 
 /* Scrollbar  */
 
