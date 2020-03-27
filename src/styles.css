@@ -440,6 +440,10 @@ img {
   background-color: #fff;
 }
 
+.bg-gray-600 {
+  background-color: #718096;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -469,6 +473,14 @@ img {
 }
 
 .hidden {
+  display: none;
+}
+
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:hidden:hover {
   display: none;
 }
 
@@ -864,6 +876,10 @@ img {
   width: 100vw;
 }
 
+.z-30 {
+  z-index: 30;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -892,6 +908,8 @@ img {
 }
 
 @import '~react-image-gallery/styles/css/image-gallery.css';
+
+@import '~react-alice-carousel/lib/alice-carousel.css';
 
 .text-acm-blue {
   color: #0085b9;
@@ -970,6 +988,28 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Styling of overlay */
 
 /* Event Timeline Customisations end  */
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+
+  10% {
+    opacity: 1;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+}
 
 @media (min-width: 870px) {
 

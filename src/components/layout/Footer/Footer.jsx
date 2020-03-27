@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 import ImageGallery from 'react-image-gallery';
+import AliceCarousel from 'react-alice-carousel';
 
 import { ReactComponent as Email } from '../../../vectors/Email.svg';
+
+const handleOnDragStart = e => e.preventDefault();
 
 const images = [
   {
@@ -69,9 +72,35 @@ const Footer = () => {
           <span>by ACM-VIT</span>
         </div>
       </div>
-      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4">
+      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
         <div
-          className="w-96 h-40 rounded-lg"
+          className="w-full md:w-1/2 rounded-lg overflow-hidden"
+          onClick={toggleOpen}
+          role="button"
+          tabIndex={0}
+        >
+          <AliceCarousel
+            mouseTrackingEnabled
+            buttonsDisabled
+            dotsDisabled
+            autoPlay
+            autoPlayInterval={4000}
+          >
+            <img
+              src="https://picsum.photos/id/1018/1000/600/"
+              onDragStart={handleOnDragStart}
+              className="yours-custom-class"
+            />
+            <img
+              src="https://picsum.photos/id/1015/1000/600/"
+              onDragStart={handleOnDragStart}
+              className="yours-custom-class"
+            />
+          </AliceCarousel>
+        </div>
+
+        {/* <div
+          className="w-96 h-40 rounded-lg z-30"
           onClick={toggleOpen}
           role="button"
           tabIndex={0}
@@ -79,7 +108,7 @@ const Footer = () => {
           <div className="opacity-0 hover:opacity-50 bg-black h-full rounded-lg flex justify-center items-center">
             <div>View Gallery</div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div
         className={`fixed inset-0 h-screen w-screen z-50 ${
