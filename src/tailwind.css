@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import '~react-image-gallery/styles/css/image-gallery.css';
+@import '~react-alice-carousel/lib/alice-carousel.css';
 
 .text-acm-blue {
   color: #0085b9;
@@ -156,3 +157,23 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Event Timeline Customisations end  */
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+}
