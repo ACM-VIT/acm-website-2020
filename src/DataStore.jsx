@@ -268,7 +268,7 @@ const EVENTS = [
     name: 'Code Your Dreams',
     desc:
       'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
     url: 'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
     date: '15th December 2019'
   },
@@ -333,7 +333,7 @@ const EVENTS = [
     name: 'Code Your Dreams',
     desc:
       'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
     url: 'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
     date: '26th, 27th February 2019 and 1st March 2019'
   },
@@ -342,7 +342,7 @@ const EVENTS = [
     name: 'Codart',
     desc:
       'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Codart.png`,
+    image: `${process.env.PUBLIC_URL}/assets/images/Codart2.png`,
     url: 'https://codart.acmvit.in/',
     date:
       '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
