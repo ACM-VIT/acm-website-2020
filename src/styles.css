@@ -109,7 +109,8 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-button {
+button,
+input {
   font-family: inherit; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
@@ -121,7 +122,8 @@ button {
  * 1. Show the overflow in Edge.
  */
 
-button { /* 1 */
+button,
+input { /* 1 */
   overflow: visible;
 }
 
@@ -343,6 +345,22 @@ img {
   border-style: solid;
 }
 
+input::-webkit-input-placeholder {
+  color: #a0aec0;
+}
+
+input:-ms-input-placeholder {
+  color: #a0aec0;
+}
+
+input::-ms-input-placeholder {
+  color: #a0aec0;
+}
+
+input::placeholder {
+  color: #a0aec0;
+}
+
 button,
 [role="button"] {
   cursor: pointer;
@@ -371,7 +389,8 @@ a {
  * normalize.css.
  */
 
-button {
+button,
+input {
   padding: 0;
   line-height: inherit;
   color: inherit;
@@ -440,10 +459,6 @@ img {
   background-color: #fff;
 }
 
-.bg-gray-600 {
-  background-color: #718096;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -473,14 +488,6 @@ img {
 }
 
 .hidden {
-  display: none;
-}
-
-.hover\:block:hover {
-  display: block;
-}
-
-.hover\:hidden:hover {
   display: none;
 }
 

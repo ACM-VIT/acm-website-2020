@@ -4,7 +4,7 @@ const SendButton = () => {
   return (
     <div className="flex justify-center items-center">
       <button
-        className="p-4 rounded-full bg-acm-blue -mr-40 md:-mr-16"
+        className="rounded-full bg-acm-blue -mr-40 md:-mr-16 p-4"
         type="submit"
       >
         <img

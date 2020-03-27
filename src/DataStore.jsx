@@ -560,6 +560,13 @@ const SOCIAL_LINKS = [
     url: 'https://twitter.com/ACM_VIT'
   }
 ];
+
+const CONTACT_DETAILS = {
+  name: '',
+  email: '',
+  message: ''
+};
+
 export {
   ABOUT,
   FACULTY,
@@ -570,5 +577,6 @@ export {
   LINKS,
   LEFTS_AND_WIDTHS,
   OFFSET_POS,
-  SOCIAL_LINKS
+  SOCIAL_LINKS,
+  CONTACT_DETAILS
 };
