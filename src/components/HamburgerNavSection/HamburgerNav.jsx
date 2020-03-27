@@ -5,7 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 const HamburgerNav = () => {
   
   return(
-    <Menu className="text-center text-white text-xl">
+    <Menu className="text-center text-white text-xl top-0">
         <a id="home" className="menu-item" href="#landing-section">Home</a>
         <a id="about" className="menu-item" href="#about-section">About Us</a>
         <a id="team" className="menu-item" href="#team-section">Team</a>

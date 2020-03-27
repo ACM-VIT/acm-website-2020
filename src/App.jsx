@@ -7,7 +7,7 @@ import HamburgerNavbar from './components/HamburgerNavSection/HamburgerNav';
 import LandingPage from './pages/LandingPage';
 import EventsPageLanding from './pages/EventsPageLanding';
 import BlogsPageLanding from './pages/BlogsPageLanding';
-// import Footer from './components/layout/Footer/Footer';
+import Footer from './components/layout/Footer/Footer';
 
 // Data
 import { OFFSET_POS } from './DataStore';
@@ -38,7 +38,7 @@ const App = () => {
         <Route exact path="/events" component={EventsPageLanding} />
         <Route exact path="/blogs" component={BlogsPageLanding} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 };
