@@ -63,7 +63,7 @@ const Footer = () => {
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
         <div
-          className="w-1/2 sm:w-1/3 md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center"
+          className="w-1/2 sm:w-1/3 md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center mt-8"
           onClick={toggleOpen}
           role="button"
           tabIndex={0}
@@ -77,6 +77,7 @@ const Footer = () => {
           >
             {GALLERY_IMAGES.map(image => (
               <img
+                className="rounded-lg"
                 src={image.thumbnail}
                 onDragStart={handleOnDragStart}
                 alt="Slideshow"
@@ -103,7 +104,9 @@ const Footer = () => {
               />
             </div>
             <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
-            <ImageGallery items={GALLERY_IMAGES} />
+            <div className="w-full">
+              <ImageGallery items={GALLERY_IMAGES} />
+            </div>
           </div>
         </div>
       </div>

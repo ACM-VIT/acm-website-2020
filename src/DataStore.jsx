@@ -25,18 +25,128 @@ const CONTACT_DETAILS = {
 const GALLERY_IMAGES = [
   {
     id: 1,
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow1.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow1.jpg`
   },
   {
     id: 2,
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow2.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow2.jpg`
   },
   {
     id: 3,
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/'
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow3.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow3.jpg`
+  },
+  {
+    id: 4,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow4.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow4.jpg`
+  },
+  {
+    id: 5,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow5.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow5.jpg`
+  },
+  {
+    id: 6,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow6.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow6.jpg`
+  },
+  {
+    id: 7,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow7.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow7.jpg`
+  },
+  {
+    id: 8,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow8.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow8.jpg`
+  },
+  {
+    id: 9,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow9.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow9.jpg`
+  },
+  {
+    id: 10,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow10.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow10.jpg`
+  },
+  {
+    id: 11,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow11.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow11.jpg`
+  },
+  {
+    id: 12,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow12.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow12.jpg`
+  },
+  {
+    id: 13,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow13.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow13.jpg`
+  },
+  {
+    id: 14,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow14.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow14.jpg`
+  },
+  {
+    id: 15,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow15.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow15.jpg`
+  },
+  {
+    id: 16,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow16.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow16.jpg`
+  },
+  {
+    id: 17,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow17.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow17.jpg`
+  },
+  {
+    id: 18,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow18.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow18.jpg`
+  },
+  {
+    id: 19,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow19.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow19.jpg`
+  },
+  {
+    id: 20,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow20.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow20.jpg`
+  },
+  {
+    id: 21,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow21.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow21.jpg`
+  },
+  {
+    id: 22,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow22.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow22.jpg`
+  },
+  {
+    id: 23,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow23.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow23.jpg`
+  },
+  {
+    id: 24,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow24.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow24.jpg`
+  },
+  {
+    id: 25,
+    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow25.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow25.jpg`
   }
 ];
 
