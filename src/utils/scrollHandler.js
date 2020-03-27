@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 // Handle navbar events on scroll
-const scrollHandler = (links, setLinks) => {
+export default (links, setLinks) => {
   let highest = 0;
 
   // Set the currently active link
@@ -23,5 +23,3 @@ const scrollHandler = (links, setLinks) => {
   });
   setLinks(Links);
 };
-
-export default scrollHandler;

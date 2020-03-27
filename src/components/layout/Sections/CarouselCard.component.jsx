@@ -10,7 +10,7 @@ const CarouselCard = props => {
         <div className="flex flex-col justify-between items-center h-full">
           <div className="flex flex-col md:flex-row items-end justify-center md:justify-between relative w-full">
             <div
-              className="shift-up w-full md:w-40 h-40 rounded-lg md:absolute flex-shrink-0 bg-cover bg-center bg-no-repeat"
+              className="-top-24 w-full md:w-40 h-40 rounded-lg md:absolute flex-shrink-0 bg-cover bg-center bg-no-repeat"
               style={{
                 backgroundImage: `url(${image})`
               }}

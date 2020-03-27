@@ -1,15 +1,17 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
 
+// Sections
 import Landing from '../components/LandingSection/Landing.section';
-import About from '../components/AboutSection/About.section';
-import Team from '../components/TeamSection/Team.section';
-import Events from '../components/EventsSection/Events.section';
-import Blog from '../components/BlogSection/Blog.section';
 import Project from '../components/ProjectSection/Project.section';
 import Contact from '../components/ContactSection/Contact.section';
+import Events from '../components/EventsSection/Events.section';
+import About from '../components/AboutSection/About.section';
+import Team from '../components/TeamSection/Team.section';
+import Blog from '../components/BlogSection/Blog.section';
 
 // Alert options
 const options = {

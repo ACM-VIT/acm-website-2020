@@ -2,26 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Package styles  */
 @import '~react-image-gallery/styles/css/image-gallery.css';
 @import '~react-alice-carousel/lib/alice-carousel.css';
 @import '~react-vertical-timeline-component/style.min.css';
 
-.text-acm-blue {
-  color: #0085b9;
-}
-
-.bg-acm-blue {
-  background-color: #0085b9;
-}
-
-.shadow-card {
-  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
-}
-
-.shift-up {
-  top: -6rem;
-}
-
+/* Scrollbar  */
 .hide-scrollbar {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
@@ -29,10 +15,6 @@
 
 .hide-scrollbar::-webkit-scrollbar {
   width: 0 !important;
-}
-
-.w-96 {
-  width: 21rem;
 }
 
 /* Event Timeline Customisations Start*/
@@ -136,25 +118,4 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: #0085b9;
 }
-
 /* Event Timeline Customisations end  */
-
-@keyframes imageAnimation {
-  0% {
-    opacity: 0;
-    animation-timing-function: ease-in;
-  }
-
-  10% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-
-  20% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 0;
-  }
-}
