@@ -5,8 +5,8 @@ const SocialLink = props => {
   const { children, logo, url } = props;
 
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="flex justify-center md:justify-start items-center my-8">
+    <a href={url} target="_blank" rel="noopener noreferrer" className="w-full">
+      <div className="flex justify-center md:justify-start items-center my-4">
         <div className="md:w-1/4 flex justify-center">{logo}</div>
         <div className="md:w-3/4 text-xl ml-4 md:ml-20">{children}</div>
       </div>

@@ -138,7 +138,8 @@ button { /* 1 */
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button {
+button,
+[type="button"] {
   -webkit-appearance: button;
 }
 
@@ -146,7 +147,8 @@ button {
  * Remove the inner border and padding in Firefox.
  */
 
-button::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -155,7 +157,8 @@ button::-moz-focus-inner {
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -186,6 +189,11 @@ button:-moz-focusring {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
@@ -613,6 +621,10 @@ img {
 
 .mb-32 {
   margin-bottom: 8rem;
+}
+
+.-mr-40 {
+  margin-right: -10rem;
 }
 
 .focus\:outline-none:focus {
@@ -1050,12 +1062,20 @@ p.font18.bold.center {
     justify-content: space-between;
   }
 
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:ml-20 {
     margin-left: 5rem;
   }
 
   .md\:ml-48 {
     margin-left: 12rem;
+  }
+
+  .md\:-mr-16 {
+    margin-right: -4rem;
   }
 
   .md\:px-32 {
