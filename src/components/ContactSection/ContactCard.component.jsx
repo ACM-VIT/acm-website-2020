@@ -11,7 +11,7 @@ import SendButton from './SendButton';
 import sendMail from '../../utils/request';
 
 // Data
-import { SOCIAL_LINKS, CONTACT_DETAILS } from '../../DataStore';
+import { CONTACT_DETAILS, SOCIAL_LINKS } from '../../DataStore';
 
 const ContactCard = () => {
   const [contactDetails, setContactDetails] = useState(CONTACT_DETAILS);
@@ -77,7 +77,6 @@ const ContactCard = () => {
                 label="Name"
                 name="name"
                 value={name}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">

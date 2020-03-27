@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 
 // Components
-import EventCard from './EventsPage.component';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
+import EventCard from './EventsPage.component';
 
 // Data
 import { EVENTS } from '../../DataStore';

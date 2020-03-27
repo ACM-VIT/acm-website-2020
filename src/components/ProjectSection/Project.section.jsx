@@ -47,10 +47,10 @@ const Projects = ({ findOffset }) => {
         >
           {projects.map(project => (
             <ProjectCard
-              key={project.id}
               description={project.description}
               image={project.image}
               url={project.url}
+              key={project.id}
             >
               {project.title}
             </ProjectCard>

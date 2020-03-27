@@ -5,21 +5,19 @@ import PropTypes from 'prop-types';
 // Utility functions
 import offsetY from '../../utils/offsetY';
 
+// Data
 import { LANDING_LINES } from '../../DataStore';
 
 const Landing = ({ findOffset }) => {
   // Background image styles
   const backgroundStyling = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/LandingBackground.png)`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/LandingBackground.png)`
   };
 
   return (
     <section
       ref={el => offsetY(el, findOffset)}
-      className="h-screen flex justify-center items-center"
+      className="h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
       style={backgroundStyling}
       id="landing-section"
     >

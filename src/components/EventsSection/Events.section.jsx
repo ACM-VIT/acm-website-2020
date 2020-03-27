@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Components
+import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 import RightArrow from '../layout/Sections/RightArrow';
 import LeftArrow from '../layout/Sections/LeftArrow';
-import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
 // Utility functions
 import scrollHorizontally from '../../utils/scrollHorizontally';
@@ -50,10 +50,10 @@ const Events = ({ findOffset }) => {
             if (index < 6)
               return (
                 <CarouselCard
-                  key={event.id}
-                  desc={event.desc}
                   image={event.image}
+                  desc={event.desc}
                   url={event.url}
+                  key={event.id}
                 >
                   {event.name}
                 </CarouselCard>

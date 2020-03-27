@@ -50,10 +50,10 @@ const Blog = ({ findOffset }) => {
             if (index < 6)
               return (
                 <CarouselCard
-                  key={blog.id}
-                  desc={blog.desc}
                   image={blog.image}
+                  desc={blog.desc}
                   url={blog.url}
+                  key={blog.id}
                 >
                   {blog.name}
                 </CarouselCard>
