@@ -42,7 +42,7 @@ const Projects = ({ findOffset }) => {
           </div>
         </div>
         <div
-          className="hide-scrollbar flex overflow-x-scroll items-stretch p-16 px-4"
+          className="hide-scrollbar flex overflow-x-scroll items-stretch p-8 md:p-16 px-4"
           ref={el => {
             if (!el) return;
             node = el;

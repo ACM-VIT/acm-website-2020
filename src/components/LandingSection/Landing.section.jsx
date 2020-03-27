@@ -22,8 +22,8 @@ const Landing = ({ findOffset }) => {
       style={backgroundStyling}
       id="landing-section"
     >
-      <h1 className="text-4xl text-white uppercase mx-4">
-        <div className="flex">
+      <h1 className="text-3xl md:text-4xl text-white uppercase mx-4">
+        <div className="flex p-8">
           <div>____</div>
           <Typewriter
             options={{
