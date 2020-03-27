@@ -24,8 +24,8 @@ const ProjectCard = props => {
 };
 
 ProjectCard.propTypes = {
-  children: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
 };

@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-
 import { VerticalTimeline } from 'react-vertical-timeline-component';
-import EventsNet from './EventsPage.component';
-import SectionHeader from '../layout/Sections/SectionHeader.component';
-import 'react-vertical-timeline-component/style.min.css';
 
+// Components
+import EventCard from './EventsPage.component';
+import SectionHeader from '../layout/Sections/SectionHeader.component';
+
+// Data
 import { EVENTS } from '../../DataStore';
 
 const EventsPage = () => {
   const [events] = useState(EVENTS);
 
   return (
-    <section className="-ml-1 ml-16 text-center my-12 pt-2">
+    <section className="text-center my-12 ml-16 pt-2">
       <SectionHeader>OUR EVENTS</SectionHeader>
       <VerticalTimeline>
         {events.map(event => (
-          <EventsNet
+          <EventCard
             key={event.id}
             name={event.name}
             desc={event.desc}

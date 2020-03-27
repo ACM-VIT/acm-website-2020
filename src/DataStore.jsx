@@ -567,6 +567,13 @@ const CONTACT_DETAILS = {
   message: ''
 };
 
+const LANDING_LINES = [
+  'Because technology matters',
+  "There's future, There's innovation",
+  'We do what we dream',
+  'Encouraging diversity, igniting minds'
+];
+
 export {
   ABOUT,
   FACULTY,
@@ -578,5 +585,6 @@ export {
   LEFTS_AND_WIDTHS,
   OFFSET_POS,
   SOCIAL_LINKS,
-  CONTACT_DETAILS
+  CONTACT_DETAILS,
+  LANDING_LINES
 };

@@ -2,6 +2,11 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import PropTypes from 'prop-types';
 
+// Utility functions
+import offsetY from '../../utils/offsetY';
+
+import { LANDING_LINES } from '../../DataStore';
+
 const Landing = ({ findOffset }) => {
   // Background image styles
   const backgroundStyling = {
@@ -13,12 +18,8 @@ const Landing = ({ findOffset }) => {
 
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        // Get element's offset Y value
-        findOffset(el.getBoundingClientRect().y);
-      }}
-      className="h-screen flex justify-center items-center bg-landing"
+      ref={el => offsetY(el, findOffset)}
+      className="h-screen flex justify-center items-center"
       style={backgroundStyling}
       id="landing-section"
     >
@@ -27,12 +28,7 @@ const Landing = ({ findOffset }) => {
           <div>____</div>
           <Typewriter
             options={{
-              strings: [
-                'Because technology matters',
-                "There's future, There's innovation",
-                'We do what we dream',
-                'Encouraging diversity, igniting minds'
-              ],
+              strings: LANDING_LINES,
               autoStart: true,
               loop: true
             }}

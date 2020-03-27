@@ -1,26 +1,20 @@
-/* eslint-disable import/no-duplicates */
-/* eslint-disable no-shadow */
-/* eslint-disable react/jsx-indent */
-import React from 'react';
+import React, { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import { useState } from 'react';
+
+// Data
 import { LINKS } from '../../DataStore';
 
 const HamburgerNav = () => {
-
   const [links] = useState(LINKS);
-  
-  return(
+
+  return (
     <div className="md:hidden">
       <Menu className="text-center text-white text-xl top-0">
-          {links.map(links => (
-            <a
-              key={links.id}
-              href={`${window.location.origin}/#${links.scrollTo}`}
-            >
-              {links.text}
-            </a>
-          ))}
+        {links.map(link => (
+          <a key={link.id} href={`${window.location.origin}/#${link.scrollTo}`}>
+            {link.text}
+          </a>
+        ))}
       </Menu>
     </div>
   );
