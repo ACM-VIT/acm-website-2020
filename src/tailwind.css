@@ -35,12 +35,25 @@
   width: 21rem;
 }
 
+.hide-eventstext{
+  font-size: 0;
+  padding: 0;
+}
+
 .eventspage-img {
   float: left;
   margin-right: 0.625rem;
   display: flex;
 }
 
+.eventspage-card-mobile {
+  height: 18rem;
+}
+
+.eventspage-img-mobile {
+  margin-right: 0.625rem;
+  display: inline-block;
+}
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
