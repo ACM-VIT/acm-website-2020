@@ -60,8 +60,8 @@
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 18px;
+  top: 18px;
 }
 
 /* Color/shape of burger icon bars */
@@ -98,7 +98,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   background: #0085b9;
-  padding: 9em 1.5em 0;
+  padding: 8em 1.5em 0;
   font-size: 1.15em;
 }
 
