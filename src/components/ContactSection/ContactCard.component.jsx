@@ -1,32 +1,107 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useAlert } from 'react-alert';
+import TextField from '@material-ui/core/TextField';
 
-import { ReactComponent as Instagram } from '../../vectors/Instagram.svg';
-import { ReactComponent as Facebook } from '../../vectors/Facebook.svg';
-import { ReactComponent as Email } from '../../vectors/Email.svg';
-import { ReactComponent as Twitter } from '../../vectors/Twitter.svg';
-
+// Components
 import SocialLink from './SocialLink.component';
+import SendButton from './SendButton';
+
+// Data
+import { SOCIAL_LINKS } from '../../DataStore';
 
 const ContactCard = () => {
-  const [socialLinks] = useState([
-    { id: 1, logo: <Instagram />, handle: '@acmvit' },
-    { id: 2, logo: <Facebook />, handle: '@acmvit' },
-    { id: 3, logo: <Email />, handle: '@acmvit' },
-    { id: 4, logo: <Twitter />, handle: '@acmvit' }
-  ]);
+  const [socialLinks] = useState(SOCIAL_LINKS);
+  const [contactDetails, setContactDetails] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const { name, email, message } = contactDetails;
+  const alert = useAlert();
+
+  const onChange = e => {
+    setContactDetails({ ...contactDetails, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = e => {
+    e.preventDefault();
+
+    const emptyContacts = {
+      name: '',
+      email: '',
+      message: ''
+    };
+
+    axios.defaults.baseURL = 'https://acm-vit-nodemail.herokuapp.com';
+    axios
+      .post('/api/sendMail', {
+        name: contactDetails.name,
+        email: contactDetails.email,
+        message: contactDetails.message
+      })
+      .then(() => {
+        // eslint-disable-next-line no-alert
+        alert.show('Message sent');
+        setContactDetails(emptyContacts);
+      })
+      .catch(error => {
+        // eslint-disable-next-line no-console
+        alert.show('Incorrect values provided, please check your inputs.');
+        // eslint-disable-next-line no-console
+        console.log(error);
+      });
+  };
 
   return (
-    <div className="flex justify-center mb-4 py-4">
-      <div className="shadow-card w-2/3 rounded-lg flex p-4 py-8">
-        <div className="w-1/3 bg-acm-blue text-white relative shift-left px-6 py-4 shadow-card rounded-lg">
-          <div className="text-4xl">Reach us at</div>
-          {socialLinks.map(social => (
-            <SocialLink logo={social.logo} key={social.id}>
-              {social.handle}
-            </SocialLink>
-          ))}
+    <div className="container flex justify-center mx-auto">
+      <div className="w-full md:w-160 rounded-lg flex shadow-card rounded-lg flex flex-col-reverse md:flex-row mx-8 sm:mx-40 p-4 py-8">
+        <div className="bg-acm-blue text-white relative flex flex-col justify-between md:-left-64 px-6 py-4 shadow-card rounded-lg">
+          <div className="text-4xl text-center md:text-left">Reach us at</div>
+          <div className="flex flex-col justify-center items-center md:mb-8">
+            {socialLinks.map(social => (
+              <SocialLink logo={social.logo} url={social.url} key={social.id}>
+                {social.handle}
+              </SocialLink>
+            ))}
+          </div>
         </div>
-        <div className="w-2/3 text-4xl">Contact Us</div>
+        <div className="w-full flex flex-col justify-star my-4">
+          <div className="w-full text-4xl text-center md:text-left">
+            Contact Us
+          </div>
+          <form autoComplete="off" className="my-auto" onSubmit={onSubmit}>
+            <div className="my-8 flex justify-center md:justify-start">
+              <TextField
+                id="standard-basic"
+                label="Name"
+                name="name"
+                value={name}
+                onChange={e => onChange(e)}
+              />
+            </div>
+            <div className="my-8 flex justify-center md:justify-start">
+              <TextField
+                id="standard-basic"
+                label="Email"
+                name="email"
+                value={email}
+                onChange={e => onChange(e)}
+              />
+            </div>
+            <div className="my-8 flex justify-center md:justify-start">
+              <TextField
+                id="standard-basic"
+                label="Text"
+                name="message"
+                value={message}
+                onChange={e => onChange(e)}
+              />
+            </div>
+            <SendButton />
+          </form>
+        </div>
       </div>
     </div>
   );

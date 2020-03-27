@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~react-image-gallery/styles/css/image-gallery.css';
+@import '~react-alice-carousel/lib/alice-carousel.css';
+
 .text-acm-blue {
   color: #0085b9;
 }
@@ -18,10 +21,6 @@
   top: -6rem;
 }
 
-.shift-left {
-  left: -6rem;
-}
-
 .hide-scrollbar {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
@@ -31,12 +30,13 @@
   width: 0 !important;
 }
 
-.w-448 {
-  width: 28rem;
-}
-
 .w-96 {
   width: 21rem;
+}
+
+.hide-eventstext {
+  font-size: 0;
+  padding: 0;
 }
 
 .eventspage-img {
@@ -45,18 +45,29 @@
   display: flex;
 }
 
+.eventspage-card-mobile {
+  height: 18rem;
+}
+
+.eventspage-img-mobile {
+  margin-right: 0.625rem;
+  display: inline-block;
+}
+
+/* Event Timeline Customisations Start*/
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 18px;
+  top: 18px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #fff;
+  background: #0085b9;
   right: 0;
 }
 
@@ -88,7 +99,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* General sidebar styles */
 .bm-menu {
   background: #0085b9;
-  padding: 9em 1.5em 0;
+  padding: 8em 1.5em 0;
   font-size: 1.15em;
 }
 
@@ -103,32 +114,36 @@ Note: Beware of modifying this element as it can break the animations - you shou
   padding: 2em;
 }
 
-.vertical-timeline::before{content:'';
-  position:absolute;
-  top:0;
-  left:18px;
-  height:100%;
-  width:4px;
-  background:#0085B9;
+.vertical-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #0085b9;
 }
 
-.vertical-timeline-element-icon{position:absolute;
-  top:0;
-  left:0;
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  box-shadow:0 0 0 4px #0085B9,inset 0 2px 0 rgba(0,0,0,.08),0 3px 0 4px rgba(0,0,0,.05);
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #0085b9, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
-.vertical-timeline-element-content-arrow{content:'';
-  position:absolute;
-  top:16px;
-  right:100%;
-  height:0;
-  width:0;
-  border:7px solid transparent;
-  border-right:7px solid #0085B9;
+.vertical-timeline-element-content-arrow {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #0085b9;
 }
 
 /* Individual item */
@@ -141,165 +156,24 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #0085b9;
 }
 
-.App{
-  /* background-color:black; */
-  height:100%;
-  width:100%;
-  position:relative;
-}
-.box{
-  height:200px;
-  width:200px;
-  background-color:red;
-  color:white;
-}
+/* Event Timeline Customisations end  */
 
-div.vitlg{
-  padding: 0 !important;
-}
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
 
-/* .vitLogo, .acmLogo, . {
-  height: 400px !important;
-} */
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
 
-/* .footerContent {
-  text-align: center;
-  align-content: center;
-} */
-.vitlo, .acm_logo {
-  padding: 0px !important;
-  height: auto;
-  width: 100% !important;
-  /* width: 100% !important; */
-  text-align: center !important;
-  /* object-fit: cover !important; */
-}
+  20% {
+    opacity: 1;
+  }
 
-.acmLogo {
-  padding: 50px 50px !important;
-}
-
-.vitLogo {
-  padding: 50px 50px !important;
-
-}
-
-.FooterGrid{
-  padding-left:5% !important;
-  padding-right:5% !important;
-}
-
-.Contact{
-  /* margin-left: 10%; */
-  /* padding: 10px; */
-  font-size:20px !important;
-  padding-top: 30px !important;
-  text-align: center !important;
-  /* padding-top: 20%; */
-}
-
-/* .vitl {
-  padding: 0 !important;
-  height: auto !important;
-  width: 100% !important;
-  padding: 0;
-
-}  */
-
-.footerContent {
-  background: black;
-  color: white;
-  margin-top: 100px;
-}
-.Footer-Grid {
- 
-  color: white;
-  position: fixed;
-  bottom:0;
-  width: 100%;
-}
-
-
-
-.sm {
-  height: 30px;
-  width: 30px;
-  margin:0 10px;
-}
-
-.EmailIcon{
-  display:inline-block;
-  vertical-align: text-top !important;
-  font-weight: bold;
-  margin:0!important;
-}
-
-.Email {
-  display:inline-block;
-  vertical-align: text-top !important;
-  font-weight: bold;
-  margin:0!important;
-  padding-left: 10px !important;
-
-}
-
-/* .ContactNo{
-  margin:0!important;
-} */
-/* 
-.Email{
-  margin:0!important;
-} */
-
-/* .FooterPhoneIcon,.EmailIcon{
-  position:relative;
-  top:5px;
-  height:20px;
-  margin-right:5px;
-} */
-
-/* .socMed,.vitlg{
-  text-align:center;
-  padding-top:50px;
-} */
-
-/* .vitlg{
-  width:100%!important;
-  text-align: center !important;
-
-} */
-
-
-/* 
-.acmlg{
-  text-align:center !important;
-  padding-top:30px; 
-  width:100%!important; 
-  height: auto !important;
-} */
-
-/* .no-margin-top{
-  margin-top:0!important;
-}
-
-.no-margin-bottom{
-  margin-bottom:0!important;
-} */
-/* 
-.center{
-   align-content:center !important; 
-}
-
-.bold{
-  font-weight: bold;
-} */
-
-.no_blue, p.font18.bold.center{
-  margin-top: 50px !important;
-  text-decoration:none!important;
-  color:white!important;
-  font-size: 20px !important;
-  font-weight: bold;
-  align-content:center !important; 
-
+  30% {
+    opacity: 0;
+  }
 }

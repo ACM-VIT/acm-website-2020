@@ -5,8 +5,16 @@ module.exports = {
       md: '1140px',
       lg: '1600px'
     },
-    extend: {}
+    extend: {
+      width: {
+        448: '28rem',
+        160: '40rem'
+      },
+      inset: {
+        '-64': '-8rem'
+      }
+    }
   },
-  variants: {},
+  variants: { display: ['responsive', 'hover', 'focus'] },
   plugins: []
 };

@@ -1,5 +1,10 @@
 import React from 'react';
 
+import { ReactComponent as Instagram } from './vectors/Instagram.svg';
+import { ReactComponent as Facebook } from './vectors/Facebook.svg';
+import { ReactComponent as Email } from './vectors/Email.svg';
+import { ReactComponent as Twitter } from './vectors/Twitter.svg';
+
 const ABOUT = [
   {
     id: 1,
@@ -262,15 +267,14 @@ const EVENTS = [
     id: 9,
     name: 'Code Your Dreams',
     desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to use the "Hour of Code" as an opportunity to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
-    url:
-      'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
+      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
+    url: 'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
     date: '15th December 2019'
   },
   {
     id: 8,
-    name: 'Local Hack Day Build(by MLH)',
+    name: 'Local Hack Day',
     desc:
       'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
     image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
@@ -300,20 +304,18 @@ const EVENTS = [
     id: 5,
     name: 'Learn To Augment',
     desc:
-      "Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.",
+      'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
     image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
-    url:
-      'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
+    url: 'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
     date: '31st August 2019'
   },
   {
     id: 4,
-    name: "Competitive Coding Cometh(by Coding Blocks)",
+    name: 'Competitive Coding Cometh(by Coding Blocks)',
     desc:
       'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
     image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
-    url:
-      'https://c3.acmvit.in/',
+    url: 'https://c3.acmvit.in/',
     date: '20th July 2019'
   },
   {
@@ -322,8 +324,7 @@ const EVENTS = [
     desc:
       'Code2Create is back with its third rendition, and it is bigger and greater than ever before!',
     image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
-    url:
-      'https://c2c.acmvit.in',
+    url: 'https://c2c.acmvit.in',
     date: '22nd - 24th March 2019'
   },
 
@@ -331,10 +332,9 @@ const EVENTS = [
     id: 2,
     name: 'Code Your Dreams',
     desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to use the "Hour of Code" as an opportunity to enlighten the little minds at various schools about computers and coding',
-    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE-01.png`,
-    url:
-      'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
+      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HOUROFCODE2.png`,
+    url: 'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
     date: '26th, 27th February 2019 and 1st March 2019'
   },
   {
@@ -342,9 +342,10 @@ const EVENTS = [
     name: 'Codart',
     desc:
       'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Codart.png`,
+    image: `${process.env.PUBLIC_URL}/assets/images/Codart2.png`,
     url: 'https://codart.acmvit.in/',
-    date: '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
+    date:
+      '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
   }
 ];
 
@@ -461,7 +462,7 @@ const PROJECTS = [
   },
   {
     id: 4,
-    title: 'FreeSlot Web Extension',
+    title: 'FreeSlot Extension',
     description: 'A chrome extension to extract timetable from vtop.',
     image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
     url: 'https://github.com/ACM-VIT/freeslotWebExtension'
@@ -532,6 +533,33 @@ const LEFTS_AND_WIDTHS = [
 
 const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
 
+const SOCIAL_LINKS = [
+  {
+    id: 1,
+    logo: <Instagram />,
+    handle: '@acmvit',
+    url: 'https://www.instagram.com/acmvit'
+  },
+  {
+    id: 2,
+    logo: <Facebook />,
+    handle: '@ACM.VITU',
+    url: 'https://facebook.com/ACM.VITU'
+  },
+  {
+    id: 3,
+    logo: <Email />,
+    handle: '@acmvit',
+    url:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreach.acmvit@gmail.com'
+  },
+  {
+    id: 4,
+    logo: <Twitter />,
+    handle: '@ACM_VIT',
+    url: 'https://twitter.com/ACM_VIT'
+  }
+];
 export {
   ABOUT,
   FACULTY,
@@ -541,5 +569,6 @@ export {
   PROJECTS,
   LINKS,
   LEFTS_AND_WIDTHS,
-  OFFSET_POS
+  OFFSET_POS,
+  SOCIAL_LINKS
 };

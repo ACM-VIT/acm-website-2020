@@ -1,85 +1,138 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react'
-import Typewriter from 'typewriter-effect';
-import Grid from '@material-ui/core/Grid'
-import email from '../../../vectors/Email.svg'
-// import instagram from '../../../vectors/Instagram.svg'
-// import facebook from '../../../vectors/Facebook.svg'
-import vit from '../../../vectors/Logos_ACM.png'
-import acm from '../../../vectors/ACMFOOTER.png'
-import '../../../tailwind.css'
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { useState } from 'react';
+import ImageGallery from 'react-image-gallery';
+import AliceCarousel from 'react-alice-carousel';
 
-export default class Footer extends Component {
-  render () {
-    return (
-      <div id='footer' className='footerContent'>
-        <Grid className='FooterGrid' container spacing={4}>
+import { ReactComponent as Email } from '../../../vectors/Email.svg';
 
-          {/* <Grid className='social' item xs={12} md={3}>
-            <div className='socMed'>
-              <a className='fb' target='blank' href='https://www.facebook.com/ACM.VITU/'><img alt='fb' className='sm' src={facebook} /></a>
+const handleOnDragStart = e => e.preventDefault();
 
-              <a className='ig' target='blank' href='https://www.instagram.com/acmvit/?hl=en'><img alt='insta' className='sm' src={instagram} /></a>
-
-            </div>
-          </Grid> */}
-          <Grid className='acmLogo' item xs={12} md={4}>
-            <div className='acmlg'>
-              <a href='https://acmvit.in' target='_blank' rel='noopener noreferrer'><img className='acm_logo' src={acm} alt='acm logo' /></a>
-            </div>
-            <div className='Contact'>
-              <img className='EmailIcon' src={email} />
-              <p className='Email font18'> outreach.acmvit@gmail.com. </p>
-            </div>
-          </Grid>
-
-          <Grid className='vitLogo' item xs={12} md={4}>
-            <div className='vitlg'>
-              <a href='https://vit.ac.in' target='_blank' rel='noopener noreferrer'><img className='vitlo' src={vit} alt='vit logo' /></a>
-              <div>
-                <h3 className='font18'>
-                  Vellore Institute of Technology
-                  <br />
-                  Vellore, Tamil-Nadu-632014
-                </h3>
-              </div>
-              <a href='https://acmvit.in' target='_blank' rel='noopener noreferrer' className='no_blue'>
-
-                <p className='font18 bold center'>Made with &#x1F493; by ACM-VIT</p>
-                {/* <Typewriter
-                  options={{
-                    strings: [
-                      'Made with ❤ by ACM-VIT',
-                      'Thank you for Visiting',
-                      'We do what we dream',
-                      'Encouraging diversity, igniting minds'
-                    ],
-                    autoStart: true,
-                    loop: true
-                  }}
-                /> */}
-              </a>
-            </div>
-            {/* <a href="https://acmvit.in" target="_blank" rel="noopener noreferrer" className="no_blue"><p className="font18 bold center">Developed by ACM-VIT</p></a> */}
-          </Grid>
-
-          {/* <Grid className='Contacts' item xs={12} md={4}>
-            <div className='Contact'>
-              <img className='EmailIcon' src={email} />
-              <p className='Email font18'> outreach.acmvit@gmail.com. </p>
-              <h3 className='font18'>
-                <br />
-                Vellore Institute of Technology
-                <br />
-                Vellore, Tamil-Nadu-632014
-              </h3>
-            </div>
-          </Grid> */}
-
-        </Grid>
-
-      </div>
-    )
+const images = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/'
   }
-}
+];
+
+const Footer = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <div id="footer" className="bg-black text-white flex flex-col md:flex-row">
+      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8">
+        <a
+          href={`${window.location.origin}`}
+          className="flex justify-center my-4"
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/ACMLogo.png`}
+            alt="ACM"
+            className="w-64"
+          />
+        </a>
+        <a
+          href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreach.acmvit@gmail.com"
+          className="flex justify-center"
+        >
+          <span>
+            <Email />
+          </span>
+          <span className="ml-4">outreach.acmvit@gmail.com</span>
+        </a>
+      </div>
+      <div className="w-full md:w-1/3 flex flex-col justify-center items-center md:my-8">
+        <a href="https://vit.ac.in" className="flex justify-center my-4">
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/VITLogo.png`}
+            alt="ACM"
+            className="w-64"
+          />
+        </a>
+        <div className="flex justify-center">
+          <span>Made with</span>
+          <div className="w-8 flex-shrink-0 flex justify-center items-center">
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/HeartEmoji.png`}
+              alt="Heart"
+              className="w-4 flex-shrink-0"
+            />
+          </div>
+          <span>by ACM-VIT</span>
+        </div>
+      </div>
+      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
+        <div
+          className="w-full md:w-1/2 rounded-lg overflow-hidden"
+          onClick={toggleOpen}
+          role="button"
+          tabIndex={0}
+        >
+          <AliceCarousel
+            mouseTrackingEnabled
+            buttonsDisabled
+            dotsDisabled
+            autoPlay
+            autoPlayInterval={4000}
+          >
+            <img
+              src="https://picsum.photos/id/1018/1000/600/"
+              onDragStart={handleOnDragStart}
+              className="yours-custom-class"
+            />
+            <img
+              src="https://picsum.photos/id/1015/1000/600/"
+              onDragStart={handleOnDragStart}
+              className="yours-custom-class"
+            />
+          </AliceCarousel>
+        </div>
+
+        {/* <div
+          className="w-96 h-40 rounded-lg z-30"
+          onClick={toggleOpen}
+          role="button"
+          tabIndex={0}
+        >
+          <div className="opacity-0 hover:opacity-50 bg-black h-full rounded-lg flex justify-center items-center">
+            <div>View Gallery</div>
+          </div>
+        </div> */}
+      </div>
+      <div
+        className={`fixed inset-0 h-screen w-screen z-50 ${
+          open ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="bg-black w-full h-full flex justify-center items-center cursor-default">
+          <div className="w-2/3 md:w-1/2 bg-white text-black relative p-4">
+            <div className="absolute right-0 mr-4">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/Close.png`}
+                alt="Close"
+                onClick={() => toggleOpen()}
+                type="button"
+                className="cursor-pointer"
+              />
+            </div>
+            <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
+            <ImageGallery items={images} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

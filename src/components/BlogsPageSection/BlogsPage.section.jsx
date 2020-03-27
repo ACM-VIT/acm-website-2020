@@ -26,7 +26,7 @@ const BlogsPage = () => {
   };
 
   return (
-    <section className="text-center w-full pb-40">
+    <section className="text-center w-full pb-40 my-12 pt-2">
       <SectionHeader>Our Blogs</SectionHeader>
       <div className="container mx-auto">
         <div className="flex flex-row justify-center flex-wrap items-stretch">
@@ -41,7 +41,7 @@ const BlogsPage = () => {
             </BlogCard>
           ))}
         </div>
-        <div className="flex justify-end mt-8">
+        <div className="flex justify-center sm:justify-end mt-8">
           <a
             href="https://medium.com/acmvit"
             target="_blank"
