@@ -36,7 +36,7 @@ const Projects = ({ findOffset }) => {
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
             role="button"
-            tabIndex="-1"
+            tabIndex={0}
           >
             <LeftArrow />
           </div>
@@ -63,7 +63,7 @@ const Projects = ({ findOffset }) => {
           <div
             onClick={() => scrollHorizontally(node, 'right', 25, 480, 48)}
             role="button"
-            tabIndex="-1"
+            tabIndex={0}
           >
             <RightArrow />
           </div>

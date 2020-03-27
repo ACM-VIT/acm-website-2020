@@ -1,8 +1,31 @@
-import React from 'react';
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+import React, { useState } from 'react';
+import ImageGallery from 'react-image-gallery';
 
 import { ReactComponent as Email } from '../../../vectors/Email.svg';
 
+const images = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/'
+  }
+];
+
 const Footer = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
     <div id="footer" className="bg-black text-white flex flex-col md:flex-row">
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8">
@@ -23,7 +46,7 @@ const Footer = () => {
           <span>
             <Email />
           </span>
-          <span className="ml-4"> outreach.acmvit@gmail.com</span>
+          <span className="ml-4">outreach.acmvit@gmail.com</span>
         </a>
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center md:my-8">
@@ -46,8 +69,38 @@ const Footer = () => {
           <span>by ACM-VIT</span>
         </div>
       </div>
-      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8">
-        Slideshow
+      <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4">
+        <div
+          className="w-96 h-40 rounded-lg"
+          onClick={toggleOpen}
+          role="button"
+          tabIndex={0}
+        >
+          <div className="opacity-0 hover:opacity-50 bg-black h-full rounded-lg flex justify-center items-center">
+            <div>View Gallery</div>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`fixed inset-0 h-screen w-screen z-50 ${
+          open ? 'block' : 'hidden'
+        }`}
+      >
+        <div className="bg-black w-full h-full flex justify-center items-center cursor-default">
+          <div className="w-2/3 md:w-1/2 bg-white text-black relative p-4">
+            <div className="absolute right-0 mr-4">
+              <img
+                src={`${process.env.PUBLIC_URL}/assets/images/Close.png`}
+                alt="Close"
+                onClick={() => toggleOpen()}
+                type="button"
+                className="cursor-pointer"
+              />
+            </div>
+            <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
+            <ImageGallery items={images} />
+          </div>
+        </div>
       </div>
     </div>
   );

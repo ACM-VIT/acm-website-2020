@@ -21,7 +21,7 @@ const NavLink = props => {
           window.location.href !== `${window.location.origin}/events` &&
           'text-acm-blue'}`}
         role="button"
-        tabIndex="-1"
+        tabIndex={0}
       >
         {children}
       </div>

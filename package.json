@@ -16,9 +16,11 @@
     "react-alert-template-basic": "^1.0.0",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.0",
+    "react-image-gallery": "^1.0.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.0",
     "react-sizeme": "^2.6.12",
+    "react-slideshow-image": "^1.4.0",
     "react-vertical-timeline-component": "^2.5.0",
     "tailwindcss": "^1.2.0",
     "typewriter-effect": "^2.13.0"
