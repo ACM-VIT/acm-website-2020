@@ -549,9 +549,9 @@ const SOCIAL_LINKS = [
   {
     id: 3,
     logo: <Email />,
-    handle: '@outreachvit',
+    handle: '@acmvit',
     url:
-      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreachvit@gmail.com'
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreach.acmvit@gmail.com'
   },
   {
     id: 4,
