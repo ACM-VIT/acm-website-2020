@@ -31,9 +31,9 @@ const NavLink = props => {
 
 NavLink.propTypes = {
   children: PropTypes.string.isRequired,
-  active: PropTypes.bool.isRequired,
   scrollTo: PropTypes.string.isRequired,
-  getProps: PropTypes.func.isRequired
+  getProps: PropTypes.func.isRequired,
+  active: PropTypes.bool.isRequired
 };
 
 export default withSize()(NavLink);
