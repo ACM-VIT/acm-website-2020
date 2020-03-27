@@ -912,6 +912,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 @media (min-width: 870px) {
 
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
   .sm\:mx-40 {
     margin-left: 10rem;
     margin-right: 10rem;

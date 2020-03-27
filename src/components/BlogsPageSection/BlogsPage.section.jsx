@@ -41,7 +41,7 @@ const BlogsPage = () => {
             </BlogCard>
           ))}
         </div>
-        <div className="flex justify-end mt-8">
+        <div className="flex justify-center sm:justify-end mt-8">
           <a
             href="https://medium.com/acmvit"
             target="_blank"
