@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
 
 // Components
@@ -10,7 +11,6 @@ import { SOCIAL_LINKS } from '../../DataStore';
 
 const ContactCard = () => {
   const [socialLinks] = useState(SOCIAL_LINKS);
-
   const [contactDetails, setContactDetails] = useState({
     name: '',
     email: '',
@@ -21,6 +21,33 @@ const ContactCard = () => {
 
   const onChange = e => {
     setContactDetails({ ...contactDetails, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = e => {
+    e.preventDefault();
+
+    const emptyContacts = {
+      name: '',
+      email: '',
+      message: ''
+    };
+
+    axios.defaults.baseURL = 'https://acm-vit-nodemail.herokuapp.com';
+    axios
+      .post('/api/sendMail', {
+        name: contactDetails.name,
+        email: contactDetails.email,
+        message: contactDetails.message
+      })
+      .then(response => {
+        // eslint-disable-next-line no-alert
+        alert(response.data.message);
+        setContactDetails(emptyContacts);
+      })
+      .catch(error => {
+        // eslint-disable-next-line no-console
+        console.log(error);
+      });
   };
 
   return (
@@ -40,7 +67,7 @@ const ContactCard = () => {
           <div className="w-full text-4xl text-center md:text-left">
             Contact Us
           </div>
-          <form autoComplete="off" className="my-auto">
+          <form autoComplete="off" className="my-auto" onSubmit={onSubmit}>
             <div className="my-8 flex justify-center md:justify-start">
               <TextField
                 id="standard-basic"

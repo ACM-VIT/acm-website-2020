@@ -5,7 +5,7 @@ const SendButton = () => {
     <div className="flex justify-center items-center">
       <button
         className="p-4 rounded-full bg-acm-blue -mr-40 md:-mr-16"
-        type="button"
+        type="submit"
       >
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/AirPlane.png`}
