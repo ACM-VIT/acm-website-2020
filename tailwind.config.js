@@ -7,7 +7,11 @@ module.exports = {
     },
     extend: {
       width: {
-        448: '28rem'
+        448: '28rem',
+        160: '40rem'
+      },
+      inset: {
+        '-64': '-8rem'
       }
     }
   },

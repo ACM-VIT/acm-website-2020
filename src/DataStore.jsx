@@ -1,5 +1,10 @@
 import React from 'react';
 
+import { ReactComponent as Instagram } from './vectors/Instagram.svg';
+import { ReactComponent as Facebook } from './vectors/Facebook.svg';
+import { ReactComponent as Email } from './vectors/Email.svg';
+import { ReactComponent as Twitter } from './vectors/Twitter.svg';
+
 const ABOUT = [
   {
     id: 1,
@@ -528,6 +533,33 @@ const LEFTS_AND_WIDTHS = [
 
 const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
 
+const SOCIAL_LINKS = [
+  {
+    id: 1,
+    logo: <Instagram />,
+    handle: '@acmvit',
+    url: 'https://www.instagram.com/acmvit'
+  },
+  {
+    id: 2,
+    logo: <Facebook />,
+    handle: '@ACM.VITU',
+    url: 'https://facebook.com/ACM.VITU'
+  },
+  {
+    id: 3,
+    logo: <Email />,
+    handle: '@outreachvit',
+    url:
+      'https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=outreachvit@gmail.com'
+  },
+  {
+    id: 4,
+    logo: <Twitter />,
+    handle: '@ACM_VIT',
+    url: 'https://twitter.com/ACM_VIT'
+  }
+];
 export {
   ABOUT,
   FACULTY,
@@ -537,5 +569,6 @@ export {
   PROJECTS,
   LINKS,
   LEFTS_AND_WIDTHS,
-  OFFSET_POS
+  OFFSET_POS,
+  SOCIAL_LINKS
 };

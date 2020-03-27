@@ -2,19 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SocialLink = props => {
-  const { children, logo } = props;
+  const { children, logo, url } = props;
 
   return (
-    <div className="flex items-center my-8">
-      <div className="w-1/4 flex justify-center">{logo}</div>
-      <div className="w-3/4 text-xl ml-20">{children}</div>
-    </div>
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <div className="flex justify-center md:justify-start items-center my-8">
+        <div className="md:w-1/4 flex justify-center">{logo}</div>
+        <div className="md:w-3/4 text-xl ml-4 md:ml-20">{children}</div>
+      </div>
+    </a>
   );
 };
 
 SocialLink.propTypes = {
   children: PropTypes.string.isRequired,
-  logo: PropTypes.element.isRequired
+  logo: PropTypes.element.isRequired,
+  url: PropTypes.string.isRequired
 };
 
 export default SocialLink;
