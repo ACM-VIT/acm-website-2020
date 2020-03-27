@@ -11,7 +11,7 @@ const EventsPage = () => {
   const [events] = useState(EVENTS);
 
   return (
-    <section className="-ml-1 md: ml-16 text-center my-12 pt-2">
+    <section className="-ml-1 ml-16 text-center my-12 pt-2">
       <SectionHeader>OUR EVENTS</SectionHeader>
       <VerticalTimeline>
         {events.map(event => (
