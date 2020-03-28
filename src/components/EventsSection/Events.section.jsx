@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Components
+import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 import RightArrow from '../layout/Sections/RightArrow';
 import LeftArrow from '../layout/Sections/LeftArrow';
-import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
 // Utility functions
 import scrollHorizontally from '../../utils/scrollHorizontally';
+import offsetY from '../../utils/offsetY';
 
 // Data
 import { EVENTS } from '../../DataStore';
@@ -23,17 +24,13 @@ const Events = ({ findOffset }) => {
 
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        // Get element's offset Y value
-        findOffset(el.getBoundingClientRect().y - 180);
-      }}
+      ref={el => offsetY(el, findOffset)}
       className="text-center my-12"
       id="events-section"
     >
       <SectionHeader>Events</SectionHeader>
       <div className="flex">
-        <div className="hidden md:flex flex-shrink-0  justify-center items-center w-32">
+        <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}
             role="button"
@@ -53,10 +50,10 @@ const Events = ({ findOffset }) => {
             if (index < 6)
               return (
                 <CarouselCard
-                  key={event.id}
-                  desc={event.desc}
                   image={event.image}
+                  desc={event.desc}
                   url={event.url}
+                  key={event.id}
                 >
                   {event.name}
                 </CarouselCard>

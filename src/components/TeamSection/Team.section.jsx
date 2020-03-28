@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import TeamCard from './TeamCard.component';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
+import TeamCard from './TeamCard.component';
+
+// Utility functions
+import offsetY from '../../utils/offsetY';
 
 // Data
 import { FACULTY, TEAM } from '../../DataStore';
@@ -14,11 +17,7 @@ const Team = ({ findOffset }) => {
 
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        // Get element's offset Y value
-        findOffset(el.getBoundingClientRect().y - 180);
-      }}
+      ref={el => offsetY(el, findOffset)}
       className="container mx-auto text-center my-8"
       id="team-section"
     >

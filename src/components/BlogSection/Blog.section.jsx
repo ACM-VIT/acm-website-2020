@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 // Components
+import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 import CarouselCard from '../layout/Sections/CarouselCard.component';
 import RightArrow from '../layout/Sections/RightArrow';
 import LeftArrow from '../layout/Sections/LeftArrow';
-import { ReactComponent as RightLink } from '../../vectors/RightArrow.svg';
 
 // Utility functions
 import scrollHorizontally from '../../utils/scrollHorizontally';
+import offsetY from '../../utils/offsetY';
 
 // Data
 import { BLOGS } from '../../DataStore';
@@ -23,11 +24,7 @@ const Blog = ({ findOffset }) => {
 
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        // Get element's offset Y value
-        findOffset(el.getBoundingClientRect().y - 180);
-      }}
+      ref={el => offsetY(el, findOffset)}
       className="text-center my-12"
       id="blogs-section"
     >
@@ -53,10 +50,10 @@ const Blog = ({ findOffset }) => {
             if (index < 6)
               return (
                 <CarouselCard
-                  key={blog.id}
-                  desc={blog.desc}
                   image={blog.image}
+                  desc={blog.desc}
                   url={blog.url}
+                  key={blog.id}
                 >
                   {blog.name}
                 </CarouselCard>

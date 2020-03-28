@@ -1,5 +1,5 @@
+/* eslint-disable no-console */
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useAlert } from 'react-alert';
 import TextField from '@material-ui/core/TextField';
 
@@ -7,24 +7,31 @@ import TextField from '@material-ui/core/TextField';
 import SocialLink from './SocialLink.component';
 import SendButton from './SendButton';
 
+// Utility Functions
+import sendMail from '../../utils/request';
+
 // Data
-import { SOCIAL_LINKS } from '../../DataStore';
+import { CONTACT_DETAILS, SOCIAL_LINKS } from '../../DataStore';
 
 const ContactCard = () => {
+  const [contactDetails, setContactDetails] = useState(CONTACT_DETAILS);
   const [socialLinks] = useState(SOCIAL_LINKS);
-  const [contactDetails, setContactDetails] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
+  // Destructuring
   const { name, email, message } = contactDetails;
+
+  // Initialising alerts
   const alert = useAlert();
 
+  // Handle change of input field
   const onChange = e => {
-    setContactDetails({ ...contactDetails, [e.target.name]: e.target.value });
+    setContactDetails({
+      ...contactDetails,
+      [e.target.name]: e.target.value
+    });
   };
 
+  // Handle sumbit of form
   const onSubmit = e => {
     e.preventDefault();
 
@@ -34,22 +41,14 @@ const ContactCard = () => {
       message: ''
     };
 
-    axios.defaults.baseURL = 'https://acm-vit-nodemail.herokuapp.com';
-    axios
-      .post('/api/sendMail', {
-        name: contactDetails.name,
-        email: contactDetails.email,
-        message: contactDetails.message
-      })
+    // Handle promises
+    sendMail(contactDetails.name, contactDetails.email, contactDetails.message)
       .then(() => {
-        // eslint-disable-next-line no-alert
         alert.show('Message sent');
         setContactDetails(emptyContacts);
       })
       .catch(error => {
-        // eslint-disable-next-line no-console
         alert.show('Incorrect values provided, please check your inputs.');
-        // eslint-disable-next-line no-console
         console.log(error);
       });
   };
@@ -57,7 +56,7 @@ const ContactCard = () => {
   return (
     <div className="container flex justify-center mx-auto">
       <div className="w-full md:w-160 rounded-lg flex shadow-card rounded-lg flex flex-col-reverse md:flex-row mx-8 sm:mx-40 p-4 py-8">
-        <div className="bg-acm-blue text-white relative flex flex-col justify-between md:-left-64 px-6 py-4 shadow-card rounded-lg">
+        <div className="bg-acm-blue text-white relative flex flex-col justify-between md:-left-64 shadow-card rounded-lg px-6 py-4">
           <div className="text-4xl text-center md:text-left">Reach us at</div>
           <div className="flex flex-col justify-center items-center md:mb-8">
             {socialLinks.map(social => (
@@ -72,13 +71,12 @@ const ContactCard = () => {
             Contact Us
           </div>
           <form autoComplete="off" className="my-auto" onSubmit={onSubmit}>
-            <div className="my-8 flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start my-8">
               <TextField
                 id="standard-basic"
                 label="Name"
                 name="name"
                 value={name}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">

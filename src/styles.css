@@ -1036,6 +1036,7 @@ video {
   background-color: #702459;
 }
 
+<<<<<<< HEAD
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -1304,6 +1305,280 @@ video {
   background-color: #ebf4ff;
 }
 
+=======
+.bg-acm-blue {
+  background-color: #0085b9;;
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
+.hover\:bg-black:hover {
+  background-color: #000;
+}
+
+.hover\:bg-white:hover {
+  background-color: #fff;
+}
+
+.hover\:bg-gray-100:hover {
+  background-color: #f7fafc;
+}
+
+.hover\:bg-gray-200:hover {
+  background-color: #edf2f7;
+}
+
+.hover\:bg-gray-300:hover {
+  background-color: #e2e8f0;
+}
+
+.hover\:bg-gray-400:hover {
+  background-color: #cbd5e0;
+}
+
+.hover\:bg-gray-500:hover {
+  background-color: #a0aec0;
+}
+
+.hover\:bg-gray-600:hover {
+  background-color: #718096;
+}
+
+.hover\:bg-gray-700:hover {
+  background-color: #4a5568;
+}
+
+.hover\:bg-gray-800:hover {
+  background-color: #2d3748;
+}
+
+.hover\:bg-gray-900:hover {
+  background-color: #1a202c;
+}
+
+.hover\:bg-red-100:hover {
+  background-color: #fff5f5;
+}
+
+.hover\:bg-red-200:hover {
+  background-color: #fed7d7;
+}
+
+.hover\:bg-red-300:hover {
+  background-color: #feb2b2;
+}
+
+.hover\:bg-red-400:hover {
+  background-color: #fc8181;
+}
+
+.hover\:bg-red-500:hover {
+  background-color: #f56565;
+}
+
+.hover\:bg-red-600:hover {
+  background-color: #e53e3e;
+}
+
+.hover\:bg-red-700:hover {
+  background-color: #c53030;
+}
+
+.hover\:bg-red-800:hover {
+  background-color: #9b2c2c;
+}
+
+.hover\:bg-red-900:hover {
+  background-color: #742a2a;
+}
+
+.hover\:bg-orange-100:hover {
+  background-color: #fffaf0;
+}
+
+.hover\:bg-orange-200:hover {
+  background-color: #feebc8;
+}
+
+.hover\:bg-orange-300:hover {
+  background-color: #fbd38d;
+}
+
+.hover\:bg-orange-400:hover {
+  background-color: #f6ad55;
+}
+
+.hover\:bg-orange-500:hover {
+  background-color: #ed8936;
+}
+
+.hover\:bg-orange-600:hover {
+  background-color: #dd6b20;
+}
+
+.hover\:bg-orange-700:hover {
+  background-color: #c05621;
+}
+
+.hover\:bg-orange-800:hover {
+  background-color: #9c4221;
+}
+
+.hover\:bg-orange-900:hover {
+  background-color: #7b341e;
+}
+
+.hover\:bg-yellow-100:hover {
+  background-color: #fffff0;
+}
+
+.hover\:bg-yellow-200:hover {
+  background-color: #fefcbf;
+}
+
+.hover\:bg-yellow-300:hover {
+  background-color: #faf089;
+}
+
+.hover\:bg-yellow-400:hover {
+  background-color: #f6e05e;
+}
+
+.hover\:bg-yellow-500:hover {
+  background-color: #ecc94b;
+}
+
+.hover\:bg-yellow-600:hover {
+  background-color: #d69e2e;
+}
+
+.hover\:bg-yellow-700:hover {
+  background-color: #b7791f;
+}
+
+.hover\:bg-yellow-800:hover {
+  background-color: #975a16;
+}
+
+.hover\:bg-yellow-900:hover {
+  background-color: #744210;
+}
+
+.hover\:bg-green-100:hover {
+  background-color: #f0fff4;
+}
+
+.hover\:bg-green-200:hover {
+  background-color: #c6f6d5;
+}
+
+.hover\:bg-green-300:hover {
+  background-color: #9ae6b4;
+}
+
+.hover\:bg-green-400:hover {
+  background-color: #68d391;
+}
+
+.hover\:bg-green-500:hover {
+  background-color: #48bb78;
+}
+
+.hover\:bg-green-600:hover {
+  background-color: #38a169;
+}
+
+.hover\:bg-green-700:hover {
+  background-color: #2f855a;
+}
+
+.hover\:bg-green-800:hover {
+  background-color: #276749;
+}
+
+.hover\:bg-green-900:hover {
+  background-color: #22543d;
+}
+
+.hover\:bg-teal-100:hover {
+  background-color: #e6fffa;
+}
+
+.hover\:bg-teal-200:hover {
+  background-color: #b2f5ea;
+}
+
+.hover\:bg-teal-300:hover {
+  background-color: #81e6d9;
+}
+
+.hover\:bg-teal-400:hover {
+  background-color: #4fd1c5;
+}
+
+.hover\:bg-teal-500:hover {
+  background-color: #38b2ac;
+}
+
+.hover\:bg-teal-600:hover {
+  background-color: #319795;
+}
+
+.hover\:bg-teal-700:hover {
+  background-color: #2c7a7b;
+}
+
+.hover\:bg-teal-800:hover {
+  background-color: #285e61;
+}
+
+.hover\:bg-teal-900:hover {
+  background-color: #234e52;
+}
+
+.hover\:bg-blue-100:hover {
+  background-color: #ebf8ff;
+}
+
+.hover\:bg-blue-200:hover {
+  background-color: #bee3f8;
+}
+
+.hover\:bg-blue-300:hover {
+  background-color: #90cdf4;
+}
+
+.hover\:bg-blue-400:hover {
+  background-color: #63b3ed;
+}
+
+.hover\:bg-blue-500:hover {
+  background-color: #4299e1;
+}
+
+.hover\:bg-blue-600:hover {
+  background-color: #3182ce;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #2b6cb0;
+}
+
+.hover\:bg-blue-800:hover {
+  background-color: #2c5282;
+}
+
+.hover\:bg-blue-900:hover {
+  background-color: #2a4365;
+}
+
+.hover\:bg-indigo-100:hover {
+  background-color: #ebf4ff;
+}
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .hover\:bg-indigo-200:hover {
   background-color: #c3dafe;
 }
@@ -1406,6 +1681,10 @@ video {
 
 .hover\:bg-pink-900:hover {
   background-color: #702459;
+}
+
+.hover\:bg-acm-blue:hover {
+  background-color: #0085b9;;
 }
 
 .focus\:bg-transparent:focus {
@@ -1778,6 +2057,10 @@ video {
 
 .focus\:bg-pink-900:focus {
   background-color: #702459;
+}
+
+.focus\:bg-acm-blue:focus {
+  background-color: #0085b9;;
 }
 
 .bg-bottom {
@@ -6854,6 +7137,16 @@ video {
   left: -8rem;
 }
 
+<<<<<<< HEAD
+=======
+.-inset-24 {
+  top: -6rem;
+  right: -6rem;
+  bottom: -6rem;
+  left: -6rem;
+}
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .inset-y-0 {
   top: 0;
   bottom: 0;
@@ -6884,6 +7177,19 @@ video {
   left: -8rem;
 }
 
+<<<<<<< HEAD
+=======
+.-inset-y-24 {
+  top: -6rem;
+  bottom: -6rem;
+}
+
+.-inset-x-24 {
+  right: -6rem;
+  left: -6rem;
+}
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .top-0 {
   top: 0;
 }
@@ -6932,6 +7238,25 @@ video {
   left: -8rem;
 }
 
+<<<<<<< HEAD
+=======
+.-top-24 {
+  top: -6rem;
+}
+
+.-right-24 {
+  right: -6rem;
+}
+
+.-bottom-24 {
+  bottom: -6rem;
+}
+
+.-left-24 {
+  left: -6rem;
+}
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .resize-none {
   resize: none;
 }
@@ -6988,6 +7313,10 @@ video {
   box-shadow: none;
 }
 
+.shadow-card {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+}
+
 .hover\:shadow-xs:hover {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
@@ -7028,6 +7357,10 @@ video {
   box-shadow: none;
 }
 
+.hover\:shadow-card:hover {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+}
+
 .focus\:shadow-xs:focus {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
@@ -7066,6 +7399,10 @@ video {
 
 .focus\:shadow-none:focus {
   box-shadow: none;
+}
+
+.focus\:shadow-card:focus {
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
 }
 
 .fill-current {
@@ -7484,6 +7821,10 @@ video {
   color: #702459;
 }
 
+.text-acm-blue {
+  color: #0085b9;;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -7854,6 +8195,10 @@ video {
 
 .hover\:text-pink-900:hover {
   color: #702459;
+}
+
+.hover\:text-acm-blue:hover {
+  color: #0085b9;;
 }
 
 .focus\:text-transparent:focus {
@@ -8228,6 +8573,10 @@ video {
   color: #702459;
 }
 
+.focus\:text-acm-blue:focus {
+  color: #0085b9;;
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
@@ -8525,6 +8874,13 @@ video {
   width: 16rem;
 }
 
+<<<<<<< HEAD
+=======
+.w-96 {
+  width: 21rem;
+}
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .w-160 {
   width: 40rem;
 }
@@ -11071,6 +11427,7 @@ video {
   transition-duration: 1000ms;
 }
 
+<<<<<<< HEAD
 @import '~react-image-gallery/styles/css/image-gallery.css';
 
 @import '~react-alice-carousel/lib/alice-carousel.css';
@@ -11078,19 +11435,21 @@ video {
 .text-acm-blue {
   color: #0085b9;
 }
+=======
+/* Package styles  */
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 
-.bg-acm-blue {
-  background-color: #0085b9;
-}
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
-.shadow-card {
-  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
-}
+@import '~react-alice-carousel/lib/alice-carousel.css';
 
-.shift-up {
-  top: -6rem;
-}
+@import '~react-vertical-timeline-component/style.min.css';
 
+<<<<<<< HEAD
+=======
+/* Scrollbar  */
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 .hide-scrollbar {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
@@ -11100,6 +11459,7 @@ video {
   width: 0 !important;
 }
 
+<<<<<<< HEAD
 .w-96 {
   width: 21rem;
 }
@@ -11114,6 +11474,9 @@ video {
   margin-right: 0.625rem;
   display: flex;
 }
+=======
+/* Event Timeline Customisations Start*/
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 
 .eventspage-card-mobile {
   height: 18rem;
@@ -11238,6 +11601,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* Event Timeline Customisations end  */
+<<<<<<< HEAD
 
 @keyframes imageAnimation {
   0% {
@@ -11258,6 +11622,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     opacity: 0;
   }
 }
+=======
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
 
 @media (min-width: 870px) {
   .sm\:sr-only {
@@ -11696,6 +12062,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .sm\:bg-acm-blue {
+    background-color: #0085b9;;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -12068,6 +12438,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .sm\:hover\:bg-acm-blue:hover {
+    background-color: #0085b9;;
+  }
+
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -12438,6 +12812,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sm\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .sm\:focus\:bg-acm-blue:focus {
+    background-color: #0085b9;;
   }
 
   .sm\:bg-bottom {
@@ -17514,6 +17892,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .sm\:-inset-24 {
+    top: -6rem;
+    right: -6rem;
+    bottom: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .sm\:inset-y-0 {
     top: 0;
     bottom: 0;
@@ -17544,6 +17932,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .sm\:-inset-y-24 {
+    top: -6rem;
+    bottom: -6rem;
+  }
+
+  .sm\:-inset-x-24 {
+    right: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .sm\:top-0 {
     top: 0;
   }
@@ -17592,6 +17993,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .sm\:-top-24 {
+    top: -6rem;
+  }
+
+  .sm\:-right-24 {
+    right: -6rem;
+  }
+
+  .sm\:-bottom-24 {
+    bottom: -6rem;
+  }
+
+  .sm\:-left-24 {
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .sm\:resize-none {
     resize: none;
   }
@@ -17648,6 +18068,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .sm\:shadow-card {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .sm\:hover\:shadow-xs:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -17688,6 +18112,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .sm\:hover\:shadow-card:hover {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .sm\:focus\:shadow-xs:focus {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -17726,6 +18154,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sm\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .sm\:focus\:shadow-card:focus {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
   }
 
   .sm\:fill-current {
@@ -18144,6 +18576,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .sm\:text-acm-blue {
+    color: #0085b9;;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -18514,6 +18950,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sm\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .sm\:hover\:text-acm-blue:hover {
+    color: #0085b9;;
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -18888,6 +19328,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .sm\:focus\:text-acm-blue:focus {
+    color: #0085b9;;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
   }
@@ -19185,6 +19629,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 16rem;
   }
 
+<<<<<<< HEAD
+=======
+  .sm\:w-96 {
+    width: 21rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .sm\:w-160 {
     width: 40rem;
   }
@@ -22169,6 +22620,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .md\:bg-acm-blue {
+    background-color: #0085b9;;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -22541,6 +22996,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .md\:hover\:bg-acm-blue:hover {
+    background-color: #0085b9;;
+  }
+
   .md\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -22911,6 +23370,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .md\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .md\:focus\:bg-acm-blue:focus {
+    background-color: #0085b9;;
   }
 
   .md\:bg-bottom {
@@ -27987,6 +28450,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .md\:-inset-24 {
+    top: -6rem;
+    right: -6rem;
+    bottom: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .md\:inset-y-0 {
     top: 0;
     bottom: 0;
@@ -28017,6 +28490,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .md\:-inset-y-24 {
+    top: -6rem;
+    bottom: -6rem;
+  }
+
+  .md\:-inset-x-24 {
+    right: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .md\:top-0 {
     top: 0;
   }
@@ -28065,6 +28551,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .md\:-top-24 {
+    top: -6rem;
+  }
+
+  .md\:-right-24 {
+    right: -6rem;
+  }
+
+  .md\:-bottom-24 {
+    bottom: -6rem;
+  }
+
+  .md\:-left-24 {
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .md\:resize-none {
     resize: none;
   }
@@ -28121,6 +28626,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .md\:shadow-card {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .md\:hover\:shadow-xs:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -28161,6 +28670,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .md\:hover\:shadow-card:hover {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .md\:focus\:shadow-xs:focus {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -28199,6 +28712,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .md\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .md\:focus\:shadow-card:focus {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
   }
 
   .md\:fill-current {
@@ -28617,6 +29134,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .md\:text-acm-blue {
+    color: #0085b9;;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -28987,6 +29508,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .md\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .md\:hover\:text-acm-blue:hover {
+    color: #0085b9;;
   }
 
   .md\:focus\:text-transparent:focus {
@@ -29361,6 +29886,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .md\:focus\:text-acm-blue:focus {
+    color: #0085b9;;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
   }
@@ -29658,6 +30187,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 16rem;
   }
 
+<<<<<<< HEAD
+=======
+  .md\:w-96 {
+    width: 21rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .md\:w-160 {
     width: 40rem;
   }
@@ -32642,6 +33178,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .lg\:bg-acm-blue {
+    background-color: #0085b9;;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -33014,6 +33554,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background-color: #702459;
   }
 
+  .lg\:hover\:bg-acm-blue:hover {
+    background-color: #0085b9;;
+  }
+
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent;
   }
@@ -33384,6 +33928,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .lg\:focus\:bg-pink-900:focus {
     background-color: #702459;
+  }
+
+  .lg\:focus\:bg-acm-blue:focus {
+    background-color: #0085b9;;
   }
 
   .lg\:bg-bottom {
@@ -38460,6 +39008,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .lg\:-inset-24 {
+    top: -6rem;
+    right: -6rem;
+    bottom: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .lg\:inset-y-0 {
     top: 0;
     bottom: 0;
@@ -38490,6 +39048,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .lg\:-inset-y-24 {
+    top: -6rem;
+    bottom: -6rem;
+  }
+
+  .lg\:-inset-x-24 {
+    right: -6rem;
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .lg\:top-0 {
     top: 0;
   }
@@ -38538,6 +39109,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
     left: -8rem;
   }
 
+<<<<<<< HEAD
+=======
+  .lg\:-top-24 {
+    top: -6rem;
+  }
+
+  .lg\:-right-24 {
+    right: -6rem;
+  }
+
+  .lg\:-bottom-24 {
+    bottom: -6rem;
+  }
+
+  .lg\:-left-24 {
+    left: -6rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .lg\:resize-none {
     resize: none;
   }
@@ -38594,6 +39184,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .lg\:shadow-card {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .lg\:hover\:shadow-xs:hover {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -38634,6 +39228,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     box-shadow: none;
   }
 
+  .lg\:hover\:shadow-card:hover {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
+  }
+
   .lg\:focus\:shadow-xs:focus {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
   }
@@ -38672,6 +39270,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .lg\:focus\:shadow-none:focus {
     box-shadow: none;
+  }
+
+  .lg\:focus\:shadow-card:focus {
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.32);
   }
 
   .lg\:fill-current {
@@ -39090,6 +39692,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .lg\:text-acm-blue {
+    color: #0085b9;;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -39460,6 +40066,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .lg\:hover\:text-pink-900:hover {
     color: #702459;
+  }
+
+  .lg\:hover\:text-acm-blue:hover {
+    color: #0085b9;;
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -39834,6 +40444,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #702459;
   }
 
+  .lg\:focus\:text-acm-blue:focus {
+    color: #0085b9;;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
   }
@@ -40131,6 +40745,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     width: 16rem;
   }
 
+<<<<<<< HEAD
+=======
+  .lg\:w-96 {
+    width: 21rem;
+  }
+
+>>>>>>> 63c779a7c464f2184b2ff7a754e831a888b858b1
   .lg\:w-160 {
     width: 40rem;
   }

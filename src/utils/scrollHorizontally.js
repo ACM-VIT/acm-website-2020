@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const scrollHorizontally = (element, direction, speed, distance, step) => {
+export default (element, direction, speed, distance, step) => {
   // Handles scroll upon click
   let scrollAmount = 0;
   const slideTimer = setInterval(() => {
@@ -14,5 +14,3 @@ const scrollHorizontally = (element, direction, speed, distance, step) => {
     }
   }, speed);
 };
-
-export default scrollHorizontally;
