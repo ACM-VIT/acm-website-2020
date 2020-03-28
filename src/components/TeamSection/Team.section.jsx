@@ -21,17 +21,22 @@ const Team = ({ findOffset }) => {
       className="container mx-auto text-center my-8"
       id="team-section"
     >
-      <SectionHeader>Team</SectionHeader>
-      <div className="flex flex-row justify-center flex-wrap">
-        {faculties.map(faculty => (
-          <TeamCard memberInfo={faculty} key={faculty.id} />
-        ))}
-      </div>
-
-      <div className="flex flex-row justify-center flex-wrap">
-        {ACMTeam.map(member => (
-          <TeamCard memberInfo={member} key={member.id} />
-        ))}
+      <div
+        data-aos="zoom-in"
+        data-aos-easing="ease-in-cubic"
+        data-aos-duration="800"
+      >
+        <SectionHeader>Team</SectionHeader>
+        <div className="flex flex-row justify-center flex-wrap">
+          {faculties.map(faculty => (
+            <TeamCard memberInfo={faculty} key={faculty.id} />
+          ))}
+        </div>
+        <div className="flex flex-row justify-center flex-wrap">
+          {ACMTeam.map(member => (
+            <TeamCard memberInfo={member} key={member.id} />
+          ))}
+        </div>
       </div>
     </section>
   );

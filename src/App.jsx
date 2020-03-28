@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import AOS from 'aos';
 
 // Components
 import Navbar from './components/layout/Navbar/Navbar';
@@ -18,6 +19,10 @@ import './App.css';
 
 const App = () => {
   const [offsetPos, setOffsetPos] = useState(OFFSET_POS);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   // Sets offset Y of all sections
   const findOffset = (offsetY, index) => {

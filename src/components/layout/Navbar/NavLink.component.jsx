@@ -22,6 +22,9 @@ const NavLink = props => {
           'text-acm-blue'}`}
         role="button"
         tabIndex={0}
+        data-aos="zoom-in"
+        data-aos-easing="ease-in-cubic"
+        data-aos-duration="800"
       >
         {children}
       </div>

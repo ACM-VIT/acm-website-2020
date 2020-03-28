@@ -20,8 +20,16 @@ const Landing = ({ findOffset }) => {
       className="h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
       style={backgroundStyling}
       id="landing-section"
+      data-aos="fade"
+      data-aos-easing="ease-in-cubic"
+      data-aos-duration="1000"
     >
-      <h1 className="text-3xl md:text-4xl text-white uppercase mx-4">
+      <h1
+        className="text-3xl md:text-4xl text-white uppercase mx-4"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-cubic"
+        data-aos-duration="800"
+      >
         <div className="flex p-8">
           <div>____</div>
           <Typewriter
