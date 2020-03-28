@@ -29,7 +29,7 @@ const Footer = () => {
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/ACMLogo.png`}
             alt="ACM"
-            className="w-64"
+            className="w-64 h-20"
           />
         </a>
         <a
@@ -47,7 +47,7 @@ const Footer = () => {
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/VITLogo.png`}
             alt="ACM"
-            className="w-64"
+            className="w-64 h-20"
           />
         </a>
         <div className="flex justify-center">
