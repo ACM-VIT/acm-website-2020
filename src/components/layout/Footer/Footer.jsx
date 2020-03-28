@@ -23,7 +23,7 @@ const Footer = () => {
     <div id="footer" className="bg-black text-white flex flex-col md:flex-row">
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8">
         <a
-          href={`${window.location.origin}`}
+          href={`${window.location.origin}/`}
           className="flex justify-center my-4"
         >
           <img
