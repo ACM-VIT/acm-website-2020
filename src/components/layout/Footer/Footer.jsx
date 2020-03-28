@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
+import LazyLoad from 'react-lazyload';
 import ImageGallery from 'react-image-gallery';
 import AliceCarousel from 'react-alice-carousel';
 
@@ -63,24 +64,27 @@ const Footer = () => {
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
         <div
-          className="w-full md:w-1/2 rounded-lg overflow-hidden"
+          className="w-1/2 sm:w-1/3 md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center mt-8"
           onClick={toggleOpen}
           role="button"
           tabIndex={0}
         >
           <AliceCarousel
-            mouseTrackingEnabled
             autoPlayInterval={4000}
+            mouseTrackingEnabled
             buttonsDisabled
             dotsDisabled
             autoPlay
           >
             {GALLERY_IMAGES.map(image => (
-              <img
-                src={image.thumbnail}
-                onDragStart={handleOnDragStart}
-                alt="Slideshow"
-              />
+              <LazyLoad height={110} key={image.id}>
+                <img
+                  className="rounded-lg"
+                  src={image.thumbnail}
+                  onDragStart={handleOnDragStart}
+                  alt="Slideshow"
+                />
+              </LazyLoad>
             ))}
           </AliceCarousel>
         </div>
@@ -91,8 +95,8 @@ const Footer = () => {
         }`}
       >
         <div className="bg-black w-full h-full flex justify-center items-center cursor-default">
-          <div className="w-2/3 md:w-1/2 bg-white text-black relative p-4">
-            <div className="absolute right-0 mr-4">
+          <div className="w-full md:w-1/2 bg-white text-black relative p-4 flex flex-col justify-center items-center">
+            <div className="absolute right-0 top-0 mt-4 mr-4">
               <img
                 src={`${process.env.PUBLIC_URL}/assets/images/Close.png`}
                 alt="Close"
@@ -102,7 +106,9 @@ const Footer = () => {
               />
             </div>
             <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
-            <ImageGallery items={GALLERY_IMAGES} />
+            <div className="w-full">
+              <ImageGallery items={GALLERY_IMAGES} lazyLoad />
+            </div>
           </div>
         </div>
       </div>
