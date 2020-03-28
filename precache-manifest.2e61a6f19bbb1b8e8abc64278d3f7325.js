@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dde1f23b05d077359047ec4e663dbdb9",
+    "revision": "856bbc322f9cbc37cad4958cd5e191d1",
     "url": "/acm-website-2020/index.html"
   },
   {
-    "revision": "af74c26a533b91c1e3bb",
-    "url": "/acm-website-2020/static/css/2.61d494cb.chunk.css"
+    "revision": "5dd9143c7b98d841d97d",
+    "url": "/acm-website-2020/static/css/2.996a64ce.chunk.css"
   },
   {
-    "revision": "e9787332c9485829390f",
-    "url": "/acm-website-2020/static/css/main.2a4eecdb.chunk.css"
+    "revision": "073daa011080a8c32f7e",
+    "url": "/acm-website-2020/static/css/main.bdd5cf20.chunk.css"
   },
   {
-    "revision": "af74c26a533b91c1e3bb",
-    "url": "/acm-website-2020/static/js/2.be794a02.chunk.js"
+    "revision": "5dd9143c7b98d841d97d",
+    "url": "/acm-website-2020/static/js/2.e5376d76.chunk.js"
   },
   {
     "revision": "c099810c3c102db7a44755001529c804",
-    "url": "/acm-website-2020/static/js/2.be794a02.chunk.js.LICENSE.txt"
+    "url": "/acm-website-2020/static/js/2.e5376d76.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e9787332c9485829390f",
-    "url": "/acm-website-2020/static/js/main.918e49d3.chunk.js"
+    "revision": "073daa011080a8c32f7e",
+    "url": "/acm-website-2020/static/js/main.08b49f9d.chunk.js"
   },
   {
     "revision": "3a463a7b7ebc16f15acd",
