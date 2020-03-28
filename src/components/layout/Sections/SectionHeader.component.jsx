@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const SectionHeader = props => {
-  const { children, innerHeader } = props;
+  const { innerHeader, children } = props;
 
   return (
     <header

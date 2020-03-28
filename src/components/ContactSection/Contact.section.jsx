@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Components
 import ContactCard from './ContactCard.component';
+
+// Utility functions
+import offsetY from '../../utils/offsetY';
 
 const Contact = ({ findOffset }) => {
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        findOffset(el.getBoundingClientRect().y - 180);
-      }}
+      ref={el => offsetY(el, findOffset)}
       className="mb-32"
       id="contact-section"
     >

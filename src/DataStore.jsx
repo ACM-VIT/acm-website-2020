@@ -560,6 +560,35 @@ const SOCIAL_LINKS = [
     url: 'https://twitter.com/ACM_VIT'
   }
 ];
+
+const CONTACT_DETAILS = {
+  name: '',
+  email: '',
+  message: ''
+};
+
+const LANDING_LINES = [
+  'Because technology matters',
+  "There's future, There's innovation",
+  'We do what we dream',
+  'Encouraging diversity, igniting minds'
+];
+
+const GALLERY_IMAGES = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/'
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/'
+  }
+];
+
 export {
   ABOUT,
   FACULTY,
@@ -570,5 +599,8 @@ export {
   LINKS,
   LEFTS_AND_WIDTHS,
   OFFSET_POS,
-  SOCIAL_LINKS
+  SOCIAL_LINKS,
+  CONTACT_DETAILS,
+  LANDING_LINES,
+  GALLERY_IMAGES
 };

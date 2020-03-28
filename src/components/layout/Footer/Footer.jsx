@@ -5,22 +5,11 @@ import AliceCarousel from 'react-alice-carousel';
 
 import { ReactComponent as Email } from '../../../vectors/Email.svg';
 
-const handleOnDragStart = e => e.preventDefault();
+// Data
+import { GALLERY_IMAGES } from '../../../DataStore';
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/'
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/'
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/'
-  }
-];
+// Prevent default action
+const handleOnDragStart = e => e.preventDefault();
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -81,34 +70,20 @@ const Footer = () => {
         >
           <AliceCarousel
             mouseTrackingEnabled
+            autoPlayInterval={4000}
             buttonsDisabled
             dotsDisabled
             autoPlay
-            autoPlayInterval={4000}
           >
-            <img
-              src="https://picsum.photos/id/1018/1000/600/"
-              onDragStart={handleOnDragStart}
-              className="yours-custom-class"
-            />
-            <img
-              src="https://picsum.photos/id/1015/1000/600/"
-              onDragStart={handleOnDragStart}
-              className="yours-custom-class"
-            />
+            {GALLERY_IMAGES.map(image => (
+              <img
+                src={image.thumbnail}
+                onDragStart={handleOnDragStart}
+                alt="Slideshow"
+              />
+            ))}
           </AliceCarousel>
         </div>
-
-        {/* <div
-          className="w-96 h-40 rounded-lg z-30"
-          onClick={toggleOpen}
-          role="button"
-          tabIndex={0}
-        >
-          <div className="opacity-0 hover:opacity-50 bg-black h-full rounded-lg flex justify-center items-center">
-            <div>View Gallery</div>
-          </div>
-        </div> */}
       </div>
       <div
         className={`fixed inset-0 h-screen w-screen z-50 ${
@@ -127,7 +102,7 @@ const Footer = () => {
               />
             </div>
             <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
-            <ImageGallery items={images} />
+            <ImageGallery items={GALLERY_IMAGES} />
           </div>
         </div>
       </div>

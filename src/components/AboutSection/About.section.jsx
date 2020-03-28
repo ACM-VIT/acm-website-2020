@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 // Components
 import SectionHeader from '../layout/Sections/SectionHeader.component';
 
+// Utility functions
+import offsetY from '../../utils/offsetY';
+
 // Data
 import { ABOUT } from '../../DataStore';
 
@@ -12,11 +15,7 @@ const About = ({ findOffset }) => {
 
   return (
     <section
-      ref={el => {
-        if (!el) return;
-        // Get element's offset Y value
-        findOffset(el.getBoundingClientRect().y - 180);
-      }}
+      ref={el => offsetY(el, findOffset)}
       className="container text-center mx-auto my-12"
       id="about-section"
     >
@@ -25,7 +24,7 @@ const About = ({ findOffset }) => {
           <SectionHeader innerHeader={section.inner}>
             {section.title}
           </SectionHeader>
-          <div className="text-xl text-justified m-4 mx-8 ">{section.text}</div>
+          <div className="text-xl text-justified m-4 mx-8">{section.text}</div>
         </div>
       ))}
     </section>
