@@ -26,12 +26,14 @@ const Projects = ({ findOffset }) => {
       ref={el => offsetY(el, findOffset)}
       className="text-center my-12"
       id="projects-section"
-      data-aos="zoom-in"
-      data-aos-easing="ease-in-cubic"
-      data-aos-duration="800"
     >
       <SectionHeader>Projects</SectionHeader>
-      <div className="flex">
+      <div
+        className="flex"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-cubic"
+        data-aos-duration="500"
+      >
         <div className="w-32 flex-shrink-0 hidden md:flex justify-center items-center">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}

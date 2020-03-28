@@ -764,8 +764,17 @@ video {
   background-color: #f6ad55;
 }
 
+<<<<<<< HEAD
 .bg-orange-500 {
   background-color: #ed8936;
+=======
+.h-20 {
+  height: 5rem;
+}
+
+.h-32 {
+  height: 8rem;
+>>>>>>> 630a652f317a1401a08f84a075354469aa073a49
 }
 
 .bg-orange-600 {

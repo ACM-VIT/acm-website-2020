@@ -583,123 +583,115 @@ const BLOGS = [
 const TEAM = [
   {
     id: 1,
-    name: 'Sarthak Gupta',
+    name: 'Kartik Soni',
     designation: 'Chair',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/SarthakGupta.jpg`,
-    github: 'https://www.github.com/sarthakg04',
-    linkedIn: 'https://www.linkedin.com/in/sarthak-gupta-b615398b'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Kartik.jpg`,
+    github: 'https://github.com/Kartik77',
+    linkedIn: 'https://www.linkedin.com/in/kartik-soni-0b627b148/b'
   },
   {
     id: 2,
-    name: 'Hrishita Chakrabarti',
+    name: 'Nimisha Bhatia',
     designation: 'Managing Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/HrishitaChakrabarti.jpg`,
-    github: 'https://www.github.com/HrishitaC',
-    linkedIn: 'https://www.linkedin.com/in/hrishita-chakrabarti-a26018185'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Nimisha.jpg`,
+    github: 'https://github.com/NIMZB',
+    linkedIn: 'https://www.linkedin.com/in/nimisha-bhatia-5b9b79155/'
   },
   {
     id: 3,
-    name: 'Eesha Shetty',
+    name: 'Shubham Awasthi',
     designation: 'Technical Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/EeshaShetty.png`,
-    github: 'http://www.github.com/eeshashetty',
-    linkedIn: 'http://www.linkedin.com/in/eeshashetty'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shubham.jpg`,
+    github: 'https://github.com/awasthishubh/',
+    linkedIn: 'https://www.linkedin.com/in/awasthishubh/'
   },
   {
     id: 4,
-    name: 'Anjali Roy',
+    name: 'Fiza Rasool',
     designation: 'General Secretary',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/AnjaliRoy.jpg`,
-    github: 'https://www.github.com/Anjali2505',
-    linkedIn: 'https://www.linkedin.com/in/anjali-roy-b29814153'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Fiza.jpg`,
+    github: 'https://github.com/fizarasool27',
+    linkedIn: 'https://www.linkedin.com/in/fiza/'
   },
   {
     id: 5,
-    name: 'Dhruv Roy',
-    designation: 'Treasurer',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/DhruvRoy.jpg`,
-    github: 'https://www.github.com/DhruvRoy247',
-    linkedIn: 'https://www.linkedin.com/mwlite/in/kumar-dhruv-roy-79633b166'
+    name: 'Aditya Srivastava',
+    designation: 'Web-Master',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Aditya.jpg`,
+    github: 'https://github.com/AdityaSrivast',
+    linkedIn: 'https://www.linkedin.com/in/adityasrivast/'
   },
   {
     id: 6,
-    name: 'Kashish Mittal',
-    designation: 'Web Master',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/KashishMittal.jpg`,
-    github: 'https://www.github.com/KASHISH2000',
-    linkedIn: 'http://www.linkedin.com/in/kashish-mittal-profile'
+    name: 'Sarthak Dandotiya',
+    designation: 'UI/UX Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sarthak.jpg`,
+    github: 'https://github.com/SarthakDandotiya/',
+    linkedIn: 'https://www.linkedin.com/in/sarthakdandotiya/'
   },
   {
     id: 7,
-    name: 'Shovin Kakaraddi',
-    designation: 'UI/UX Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/ShovinK.jpg`,
-    github: 'https://www.github.com/NIVOSH379',
-    linkedIn: 'https://in.linkedin.com/in/shovin-kakaraddi-30112718b'
+    name: 'Svetansu Singh',
+    designation: 'Treasurer',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpeg`,
+    github: 'https://github.com/Svetansu',
+    linkedIn: 'https://www.linkedin.com/in/svetansu-singh-370aa8149/'
   },
   {
     id: 8,
-    name: 'Devansh Mehta',
+    name: 'Sparsh Srivastava',
     designation: 'App Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/DevanshMehta.jpg`,
-    github: 'https://www.github.com/dev5151',
-    linkedIn: 'https://www.linkedin.com/in/devansh-mehta-181381167/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sparsh.jpg`,
+    github: 'https://github.com/reallyinvincible/',
+    linkedIn: 'https://www.linkedin.com/in/sparshsri'
   },
   {
     id: 9,
-    name: 'Iishi Patel',
+    name: 'Subhaditya Mukherjee',
     designation: 'Research Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/IishiPatel.jpg`,
-    github: 'https://www.github.com/iishipatel',
-    linkedIn: 'https://www.linkedin.com/in/iishi-patel-603411182'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Subhaditya.jpg`,
+    github: 'https://www.github.com/SubhadityaMukherjee',
+    linkedIn: 'https://www.linkedin.com/in/subhaditya-mukherjee-a36883100'
   },
   {
     id: 10,
-    name: 'Nimit Kumar Jain',
+    name: 'Rajat Gupta',
     designation: 'Competetive Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/NimitJain.jpg`,
-    github: 'https://www.github.com/n4nimit2000',
-    linkedIn: 'https://www.linkedin.com/in/nimit-jain-6b5859172/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Rajat.jpg`,
+    github: 'https://github.com/rajatg98',
+    linkedIn: 'https://linkedin.com/in/rajatg98'
   },
   {
     id: 11,
-    name: 'Jerelyn P. Premjit',
-    designation: 'ACM-W Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/JerelynP.jpg`,
-    github: 'https://github.com/TheWildWanderer',
-    linkedIn: 'https://www.linkedin.com/in/jerelyn-p-premjit-b92159184'
+    name: 'Madhur Dixit',
+    designation: 'Research Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Madhur.jpg`,
+    github: 'https://github.com/Chester-King',
+    linkedIn: 'https://www.linkedin.com/in/madhur-dixit-065907157/'
   },
   {
     id: 12,
-    name: 'Sidharth Nahar',
-    designation: 'Competetive Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/SidharthNahar.jpg`,
-    github: 'https://www.github.com/VickyNahar',
-    linkedIn: 'https://www.linkedin.com/in/sidharth-nahar-03013018b'
+    name: 'Shrey Sindher',
+    designation: 'App Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shrey.jpg`,
+    github: 'https://github.com/ssindher11',
+    linkedIn: 'https://www.linkedin.com/in/shrey-sindher-0b3008167'
   },
   {
     id: 13,
-    name: 'Elio Jordan Lopes',
+    name: 'Shivank Sahai',
     designation: 'Web Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/ElioLopes.jpg`,
-    github: 'http://www.github.com/lopeselio',
-    linkedIn: 'https://www.linkedin.com/mwlite/in/elio-jordan-lopes-5b1533149'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpeg`,
+    github: 'https://github.com/ShivankSahai',
+    linkedIn: 'https://www.linkedin.com/in/shivank-sahai-3393b5172/'
   },
   {
     id: 14,
-    name: 'Garima Bothra',
-    designation: 'App Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/GarimaBothra.jpg`,
-    github: 'http://www.github.com/garima94921',
-    linkedIn: 'http://www.linkedin.com/in/garima-bothra'
-  },
-  {
-    id: 15,
-    name: 'Sriya Reddi',
-    designation: 'Operations Head',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/SriyaReddi.jpg`,
-    github: 'https://www.github.com/SriyaReddi',
-    linkedIn: 'https://in.linkedin.com/in/SriyaReddi'
+    name: 'Bhumij Gupta',
+    designation: 'Creative Head',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Bhumij.jpg`,
+    github: 'https://github.com/bhumijgupta/',
+    linkedIn: 'https://www.linkedin.com/in/bhumijgupta'
   }
 ];
 

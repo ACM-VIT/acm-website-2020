@@ -20,16 +20,18 @@ const About = ({ findOffset }) => {
       id="about-section"
     >
       {about.map(section => (
-        <div
-          key={section.id}
-          data-aos="zoom-in"
-          data-aos-easing="ease-in-cubic"
-          data-aos-duration="800"
-        >
+        <div key={section.id}>
           <SectionHeader innerHeader={section.inner}>
             {section.title}
           </SectionHeader>
-          <div className="text-xl text-justified m-4 mx-8">{section.text}</div>
+          <div
+            className="text-xl text-justified m-4 mx-8"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-cubic"
+            data-aos-duration="500"
+          >
+            {section.text}
+          </div>
         </div>
       ))}
     </section>
