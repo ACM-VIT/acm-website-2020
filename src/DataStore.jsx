@@ -281,7 +281,7 @@ const EVENTS = [
     desc:
       'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
     image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
-    date: '(Offline Round) 16th October 2019 & (Online Round) 20th October 2019'
+    date: '20th October 2019'
   },
   {
     id: 6,
@@ -338,7 +338,7 @@ const EVENTS = [
     image: `${process.env.PUBLIC_URL}/assets/images/CodeArt.png`,
     url: 'https://codart.acmvit.in/',
     date:
-      '(Online Round) 3rd February 2019 & (Offline Round) 10th February 2019'
+      '3rd February 2019'
   }
 ];
 
