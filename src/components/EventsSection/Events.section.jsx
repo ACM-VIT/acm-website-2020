@@ -27,12 +27,14 @@ const Events = ({ findOffset }) => {
       ref={el => offsetY(el, findOffset)}
       className="text-center my-12"
       id="events-section"
-      data-aos="zoom-in"
-      data-aos-easing="ease-in-cubic"
-      data-aos-duration="800"
     >
       <SectionHeader>Events</SectionHeader>
-      <div className="flex">
+      <div
+        className="flex"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-cubic"
+        data-aos-duration="500"
+      >
         <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
           <div
             onClick={() => scrollHorizontally(node, 'left', 25, 480, 48)}

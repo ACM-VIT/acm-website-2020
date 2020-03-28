@@ -8,6 +8,9 @@ const SectionHeader = props => {
     <header
       className={`text-acm-blue text-4xl uppercase text-center font-bold w-full my-8 ${!innerHeader &&
         'md:pt-32'}`}
+      data-aos="fade-right"
+      data-aos-easing="ease-in-cubic"
+      data-aos-duration="800"
     >
       {children}
     </header>

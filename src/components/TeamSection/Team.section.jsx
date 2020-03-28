@@ -22,9 +22,9 @@ const Team = ({ findOffset }) => {
       id="team-section"
     >
       <div
-        data-aos="zoom-in"
+        ddata-aos="fade-up"
         data-aos-easing="ease-in-cubic"
-        data-aos-duration="800"
+        data-aos-duration="500"
       >
         <SectionHeader>Team</SectionHeader>
         <div className="flex flex-row justify-center flex-wrap">
