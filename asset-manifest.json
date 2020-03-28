@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/acmvit.in/static/css/main.c5509db8.chunk.css",
-    "main.js": "/acmvit.in/static/js/main.2479d4dc.chunk.js",
-    "main.js.map": "/acmvit.in/static/js/main.2479d4dc.chunk.js.map",
+    "main.js": "/acmvit.in/static/js/main.e46fbad3.chunk.js",
+    "main.js.map": "/acmvit.in/static/js/main.e46fbad3.chunk.js.map",
     "runtime-main.js": "/acmvit.in/static/js/runtime-main.852e24d3.js",
     "runtime-main.js.map": "/acmvit.in/static/js/runtime-main.852e24d3.js.map",
-    "static/css/2.61d494cb.chunk.css": "/acmvit.in/static/css/2.61d494cb.chunk.css",
-    "static/js/2.be794a02.chunk.js": "/acmvit.in/static/js/2.be794a02.chunk.js",
-    "static/js/2.be794a02.chunk.js.map": "/acmvit.in/static/js/2.be794a02.chunk.js.map",
+    "static/css/2.996a64ce.chunk.css": "/acmvit.in/static/css/2.996a64ce.chunk.css",
+    "static/js/2.9c715bba.chunk.js": "/acmvit.in/static/js/2.9c715bba.chunk.js",
+    "static/js/2.9c715bba.chunk.js.map": "/acmvit.in/static/js/2.9c715bba.chunk.js.map",
     "index.html": "/acmvit.in/index.html",
-    "precache-manifest.6a2094801f12686e5ce9c770e6919f18.js": "/acmvit.in/precache-manifest.6a2094801f12686e5ce9c770e6919f18.js",
+    "precache-manifest.31520862617e48580e84a73b4ba26489.js": "/acmvit.in/precache-manifest.31520862617e48580e84a73b4ba26489.js",
     "service-worker.js": "/acmvit.in/service-worker.js",
-    "static/css/2.61d494cb.chunk.css.map": "/acmvit.in/static/css/2.61d494cb.chunk.css.map",
+    "static/css/2.996a64ce.chunk.css.map": "/acmvit.in/static/css/2.996a64ce.chunk.css.map",
     "static/css/main.c5509db8.chunk.css.map": "/acmvit.in/static/css/main.c5509db8.chunk.css.map",
-    "static/js/2.be794a02.chunk.js.LICENSE.txt": "/acmvit.in/static/js/2.be794a02.chunk.js.LICENSE.txt",
+    "static/js/2.9c715bba.chunk.js.LICENSE.txt": "/acmvit.in/static/js/2.9c715bba.chunk.js.LICENSE.txt",
     "static/media/AcmLogo.75e3a3bd.svg": "/acmvit.in/static/media/AcmLogo.75e3a3bd.svg",
     "static/media/Email.377fba5b.svg": "/acmvit.in/static/media/Email.377fba5b.svg",
     "static/media/Facebook.53b5f6f3.svg": "/acmvit.in/static/media/Facebook.53b5f6f3.svg",
@@ -24,9 +24,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.852e24d3.js",
-    "static/css/2.61d494cb.chunk.css",
-    "static/js/2.be794a02.chunk.js",
+    "static/css/2.996a64ce.chunk.css",
+    "static/js/2.9c715bba.chunk.js",
     "static/css/main.c5509db8.chunk.css",
-    "static/js/main.2479d4dc.chunk.js"
+    "static/js/main.e46fbad3.chunk.js"
   ]
 }

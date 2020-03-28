@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d1c51716db415c9e63641a0b7dabff8",
+    "revision": "402c515ad69b0f45f947e8a4f3a17598",
     "url": "/acmvit.in/index.html"
   },
   {
-    "revision": "af74c26a533b91c1e3bb",
-    "url": "/acmvit.in/static/css/2.61d494cb.chunk.css"
+    "revision": "490fb6ca6272d0593b21",
+    "url": "/acmvit.in/static/css/2.996a64ce.chunk.css"
   },
   {
-    "revision": "a73207f5261014f179bb",
+    "revision": "bdcb001f26f31ea17ad5",
     "url": "/acmvit.in/static/css/main.c5509db8.chunk.css"
   },
   {
-    "revision": "af74c26a533b91c1e3bb",
-    "url": "/acmvit.in/static/js/2.be794a02.chunk.js"
+    "revision": "490fb6ca6272d0593b21",
+    "url": "/acmvit.in/static/js/2.9c715bba.chunk.js"
   },
   {
     "revision": "c099810c3c102db7a44755001529c804",
-    "url": "/acmvit.in/static/js/2.be794a02.chunk.js.LICENSE.txt"
+    "url": "/acmvit.in/static/js/2.9c715bba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a73207f5261014f179bb",
-    "url": "/acmvit.in/static/js/main.2479d4dc.chunk.js"
+    "revision": "bdcb001f26f31ea17ad5",
+    "url": "/acmvit.in/static/js/main.e46fbad3.chunk.js"
   },
   {
     "revision": "77b67a039e72bd58a090",
