@@ -37,7 +37,7 @@
     "build:styles": "postcss src/tailwind.css -o src/styles.css",
     "prebuild": "NODE_ENV=production npm run build:styles",
     "prestart": "npm run build:styles",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
