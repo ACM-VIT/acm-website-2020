@@ -1,3 +1,3 @@
-const loader = () => new Promise(resolve => setTimeout(() => resolve(), 3000));
+const loader = () => new Promise(resolve => setTimeout(() => resolve(), 5000));
 
 export default loader;

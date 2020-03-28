@@ -11,9 +11,8 @@ import EventsPageLanding from './pages/EventsPageLanding';
 import BlogsPageLanding from './pages/BlogsPageLanding';
 import Footer from './components/layout/Footer/Footer';
 
-// Utility components/functions
+// Utility components
 import ScrollToTop from './components/utils/ScrollToTop';
-import loader from './utils/loader';
 
 // Data
 import { OFFSET_POS } from './DataStore';
@@ -23,10 +22,8 @@ import './App.css';
 
 const App = () => {
   const [offsetPos, setOffsetPos] = useState(OFFSET_POS);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loader().then(() => setLoading(false));
     AOS.init();
   }, []);
 
@@ -37,18 +34,7 @@ const App = () => {
     setOffsetPos(newOffsetPos);
   };
 
-  return loading ? (
-    <div
-      className="w-screen h-screen flex justify-center items-center fixed inset-0"
-      style={{ backgroundColor: '#030303' }}
-    >
-      <img
-        src="./assets/images/Preloader.gif"
-        alt="Preloader"
-        className="w-40 h-40"
-      />
-    </div>
-  ) : (
+  return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navbar offsetPos={offsetPos} />
       <HamburgerNavbar offsetPos={offsetPos} />
