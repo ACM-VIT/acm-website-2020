@@ -107,6 +107,7 @@ const Footer = () => {
             </div>
             <h1 className="font-black text-acm-blue text-2xl mb-4">Gallery</h1>
             <div className="w-full">
+              <h1> Visit Our Gallery! </h1>
               <ImageGallery items={GALLERY_IMAGES} lazyLoad />
             </div>
           </div>
