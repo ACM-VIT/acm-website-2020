@@ -23,13 +23,13 @@ const Footer = () => {
     <div id="footer" className="bg-black text-white flex flex-col md:flex-row">
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8">
         <a
-          href={`${window.location.origin}`}
+          href={`${window.location.origin}/`}
           className="flex justify-center my-4"
         >
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/ACMLogo.png`}
             alt="ACM"
-            className="w-64"
+            className="w-64 h-20"
           />
         </a>
         <a
@@ -47,7 +47,7 @@ const Footer = () => {
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/VITLogo.png`}
             alt="ACM"
-            className="w-64"
+            className="w-64 h-20"
           />
         </a>
         <div className="flex justify-center">

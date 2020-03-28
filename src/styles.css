@@ -583,6 +583,10 @@ img {
   height: 2rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-32 {
   height: 8rem;
 }
