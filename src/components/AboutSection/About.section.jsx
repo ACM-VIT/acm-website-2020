@@ -20,7 +20,12 @@ const About = ({ findOffset }) => {
       id="about-section"
     >
       {about.map(section => (
-        <div key={section.id}>
+        <div
+          key={section.id}
+          data-aos="zoom-in"
+          data-aos-easing="ease-in-cubic"
+          data-aos-duration="800"
+        >
           <SectionHeader innerHeader={section.inner}>
             {section.title}
           </SectionHeader>

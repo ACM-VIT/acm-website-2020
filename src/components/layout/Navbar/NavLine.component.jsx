@@ -20,6 +20,7 @@ const NavLine = props => {
     <div
       className="fixed transition duration-200 ease-in-out overflow-hidden"
       style={variableStyles}
+      data-aos="zoom-in"
     >
       <svg height="4" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="160" height="4" fill="#0085B9" />

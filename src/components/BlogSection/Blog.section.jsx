@@ -27,6 +27,9 @@ const Blog = ({ findOffset }) => {
       ref={el => offsetY(el, findOffset)}
       className="text-center my-12"
       id="blogs-section"
+      data-aos="zoom-in"
+      data-aos-easing="ease-in-cubic"
+      data-aos-duration="800"
     >
       <SectionHeader>Blogs</SectionHeader>
       <div className="flex">
