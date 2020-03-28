@@ -17,7 +17,9 @@ const Landing = ({ findOffset }) => {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/LandingBackground.jpg)`
   };
 
-  useEffect(() => loader().then(() => setLoading(false)), []);
+  useEffect(() => {
+    loader(setLoading);
+  }, []);
 
   return loading ? (
     <div
