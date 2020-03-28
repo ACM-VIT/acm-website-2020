@@ -1,5 +1,5 @@
 {
-  "homepage": "https://KASHISH2000.github.io/acm-website-2020",
+  "homepage": "acmvit.in",
   "name": "acm-website-2020",
   "version": "0.1.0",
   "private": true,
@@ -67,5 +67,16 @@
     "gh-pages": "^2.2.0",
     "postcss-cli": "^7.1.0",
     "prettier": "^1.19.1"
+  },
+  "description": "The new and improved version of https://acmvit.in/",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACM-VIT/acm-website-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACM-VIT/acm-website-2020/issues"
   }
 }
