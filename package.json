@@ -38,7 +38,7 @@
     "prebuild": "NODE_ENV=production npm run build:styles",
     "prestart": "npm run build:styles",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
