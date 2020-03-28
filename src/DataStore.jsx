@@ -193,7 +193,7 @@ const PROJECTS = [
     title: 'Octave',
     description: "Music Webite for ACM's iconic Code2Create.",
     image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
-    url: 'https://github.com/ACM-VIT/Octave'
+    url: 'https://octave.acmvit.in'
   },
   {
     id: 2,
@@ -208,14 +208,37 @@ const PROJECTS = [
     title: 'C2C Web Portal',
     description: "Web Portal for ACM's Code2Create.",
     image: `${process.env.PUBLIC_URL}/assets/images/C2CWeb.png`,
-    url: 'https://github.com/ACM-VIT/c2c-website-2020'
+    url: 'https://c2c.acmvit.in'
   },
   {
     id: 4,
-    title: 'FreeSlot Extension',
+    title: 'FreeSlot',
     description: 'A chrome extension to extract timetable from vtop.',
     image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
     url: 'https://github.com/ACM-VIT/freeslotWebExtension'
+  },
+  {
+    id: 5,
+    title: 'Ojas Website',
+    description: "The official website of VIT's Formula Student Electric Team",
+    image: `${process.env.PUBLIC_URL}/assets/images/OjasWebsite.png`,
+    url: 'https://www.ojasracing.com/'
+  },
+  {
+    id: 6,
+    title: 'Intruder',
+    description:
+      'A fun gaming website that was created for the event organized during ACM’s hackathon c2c.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Intruder.png`,
+    url: 'https://intruder.acmvit.in'
+  },
+  {
+    id: 7,
+    title: 'Headscratcher',
+    description:
+      'A fun gaming website made during GraVitas (VIT’s technical fest) for one of ACM’s event called L2A that is learn to augment.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Headscratcher.jpg`,
+    url: ''
   }
 ];
 
@@ -337,8 +360,7 @@ const EVENTS = [
       'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
     image: `${process.env.PUBLIC_URL}/assets/images/CodeArt.png`,
     url: 'https://codart.acmvit.in/',
-    date:
-      '3rd February 2019'
+    date: '3rd February 2019'
   }
 ];
 

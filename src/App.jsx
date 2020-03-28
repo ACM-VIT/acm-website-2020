@@ -11,7 +11,7 @@ import EventsPageLanding from './pages/EventsPageLanding';
 import BlogsPageLanding from './pages/BlogsPageLanding';
 import Footer from './components/layout/Footer/Footer';
 
-// Utility Components
+// Utility components
 import ScrollToTop from './components/utils/ScrollToTop';
 
 // Data
