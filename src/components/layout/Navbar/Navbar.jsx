@@ -31,11 +31,11 @@ const Navbar = ({ offsetPos }) => {
   return (
     <header
       className={`hidden md:flex w-screen overflow-x-hidden text-white items-center justify-between fixed w-full top-0 z-30 py-4 px-16 transition duration-500 ease-in-out ${
-        document.documentElement.scrollTop > 265 &&
+        document.documentElement.scrollTop < 265 &&
         window.location.href !== `${window.location.origin}/blogs` &&
         window.location.href !== `${window.location.origin}/events`
-          ? 'bg-black'
-          : 'bg-none'
+          ? 'bg-none'
+          : 'bg-black'
       }`}
     >
       <a href={`${window.location.origin}/`}>
