@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
-import LazyLoad from 'react-lazyload';
 import ImageGallery from 'react-image-gallery';
 import AliceCarousel from 'react-alice-carousel';
 
@@ -77,14 +76,12 @@ const Footer = () => {
             autoPlay
           >
             {GALLERY_IMAGES.map(image => (
-              <LazyLoad height={110} key={image.id}>
-                <img
-                  className="rounded-lg"
-                  src={image.thumbnail}
-                  onDragStart={handleOnDragStart}
-                  alt="Slideshow"
-                />
-              </LazyLoad>
+              <img
+                className="rounded-lg"
+                src={image.thumbnail}
+                onDragStart={handleOnDragStart}
+                alt="Slideshow"
+              />
             ))}
           </AliceCarousel>
         </div>
