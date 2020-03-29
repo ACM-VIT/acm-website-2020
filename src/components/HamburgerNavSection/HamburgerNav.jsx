@@ -11,7 +11,11 @@ const HamburgerNav = () => {
     <div className="md:hidden">
       <Menu className="text-center text-white text-xl top-0">
         {links.map(link => (
-          <a key={link.id} href={`${window.location.origin}/#${link.scrollTo}`}>
+          <a
+            href={`${window.location.origin}/#${link.scrollTo}`}
+            className="focus:outline-none"
+            key={link.id}
+          >
             {link.text}
           </a>
         ))}

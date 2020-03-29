@@ -15,7 +15,7 @@ const TeamCard = props => {
   };
 
   return (
-    <div className="box-border shadow-card rounded-lg flex flex-col justify-around items-center w-48 m-6 py-8 px-4">
+    <div className="box-border shadow-small-card md:shadow-card rounded-lg flex flex-col justify-around items-center w-40 md:w-48 m-2 md:m-6 py-8 px-4">
       <div
         className="rounded-full h-32 w-32 text-white flex"
         style={dpStyles}
@@ -33,8 +33,8 @@ const TeamCard = props => {
           </a>
           <a
             href={memberInfo.linkedIn}
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <LinkedinIcon />
           </a>
