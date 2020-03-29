@@ -32,6 +32,7 @@ const About = ({ findOffset }) => {
                 data-aos="fade-up"
               >
                 <ImageGallery
+                  showFullscreenButton={false}
                   items={GALLERY_IMAGES}
                   showPlayButton={false}
                   slideInterval={5000}

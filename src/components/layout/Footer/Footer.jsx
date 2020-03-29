@@ -107,7 +107,11 @@ const Footer = () => {
               Developed By
             </h1>
             <div className="w-full">
-              <ImageGallery items={DEV_INFO} lazyLoad />
+              <ImageGallery
+                showFullscreenButton={false}
+                items={DEV_INFO}
+                lazyLoad
+              />
             </div>
           </div>
         </div>

@@ -672,7 +672,7 @@ const TEAM = [
     id: 7,
     name: 'Svetansu Singh',
     designation: 'Treasurer',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpeg`,
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpg`,
     github: 'https://github.com/Svetansu',
     linkedIn: 'https://www.linkedin.com/in/svetansu-singh-370aa8149/'
   },
@@ -720,7 +720,7 @@ const TEAM = [
     id: 13,
     name: 'Shivank Sahai',
     designation: 'Web Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpeg`,
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpg`,
     github: 'https://github.com/ShivankSahai',
     linkedIn: 'https://www.linkedin.com/in/shivank-sahai-3393b5172/'
   },
