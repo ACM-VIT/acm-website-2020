@@ -49,7 +49,6 @@ const Landing = ({ findOffset }) => {
         data-aos-duration="800"
       >
         <div className="flex p-8">
-          <div>____</div>
           <Typewriter
             options={{
               strings: LANDING_LINES,
