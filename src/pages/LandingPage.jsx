@@ -12,7 +12,6 @@ import Events from '../components/EventsSection/Events.section';
 import About from '../components/AboutSection/About.section';
 import Team from '../components/TeamSection/Team.section';
 import Blog from '../components/BlogSection/Blog.section';
-import ChatBot from '../components/ChatBotSection/ChatBot';
 
 // Alert options
 const options = {
@@ -25,14 +24,6 @@ const options = {
 const LandingPage = ({ findOffset }) => {
   return (
     <>
-      <iframe
-        allow="microphone;"
-        title="ChatBot"
-        width="350"
-        height="430"
-        className="bg-blue bottom-0 right-0 mr-0 mb-0 fixed"
-        src="https://console.dialogflow.com/api-client/demo/embedded/acm-faq"
-      />
       <AlertProvider template={AlertTemplate} {...options}>
         <Landing findOffset={offsetY => findOffset(offsetY, 0)} />
         <About findOffset={offsetY => findOffset(offsetY, 1)} />
