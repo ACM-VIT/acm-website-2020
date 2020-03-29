@@ -37,7 +37,7 @@ const LandingPage = ({ findOffset }) => {
         <Project findOffset={offsetY => findOffset(offsetY, 5)} />
         <Contact findOffset={offsetY => findOffset(offsetY, 6)} />
         <button
-          className={`fixed rounded-full mr-8 flex justify-center items-center right-0 z-50 focus:outline-none ${
+          className={`fixed rounded-full mr-8 flex justify-center items-center right-0 z-40 focus:outline-none ${
             !showBot
               ? `bottom-0 w-16 h-16 bg-acm-blue mb-8`
               : `top-0 bg-red-600 w-8 h-8 mt-8`
