@@ -1,15 +1,27 @@
-import React from 'react';
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-underscore-dangle */
+import React, { useEffect } from 'react';
 
 const ChatBot = () => {
-  return(
-    <iframe
-      allow="microphone;"
-      width="350"
-      title="ChatBot"
-      height="430"
-      src="https://console.dialogflow.com/api-client/demo/embedded/acm-faq"
-    />
-  );
+  useEffect(() => {
+    ((d, m) => {
+      const kommunicateSettings = {
+        appId: '2f2b729288c723e04d231ae647afbd436',
+        popupWidget: true,
+        automaticChatOpenOnNavigation: true
+      };
+      const s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://widget.kommunicate.io/v2/kommunicate.app';
+      const h = document.getElementsByTagName('head')[0];
+      h.appendChild(s);
+      window.kommunicate = m;
+      m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+  });
+
+  return <div className="z-40" />;
 };
 
 export default ChatBot;

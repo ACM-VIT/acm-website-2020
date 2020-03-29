@@ -81,6 +81,7 @@ const Footer = () => {
                 src={image.thumbnail}
                 onDragStart={handleOnDragStart}
                 alt="Slideshow"
+                key={image.id}
               />
             ))}
           </AliceCarousel>

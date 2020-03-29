@@ -239,6 +239,22 @@ const PROJECTS = [
       'A fun gaming website made during GraVitas (VIT’s technical fest) for one of ACM’s event called L2A that is learn to augment.',
     image: `${process.env.PUBLIC_URL}/assets/images/Headscratcher.jpg`,
     url: ''
+  },
+  {
+    id: 8,
+    title: 'Head Count',
+    description:
+      'This is a Revolutionary Android App that has provided with a new way of taking attendance in meeting, class rooms or in any event.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HeadCount.jpg`,
+    url: 'https://github.com/dev5151/HEAD-COUNT-ATTENDANCE.git'
+  },
+  {
+    id: 9,
+    title: 'C2C App',
+    description:
+      'This app was made to facilitate the participants and provide them with food during Code2Create which they could avail using the e-coupons',
+    image: `${process.env.PUBLIC_URL}/assets/images/C2CApp.jpg`,
+    url: 'https://github.com/reallyinvincible/Code2Create'
   }
 ];
 

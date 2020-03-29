@@ -554,6 +554,7 @@ samp {
  */
 
 img,
+<<<<<<< HEAD
 svg,
 video,
 canvas,
@@ -561,6 +562,9 @@ audio,
 iframe,
 embed,
 object {
+=======
+svg {
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
   display: block;
   vertical-align: middle;
 }
@@ -623,6 +627,7 @@ video {
   white-space: normal;
 }
 
+<<<<<<< HEAD
 .focus\:sr-only:focus {
   position: absolute;
   width: 1px;
@@ -644,6 +649,10 @@ video {
   overflow: visible;
   clip: auto;
   white-space: normal;
+=======
+.bg-acm-blue {
+  background-color: #0085b9;;
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
 }
 
 .appearance-none {
@@ -768,12 +777,17 @@ video {
   background-color: #ed8936;
 }
 
+<<<<<<< HEAD
 .bg-orange-600 {
   background-color: #dd6b20;
 }
 
 .bg-orange-700 {
   background-color: #c05621;
+=======
+.h-20 {
+  height: 5rem;
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
 }
 
 .bg-orange-800 {
@@ -864,6 +878,7 @@ video {
   background-color: #b2f5ea;
 }
 
+<<<<<<< HEAD
 .bg-teal-300 {
   background-color: #81e6d9;
 }
@@ -874,6 +889,10 @@ video {
 
 .bg-teal-500 {
   background-color: #38b2ac;
+=======
+.ml-16 {
+  margin-left: 4rem;
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
 }
 
 .bg-teal-600 {
@@ -968,12 +987,17 @@ video {
   background-color: #faf5ff;
 }
 
+<<<<<<< HEAD
 .bg-purple-200 {
   background-color: #e9d8fd;
 }
 
 .bg-purple-300 {
   background-color: #d6bcfa;
+=======
+.-top-24 {
+  top: -6rem;
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
 }
 
 .bg-purple-400 {
@@ -1060,12 +1084,17 @@ video {
   background-color: #edf2f7;
 }
 
+<<<<<<< HEAD
 .hover\:bg-gray-300:hover {
   background-color: #e2e8f0;
 }
 
 .hover\:bg-gray-400:hover {
   background-color: #cbd5e0;
+=======
+.w-32 {
+  width: 8rem;
+>>>>>>> da38c3a8f518360f16af4c298c268c543f4e4b7f
 }
 
 .hover\:bg-gray-500:hover {

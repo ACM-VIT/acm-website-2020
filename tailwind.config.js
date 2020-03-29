@@ -23,7 +23,8 @@ module.exports = {
       },
       textColor: {
         'acm-blue': '#0085b9;'
-      }
+      },
+      spacing: { 98: '24.5rem' }
     }
   },
   variants: { display: ['responsive', 'hover', 'focus'] },
