@@ -460,10 +460,6 @@ img {
   background-color: #fff;
 }
 
-.bg-red-600 {
-  background-color: #e53e3e;
-}
-
 .bg-acm-blue {
   background-color: #0085b9;;
 }
@@ -668,6 +664,10 @@ img {
   margin-right: auto;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -706,6 +706,10 @@ img {
 
 .mb-32 {
   margin-bottom: 8rem;
+}
+
+.mb-98 {
+  margin-bottom: 24.5rem;
 }
 
 .-mr-40 {

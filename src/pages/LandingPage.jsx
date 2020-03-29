@@ -37,10 +37,8 @@ const LandingPage = ({ findOffset }) => {
         <Project findOffset={offsetY => findOffset(offsetY, 5)} />
         <Contact findOffset={offsetY => findOffset(offsetY, 6)} />
         <button
-          className={`fixed rounded-full mr-8 flex justify-center items-center right-0 z-40 focus:outline-none ${
-            !showBot
-              ? `bottom-0 w-16 h-16 bg-acm-blue mb-8`
-              : `top-0 bg-red-600 w-8 h-8 mt-8`
+          className={`fixed rounded-full flex justify-center items-center right-0 z-40 focus:outline-none bottom-0 ${
+            !showBot ? `w-16 h-16 bg-acm-blue mr-8 mb-8` : `w-8 h-8 mr-2 mb-98`
           }`}
           type="button"
           onClick={() => setShowBot(!showBot)}
@@ -56,7 +54,7 @@ const LandingPage = ({ findOffset }) => {
             />
           )}
         </button>
-        <div className={!showBot ? 'hidden' : 'fixed bottom-0 right-0 z-50'}>
+        <div className={!showBot ? 'hidden' : 'fixed bottom-0 right-0 z-30'}>
           <ChatBot />
         </div>
       </AlertProvider>
