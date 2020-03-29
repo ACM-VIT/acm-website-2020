@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6ab0a74b44790c0598c353e5b1b20d0",
+    "revision": "2aaeb1fd94ee6b148cd71aec0a568f9d",
     "url": "/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.996a64ce.chunk.css"
   },
   {
-    "revision": "394e985dd310de899c4b",
-    "url": "/static/css/main.bba6c2a6.chunk.css"
+    "revision": "d7b13686235988408de7",
+    "url": "/static/css/main.c138032e.chunk.css"
   },
   {
     "revision": "77de850b3d1d270f916f",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.362ca1d7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "394e985dd310de899c4b",
-    "url": "/static/js/main.65003721.chunk.js"
+    "revision": "d7b13686235988408de7",
+    "url": "/static/js/main.155042f1.chunk.js"
   },
   {
     "revision": "13d99c70831769473a9b",
@@ -33,7 +33,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "21a1184148d11d67c19f5076b909d63b",
-    "url": "/static/media/CircularSpotifyTxT-Book.21a11841.ttf"
+    "url": "/static/media/CircularSpotifyBook.21a11841.ttf"
   },
   {
     "revision": "377fba5b8133b068fc7917007d0d1c1b",
