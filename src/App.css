@@ -5,8 +5,8 @@
 @import '~aos/dist/aos.css';
 
 @font-face {
-  font-family: myriadPro;
-  src: url(fonts/MYRIADPRO-REGULAR.OTF);
+  font-family: circularSpotify;
+  src: url('fonts/CircularSpotifyTxT-Book.ttf');
 }
 
 body,
@@ -16,7 +16,7 @@ html {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: myriadPro, sans-serif;
+  font-family: circularSpotify, sans-serif;
 }
 
 body::-webkit-scrollbar {
