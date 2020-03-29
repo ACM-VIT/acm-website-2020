@@ -691,6 +691,10 @@ img {
   margin-bottom: 8rem;
 }
 
+.-mb-4 {
+  margin-bottom: -1rem;
+}
+
 .-mr-40 {
   margin-right: -10rem;
 }
@@ -1010,6 +1014,11 @@ img {
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .md\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
   }
 
   .md\:mb-8 {

@@ -733,6 +733,33 @@ const TEAM = [
   }
 ];
 
+const DEV_INFO = [
+  {
+    id: 1,
+    original: `${process.env.PUBLIC_URL}/assets/images/Developer1.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Developer1Thumb.jpg`,
+    name: 'Priyanshu'
+  },
+  {
+    id: 2,
+    original: `${process.env.PUBLIC_URL}/assets/images/Developer2.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Developer2Thumb.jpg`,
+    name: 'Rithvik'
+  },
+  {
+    id: 3,
+    original: `${process.env.PUBLIC_URL}/assets/images/Developer3.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Developer3Thumb.jpg`,
+    name: 'Rohan'
+  },
+  {
+    id: 4,
+    original: `${process.env.PUBLIC_URL}/assets/images/Developer4.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Developer4Thumb.jpg`,
+    name: 'Shreyas'
+  }
+];
+
 export {
   LEFTS_AND_WIDTHS,
   CONTACT_DETAILS,
@@ -741,6 +768,7 @@ export {
   SOCIAL_LINKS,
   OFFSET_POS,
   PROJECTS,
+  DEV_INFO,
   FACULTY,
   EVENTS,
   ABOUT,

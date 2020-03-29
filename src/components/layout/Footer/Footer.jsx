@@ -6,7 +6,7 @@ import AliceCarousel from 'react-alice-carousel';
 import { ReactComponent as Email } from '../../../vectors/Email.svg';
 
 // Data
-import { GALLERY_IMAGES } from '../../../DataStore';
+import { DEV_INFO } from '../../../DataStore';
 
 // Prevent default action
 const handleOnDragStart = e => e.preventDefault();
@@ -62,6 +62,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-center items-center my-8 p-4 ">
+        <div className="-mb-4">Developed By</div>
         <div
           className="w-1/2 sm:w-1/3 md:w-1/2 rounded-lg overflow-hidden flex justify-center items-center mt-8"
           onClick={toggleOpen}
@@ -75,7 +76,7 @@ const Footer = () => {
             dotsDisabled
             autoPlay
           >
-            {GALLERY_IMAGES.map(image => (
+            {DEV_INFO.map(image => (
               <img
                 className="rounded-lg"
                 src={image.thumbnail}
@@ -103,9 +104,11 @@ const Footer = () => {
                 className="cursor-pointer"
               />
             </div>
-            <h1 className="font-white text-acm-blue text-2xl mb-4">Gallery</h1>
+            <h1 className="font-white text-acm-blue text-2xl mb-4">
+              Developed By
+            </h1>
             <div className="w-full">
-              <ImageGallery items={GALLERY_IMAGES} lazyLoad />
+              <ImageGallery items={DEV_INFO} lazyLoad />
             </div>
           </div>
         </div>
