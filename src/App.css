@@ -4,6 +4,7 @@
 @import '~react-vertical-timeline-component/style.min.css';
 @import '~aos/dist/aos.css';
 
+/* Fonts  */
 @font-face {
   font-family: circularSpotify;
   src: url('fonts/CircularSpotifyTxT-Book.ttf');
