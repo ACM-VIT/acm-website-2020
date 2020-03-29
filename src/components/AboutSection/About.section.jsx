@@ -33,7 +33,6 @@ const About = ({ findOffset }) => {
               >
                 <ImageGallery
                   items={GALLERY_IMAGES}
-                  lazyLoad
                   autoPlay
                   slideInterval={5000}
                   slideDuration={800}

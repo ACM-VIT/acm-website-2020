@@ -238,7 +238,7 @@ const PROJECTS = [
     description:
       'A fun gaming website made during GraVitas (VIT’s technical fest) for one of ACM’s event called L2A that is learn to augment.',
     image: `${process.env.PUBLIC_URL}/assets/images/Headscratcher.jpg`,
-    url: ''
+    url: 'http://hs.acmvit.in/'
   },
   {
     id: 8,
@@ -246,7 +246,7 @@ const PROJECTS = [
     description:
       'This is a Revolutionary Android App that has provided with a new way of taking attendance in meeting, class rooms or in any event.',
     image: `${process.env.PUBLIC_URL}/assets/images/HeadCount.jpg`,
-    url: 'https://github.com/dev5151/HEAD-COUNT-ATTENDANCE.git'
+    url: 'https://play.google.com/store/apps/details?id=com.acmvit.headcount'
   },
   {
     id: 9,
@@ -319,6 +319,7 @@ const EVENTS = [
     name: 'Reverse Coding',
     desc:
       'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
+    url: 'http://rcpc19.acmvit.in/',
     image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
     date: '20th October 2019'
   },
