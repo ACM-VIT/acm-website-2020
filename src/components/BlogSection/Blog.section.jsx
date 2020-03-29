@@ -30,10 +30,10 @@ const Blog = ({ findOffset }) => {
     >
       <SectionHeader>Blogs</SectionHeader>
       <div
-        className="flex"
-        data-aos="fade-up"
         data-aos-easing="ease-in-cubic"
         data-aos-duration="500"
+        data-aos="fade-up"
+        className="flex"
       >
         <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
           <div

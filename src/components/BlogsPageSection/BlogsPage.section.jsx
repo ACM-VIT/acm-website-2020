@@ -38,8 +38,8 @@ const BlogsPage = () => {
         <div className="flex justify-center sm:justify-end mt-8">
           <a
             href="https://medium.com/acmvit"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <div className="shadow-card rounded-lg flex justify-evenly items-center w-96 p-4">
               <div

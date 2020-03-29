@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 // Set offsetX and widths for each navlink
 export default (width, left, index, leftsAndWidths) => {
   const newLeftsAndWidths = [...leftsAndWidths];

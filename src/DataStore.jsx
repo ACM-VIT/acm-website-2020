@@ -215,7 +215,7 @@ const PROJECTS = [
     title: 'FreeSlot',
     description: 'A chrome extension to extract timetable from vtop.',
     image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
-    url: 'https://github.com/ACM-VIT/freeslotWebExtension'
+    url: 'https://freeslot.acmvit.in'
   },
   {
     id: 5,

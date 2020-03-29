@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 import { useAlert } from 'react-alert';
 import TextField from '@material-ui/core/TextField';
@@ -36,9 +35,9 @@ const ContactCard = () => {
     e.preventDefault();
 
     const emptyContacts = {
-      name: '',
+      message: '',
       email: '',
-      message: ''
+      name: ''
     };
 
     // Handle promises
@@ -49,7 +48,7 @@ const ContactCard = () => {
       })
       .catch(error => {
         alert.show('Incorrect values provided, please check your inputs.');
-        console.log(error);
+        console.error(error);
       });
   };
 
@@ -73,29 +72,29 @@ const ContactCard = () => {
           <form autoComplete="off" className="my-auto" onSubmit={onSubmit}>
             <div className="flex justify-center md:justify-start my-8">
               <TextField
+                onChange={e => onChange(e)}
                 id="standard-basic"
+                value={name}
                 label="Name"
                 name="name"
-                value={name}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">
               <TextField
+                onChange={e => onChange(e)}
                 id="standard-basic"
+                value={email}
                 label="Email"
                 name="email"
-                value={email}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">
               <TextField
-                id="standard-basic"
-                label="Text"
-                name="message"
-                value={message}
                 onChange={e => onChange(e)}
+                id="standard-basic"
+                value={message}
+                name="message"
+                label="Text"
               />
             </div>
             <SendButton />

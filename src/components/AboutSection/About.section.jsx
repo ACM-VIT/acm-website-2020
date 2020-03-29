@@ -27,16 +27,16 @@ const About = ({ findOffset }) => {
               <SectionHeader innerHeader={section.inner}>Gallery</SectionHeader>
               <div
                 className="mx-8 md:mx-64 rounded-lg overflow-hidden"
-                data-aos="fade-up"
                 data-aos-easing="ease-in-cubic"
                 data-aos-duration="500"
+                data-aos="fade-up"
               >
                 <ImageGallery
                   items={GALLERY_IMAGES}
-                  autoPlay
+                  showPlayButton={false}
                   slideInterval={5000}
                   slideDuration={800}
-                  showPlayButton={false}
+                  autoPlay
                 />
               </div>
             </>
@@ -46,9 +46,9 @@ const About = ({ findOffset }) => {
           </SectionHeader>
           <div
             className="text-xl text-justified m-4 mx-8"
-            data-aos="fade-up"
             data-aos-easing="ease-in-cubic"
             data-aos-duration="500"
+            data-aos="fade-up"
           >
             {section.text}
           </div>

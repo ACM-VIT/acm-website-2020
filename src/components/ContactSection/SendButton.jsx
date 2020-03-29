@@ -8,8 +8,8 @@ const SendButton = () => (
     >
       <img
         src={`${process.env.PUBLIC_URL}/assets/images/AirPlane.png`}
-        alt="Send"
         height="8px"
+        alt="Send"
       />
     </button>
   </div>

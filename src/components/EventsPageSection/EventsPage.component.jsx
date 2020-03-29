@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
+import PropTypes from 'prop-types';
 
 const EventsNet = props => {
   const { image, name, desc, url, date } = props;

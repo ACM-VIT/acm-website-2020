@@ -34,19 +34,19 @@ const Landing = ({ findOffset }) => {
     </div>
   ) : (
     <section
-      ref={el => offsetY(el, findOffset)}
       className="h-screen flex justify-center items-center bg-cover bg-center bg-no-repeat"
+      ref={el => offsetY(el, findOffset)}
+      data-aos-easing="ease-in-cubic"
       style={backgroundStyling}
+      data-aos-duration="1000"
       id="landing-section"
       data-aos="fade"
-      data-aos-easing="ease-in-cubic"
-      data-aos-duration="1000"
     >
       <h1
         className="text-3xl md:text-4xl text-white uppercase mx-4"
-        data-aos="fade-up"
         data-aos-easing="ease-in-cubic"
         data-aos-duration="800"
+        data-aos="fade-up"
       >
         <div className="flex p-8">
           <Typewriter

@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -47,12 +46,12 @@ const Navbar = ({ offsetPos }) => {
             )
               return (
                 <NavLink
-                  active={link.active}
-                  key={link.id}
-                  scrollTo={link.scrollTo}
                   getProps={(width, left) =>
                     setProperties(width, left, index, leftsAndWidths)
                   }
+                  scrollTo={link.scrollTo}
+                  active={link.active}
+                  key={link.id}
                 >
                   {link.text}
                 </NavLink>
@@ -60,12 +59,12 @@ const Navbar = ({ offsetPos }) => {
             if (index < 1)
               return (
                 <NavLink
-                  active={link.active}
-                  key={link.id}
-                  scrollTo={link.scrollTo}
                   getProps={(width, left) =>
                     setProperties(width, left, index, leftsAndWidths)
                   }
+                  scrollTo={link.scrollTo}
+                  active={link.active}
+                  key={link.id}
                 >
                   {link.text}
                 </NavLink>

@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
-import ImageGallery from 'react-image-gallery';
 import AliceCarousel from 'react-alice-carousel';
+import ImageGallery from 'react-image-gallery';
 
 import { ReactComponent as Email } from '../../../vectors/Email.svg';
 
@@ -27,8 +26,8 @@ const Footer = () => {
         >
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/ACMLogo.png`}
-            alt="ACM"
             className="w-64 h-20"
+            alt="ACM"
           />
         </a>
         <a
@@ -45,8 +44,8 @@ const Footer = () => {
         <a href="https://vit.ac.in" className="flex justify-center my-4">
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/VITLogo.png`}
-            alt="ACM"
             className="w-64 h-20"
+            alt="ACM"
           />
         </a>
         <div className="flex justify-center">
@@ -54,8 +53,8 @@ const Footer = () => {
           <div className="w-8 flex-shrink-0 flex justify-center items-center">
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/HeartEmoji.png`}
-              alt="Heart"
               className="w-4 flex-shrink-0"
+              alt="Heart"
             />
           </div>
           <span>by ACM-VIT</span>
@@ -78,9 +77,9 @@ const Footer = () => {
           >
             {DEV_INFO.map(image => (
               <img
+                onDragStart={handleOnDragStart}
                 className="rounded-lg"
                 src={image.thumbnail}
-                onDragStart={handleOnDragStart}
                 alt="Slideshow"
                 key={image.id}
               />
@@ -98,10 +97,10 @@ const Footer = () => {
             <div className="absolute right-0 top-0 mt-4 mr-4">
               <img
                 src={`${process.env.PUBLIC_URL}/assets/images/Close.png`}
-                alt="Close"
                 onClick={() => toggleOpen()}
-                type="button"
                 className="cursor-pointer"
+                type="button"
+                alt="Close"
               />
             </div>
             <h1 className="font-white text-acm-blue text-2xl mb-4">
