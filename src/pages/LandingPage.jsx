@@ -12,6 +12,7 @@ import Events from '../components/EventsSection/Events.section';
 import About from '../components/AboutSection/About.section';
 import Team from '../components/TeamSection/Team.section';
 import Blog from '../components/BlogSection/Blog.section';
+import ChatBot from '../components/ChatBotSection/ChatBot';
 import { ReactComponent as FAQ } from '../vectors/Chatbot.svg';
 
 // Alert options
