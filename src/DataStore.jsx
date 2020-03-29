@@ -191,7 +191,7 @@ const PROJECTS = [
   {
     id: 1,
     title: 'Octave',
-    description: "Music Webite for ACM's iconic Code2Create.",
+    description: "Music Website for ACM's iconic Code2Create.",
     image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
     url: 'https://octave.acmvit.in'
   },

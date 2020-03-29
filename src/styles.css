@@ -950,6 +950,10 @@ img {
   transition-duration: 200ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 /* Scrollbar  */
 
 .hide-scrollbar {
