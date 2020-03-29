@@ -21,7 +21,7 @@ const ChatBot = () => {
     })(document, window.kommunicate || {});
   });
 
-  return <div />;
+  return <div className="z-40" />;
 };
 
 export default ChatBot;
