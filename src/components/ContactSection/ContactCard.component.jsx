@@ -77,6 +77,7 @@ const ContactCard = () => {
                 label="Name"
                 name="name"
                 value={name}
+                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">

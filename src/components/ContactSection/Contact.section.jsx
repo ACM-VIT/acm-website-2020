@@ -14,6 +14,7 @@ const Contact = ({ findOffset }) => {
       className="mb-32"
       id="contact-section"
     >
+      <div className="h-32 w-full" />
       <ContactCard />
     </section>
   );

@@ -4,8 +4,8 @@ const ChatBot = () => {
   return(
     <iframe
       allow="microphone;"
-      title="ChatBot"
       width="350"
+      title="ChatBot"
       height="430"
       src="https://console.dialogflow.com/api-client/demo/embedded/acm-faq"
     />
