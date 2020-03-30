@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAlert } from 'react-alert';
+import { useAlert, positions, types } from 'react-alert';
 import TextField from '@material-ui/core/TextField';
 
 // Components
@@ -43,11 +43,17 @@ const ContactCard = () => {
     // Handle promises
     sendMail(contactDetails.name, contactDetails.email, contactDetails.message)
       .then(() => {
-        alert.show('Message sent');
+        alert.show('Message sent!', {
+          position: positions.BOTTOM_LEFT,
+          type: types.SUCCESS
+        });
         setContactDetails(emptyContacts);
       })
       .catch(error => {
-        alert.show('Incorrect values provided, please check your inputs.');
+        alert.show(
+          'Invalid input provided. Make sure your email is valid and the message is more than 5 characters.',
+          { type: types.ERROR }
+        );
         console.error(error);
       });
   };
