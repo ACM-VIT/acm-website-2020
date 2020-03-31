@@ -436,7 +436,7 @@ const ABOUT = [
         <br />
         <p>
           ACM-VIT has been the creator of websites that have garnered applaud
-          and awe, like “Pravega-Racing”, “Code-2-create” and many more. ACM-VIT
+          and awe, like “Pravega-Racing”, "Team Ojas, VIT", “Code-2-create” and many more. ACM-VIT
           has also made websites with the aim of using technology to make life
           simpler like “All About VIT” and “VIT Cabshare”. ACM-VIT continues to
           pursue projects with diligence and ambition. Technology is their
