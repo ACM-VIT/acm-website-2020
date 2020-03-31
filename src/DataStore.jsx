@@ -439,7 +439,7 @@ const ABOUT = [
           has also made websites with the aim of using technology to make life
           simpler like “All About VIT” and “VIT Cabshare”. ACM-VIT continues to
           pursue projects with diligence and ambition. Technology is their
-          cause, objective, vision and mission. Ask why? Look at their motto,
+          cause, objective, vision and mission. Ask why? Look at our motto,
           “Because Technology Matters”.
         </p>
       </>
