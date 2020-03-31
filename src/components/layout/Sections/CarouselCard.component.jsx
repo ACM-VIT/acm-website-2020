@@ -6,7 +6,7 @@ const CarouselCard = props => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="w-64 md:w-448 flex-shrink-0 shadow-card rounded-lg h-full mx-4 p-8">
+      <div className="w-64 md:w-448 flex-shrink-0 shadow-small-card md:shadow-card rounded-lg h-full mx-4 p-8">
         <div className="flex flex-col justify-between items-center h-full">
           <div className="flex flex-col md:flex-row items-end justify-center md:justify-between relative w-full">
             <div

@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 // Handle navbar events on scroll
 export default (links, setLinks) => {
   let highest = 0;

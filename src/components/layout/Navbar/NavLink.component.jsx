@@ -20,11 +20,11 @@ const NavLink = props => {
           window.location.href !== `${window.location.origin}/blogs` &&
           window.location.href !== `${window.location.origin}/events` &&
           'text-acm-blue'}`}
-        role="button"
-        tabIndex={0}
-        data-aos="zoom-in"
         data-aos-easing="ease-in-cubic"
         data-aos-duration="800"
+        data-aos="zoom-in"
+        role="button"
+        tabIndex={0}
       >
         {children}
       </div>

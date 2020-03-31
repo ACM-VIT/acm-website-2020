@@ -191,7 +191,7 @@ const PROJECTS = [
   {
     id: 1,
     title: 'Octave',
-    description: "Music Webite for ACM's iconic Code2Create.",
+    description: "Music Website for ACM's iconic Code2Create.",
     image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
     url: 'https://octave.acmvit.in'
   },
@@ -215,7 +215,7 @@ const PROJECTS = [
     title: 'FreeSlot',
     description: 'A chrome extension to extract timetable from vtop.',
     image: `${process.env.PUBLIC_URL}/assets/images/FreeSlot.png`,
-    url: 'https://github.com/ACM-VIT/freeslotWebExtension'
+    url: 'https://freeslot.acmvit.in'
   },
   {
     id: 5,
@@ -238,7 +238,7 @@ const PROJECTS = [
     description:
       'A fun gaming website made during GraVitas (VIT’s technical fest) for one of ACM’s event called L2A that is learn to augment.',
     image: `${process.env.PUBLIC_URL}/assets/images/Headscratcher.jpg`,
-    url: ''
+    url: 'http://hs.acmvit.in/'
   },
   {
     id: 8,
@@ -246,7 +246,7 @@ const PROJECTS = [
     description:
       'This is a Revolutionary Android App that has provided with a new way of taking attendance in meeting, class rooms or in any event.',
     image: `${process.env.PUBLIC_URL}/assets/images/HeadCount.jpg`,
-    url: 'https://github.com/dev5151/HEAD-COUNT-ATTENDANCE.git'
+    url: 'https://play.google.com/store/apps/details?id=com.acmvit.headcount'
   },
   {
     id: 9,
@@ -319,6 +319,7 @@ const EVENTS = [
     name: 'Reverse Coding',
     desc:
       'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
+    url: 'http://rcpc19.acmvit.in/',
     image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
     date: '20th October 2019'
   },
@@ -671,7 +672,7 @@ const TEAM = [
     id: 7,
     name: 'Svetansu Singh',
     designation: 'Treasurer',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpeg`,
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpg`,
     github: 'https://github.com/Svetansu',
     linkedIn: 'https://www.linkedin.com/in/svetansu-singh-370aa8149/'
   },
@@ -719,7 +720,7 @@ const TEAM = [
     id: 13,
     name: 'Shivank Sahai',
     designation: 'Web Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpeg`,
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpg`,
     github: 'https://github.com/ShivankSahai',
     linkedIn: 'https://www.linkedin.com/in/shivank-sahai-3393b5172/'
   },

@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
@@ -30,7 +29,15 @@ const Navbar = ({ offsetPos }) => {
   }, [offsetPos]);
 
   return (
-    <header className="hidden md:flex w-screen overflow-x-hidden bg-black text-white items-center justify-between fixed w-full top-0 z-30 py-4 px-16">
+    <header
+      className={`hidden md:flex w-screen overflow-x-hidden text-white items-center justify-between fixed w-full top-0 z-30 py-4 px-16 transition duration-500 ease-in-out ${
+        document.documentElement.scrollTop < 265 &&
+        window.location.href !== `${window.location.origin}/blogs` &&
+        window.location.href !== `${window.location.origin}/events`
+          ? 'bg-none'
+          : 'bg-black'
+      }`}
+    >
       <a href={`${window.location.origin}/`}>
         <AcmLogo />
       </a>
@@ -43,12 +50,12 @@ const Navbar = ({ offsetPos }) => {
             )
               return (
                 <NavLink
-                  active={link.active}
-                  key={link.id}
-                  scrollTo={link.scrollTo}
                   getProps={(width, left) =>
                     setProperties(width, left, index, leftsAndWidths)
                   }
+                  scrollTo={link.scrollTo}
+                  active={link.active}
+                  key={link.id}
                 >
                   {link.text}
                 </NavLink>
@@ -56,12 +63,12 @@ const Navbar = ({ offsetPos }) => {
             if (index < 1)
               return (
                 <NavLink
-                  active={link.active}
-                  key={link.id}
-                  scrollTo={link.scrollTo}
                   getProps={(width, left) =>
                     setProperties(width, left, index, leftsAndWidths)
                   }
+                  scrollTo={link.scrollTo}
+                  active={link.active}
+                  key={link.id}
                 >
                   {link.text}
                 </NavLink>

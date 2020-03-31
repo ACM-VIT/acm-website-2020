@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 export default (element, direction, speed, distance, step) => {
   // Handles scroll upon click
   let scrollAmount = 0;

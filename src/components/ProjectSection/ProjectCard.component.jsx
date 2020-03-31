@@ -6,7 +6,7 @@ const ProjectCard = props => {
 
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="w-64 md:w-448 h-full flex-shrink-0 p-8 shadow-card rounded-lg mx-4">
+      <div className="w-64 md:w-448 h-full flex-shrink-0 p-8 shadow-small-card md:shadow-card rounded-lg mx-4">
         <div
           className="w-full h-40 bg-center bg-cover bg-no-repeat"
           style={{

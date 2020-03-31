@@ -11,8 +11,8 @@ const Contact = ({ findOffset }) => {
   return (
     <section
       ref={el => offsetY(el, findOffset)}
-      className="mb-32"
       id="contact-section"
+      className="mb-32"
     >
       <div className="h-32 w-full" />
       <ContactCard />

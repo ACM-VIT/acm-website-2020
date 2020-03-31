@@ -1,6 +1,5 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
-import { useAlert } from 'react-alert';
+import { useAlert, positions, types } from 'react-alert';
 import TextField from '@material-ui/core/TextField';
 
 // Components
@@ -36,20 +35,26 @@ const ContactCard = () => {
     e.preventDefault();
 
     const emptyContacts = {
-      name: '',
+      message: '',
       email: '',
-      message: ''
+      name: ''
     };
 
     // Handle promises
     sendMail(contactDetails.name, contactDetails.email, contactDetails.message)
       .then(() => {
-        alert.show('Message sent');
+        alert.show('Message sent!', {
+          position: positions.BOTTOM_LEFT,
+          type: types.SUCCESS
+        });
         setContactDetails(emptyContacts);
       })
       .catch(error => {
-        alert.show('Incorrect values provided, please check your inputs.');
-        console.log(error);
+        alert.show(
+          'Invalid input provided. Make sure your email is valid and the message is more than 5 characters.',
+          { type: types.ERROR }
+        );
+        console.error(error);
       });
   };
 
@@ -73,29 +78,29 @@ const ContactCard = () => {
           <form autoComplete="off" className="my-auto" onSubmit={onSubmit}>
             <div className="flex justify-center md:justify-start my-8">
               <TextField
+                onChange={e => onChange(e)}
                 id="standard-basic"
+                value={name}
                 label="Name"
                 name="name"
-                value={name}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">
               <TextField
+                onChange={e => onChange(e)}
                 id="standard-basic"
+                value={email}
                 label="Email"
                 name="email"
-                value={email}
-                onChange={e => onChange(e)}
               />
             </div>
             <div className="my-8 flex justify-center md:justify-start">
               <TextField
-                id="standard-basic"
-                label="Text"
-                name="message"
-                value={message}
                 onChange={e => onChange(e)}
+                id="standard-basic"
+                value={message}
+                name="message"
+                label="Text"
               />
             </div>
             <SendButton />
