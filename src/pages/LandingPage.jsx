@@ -9,7 +9,6 @@ import Project from '../components/ProjectSection/Project.section';
 import Contact from '../components/ContactSection/Contact.section';
 import Events from '../components/EventsSection/Events.section';
 import About from '../components/AboutSection/About.section';
-import ChatBot from '../components/ChatBotSection/ChatBot';
 import Team from '../components/TeamSection/Team.section';
 import Blog from '../components/BlogSection/Blog.section';
 
@@ -23,7 +22,6 @@ const options = {
 
 const LandingPage = ({ findOffset }) => (
   <>
-    <ChatBot />
     <AlertProvider template={AlertTemplate} {...options}>
       <Landing findOffset={offsetY => findOffset(offsetY, 0)} />
       <About findOffset={offsetY => findOffset(offsetY, 1)} />
