@@ -436,12 +436,12 @@ const ABOUT = [
         <br />
         <p>
           ACM-VIT has been the creator of websites that have garnered applaud
-          and awe, like “Pravega-Racing”, "Team Ojas, VIT", “Code-2-create” and many more. ACM-VIT
-          has also made websites with the aim of using technology to make life
-          simpler like “All About VIT” and “VIT Cabshare”. ACM-VIT continues to
-          pursue projects with diligence and ambition. Technology is their
-          cause, objective, vision and mission. Ask why? Look at our motto,
-          “Because Technology Matters”.
+          and awe, like “Pravega-Racing”, &quot;Team Ojas, VIT&quot;,
+          “Code-2-create” and many more. ACM-VIT has also made websites with the
+          aim of using technology to make life simpler like “All About VIT” and
+          “VIT Cabshare”. ACM-VIT continues to pursue projects with diligence
+          and ambition. Technology is their cause, objective, vision and
+          mission. Ask why? Look at our motto, “Because Technology Matters”.
         </p>
       </>
     )
@@ -622,115 +622,123 @@ const BLOGS = [
 const TEAM = [
   {
     id: 1,
-    name: 'Kartik Soni',
-    designation: 'Chair',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Kartik.jpg`,
-    github: 'https://github.com/Kartik77',
-    linkedIn: 'https://www.linkedin.com/in/kartik-soni-0b627b148/b'
+    name: 'Sarthak Gupta',
+    designation: 'President',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sarthak.jpg`,
+    github: 'https://github.com/sarthakg04',
+    linkedIn: 'https://linkedin.com/in/sarthak-gupta-b615398b'
   },
   {
     id: 2,
-    name: 'Nimisha Bhatia',
+    name: 'Hrishita Chakrabarti',
     designation: 'Managing Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Nimisha.jpg`,
-    github: 'https://github.com/NIMZB',
-    linkedIn: 'https://www.linkedin.com/in/nimisha-bhatia-5b9b79155/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Hrishita.jpg`,
+    github: 'https://github.com/HrishitaC',
+    linkedIn: 'https://linkedin.com/in/hrishita-chakrabarti-a26018185'
   },
   {
     id: 3,
-    name: 'Shubham Awasthi',
+    name: 'Eesha Shetty',
     designation: 'Technical Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shubham.jpg`,
-    github: 'https://github.com/awasthishubh/',
-    linkedIn: 'https://www.linkedin.com/in/awasthishubh/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Eesha.png`,
+    github: 'https://github.com/eeshashetty',
+    linkedIn: 'https://linkedin.com/in/eeshashetty'
   },
   {
     id: 4,
-    name: 'Fiza Rasool',
+    name: 'Anjali Roy',
     designation: 'General Secretary',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Fiza.jpg`,
-    github: 'https://github.com/fizarasool27',
-    linkedIn: 'https://www.linkedin.com/in/fiza/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Anjali.jpg`,
+    github: 'https://github.com/Anjali2505',
+    linkedIn: 'https://linkedin.com/in/anjali-roy-b29814153'
   },
   {
     id: 5,
-    name: 'Aditya Srivastava',
+    name: 'Kashish Mittal',
     designation: 'Web-Master',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Aditya.jpg`,
-    github: 'https://github.com/AdityaSrivast',
-    linkedIn: 'https://www.linkedin.com/in/adityasrivast/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Kashish.jpg`,
+    github: 'https://github.com/KASHISH2000',
+    linkedIn: 'https://linkedin.com/in/kashish-mittal-profile'
   },
   {
     id: 6,
-    name: 'Sarthak Dandotiya',
+    name: 'Shovin Kakaraddi',
     designation: 'UI/UX Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sarthak.jpg`,
-    github: 'https://github.com/SarthakDandotiya/',
-    linkedIn: 'https://www.linkedin.com/in/sarthakdandotiya/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shovin.jpg`,
+    github: ' https://github.com/NIVOSH379',
+    linkedIn: 'https://in.linkedin.com/in/shovin-kakaraddi-30112718b'
   },
   {
     id: 7,
-    name: 'Svetansu Singh',
+    name: 'Dhruv Roy',
     designation: 'Treasurer',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Svetansu.jpg`,
-    github: 'https://github.com/Svetansu',
-    linkedIn: 'https://www.linkedin.com/in/svetansu-singh-370aa8149/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Dhruv.jpg`,
+    github: 'https://github.com/DhruvRoy247',
+    linkedIn: 'https://linkedin.com/mwlite/in/kumar-dhruv-roy-79633b166'
   },
   {
     id: 8,
-    name: 'Sparsh Srivastava',
+    name: 'Devansh Mehta',
     designation: 'App Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sparsh.jpg`,
-    github: 'https://github.com/reallyinvincible/',
-    linkedIn: 'https://www.linkedin.com/in/sparshsri'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Devansh.jpg`,
+    github: 'https://github.com/dev5151',
+    linkedIn: 'https://linkedin.com/in/devansh-mehta-181381167/'
   },
   {
     id: 9,
-    name: 'Subhaditya Mukherjee',
+    name: 'Iishi Patel',
     designation: 'Research Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Subhaditya.jpg`,
-    github: 'https://www.github.com/SubhadityaMukherjee',
-    linkedIn: 'https://www.linkedin.com/in/subhaditya-mukherjee-a36883100'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Iishi.jpg`,
+    github: 'https://github.com/iishipatel',
+    linkedIn: 'https://linkedin.com/in/iishi-patel-603411182'
   },
   {
     id: 10,
-    name: 'Rajat Gupta',
+    name: 'Nimit Jain',
     designation: 'Competetive Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Rajat.jpg`,
-    github: 'https://github.com/rajatg98',
-    linkedIn: 'https://linkedin.com/in/rajatg98'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Nimit.jpg`,
+    github: 'https://github.com/n4nimit2000',
+    linkedIn: 'https://linkedin.com/in/nimit-jain-6b5859172/'
   },
   {
     id: 11,
-    name: 'Madhur Dixit',
-    designation: 'Research Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Madhur.jpg`,
-    github: 'https://github.com/Chester-King',
-    linkedIn: 'https://www.linkedin.com/in/madhur-dixit-065907157/'
+    name: 'Jerelyn Preeja',
+    designation: 'ACM-W Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Jerelyn.jpg`,
+    github: 'https://github.com/TheWildWanderer',
+    linkedIn: 'https://linkedin.com/in/jerelyn-p-premjit-b92159184'
   },
   {
     id: 12,
-    name: 'Shrey Sindher',
+    name: 'Garima Bothra',
     designation: 'App Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shrey.jpg`,
-    github: 'https://github.com/ssindher11',
-    linkedIn: 'https://www.linkedin.com/in/shrey-sindher-0b3008167'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Garima.jpg`,
+    github: 'http://github.com/garima94921',
+    linkedIn: 'http://linkedin.com/in/garima-bothra'
   },
   {
     id: 13,
-    name: 'Shivank Sahai',
+    name: 'Elio Jordan Lopes',
     designation: 'Web Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shivank.jpg`,
-    github: 'https://github.com/ShivankSahai',
-    linkedIn: 'https://www.linkedin.com/in/shivank-sahai-3393b5172/'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Elio.png`,
+    github: 'https://github.com/lopeselio',
+    linkedIn: 'https://linkedin.com/mwlite/in/elio-jordan-lopes-5b1533149'
   },
   {
     id: 14,
-    name: 'Bhumij Gupta',
-    designation: 'Creative Head',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Bhumij.jpg`,
-    github: 'https://github.com/bhumijgupta/',
-    linkedIn: 'https://www.linkedin.com/in/bhumijgupta'
+    name: 'Siddharth Nahar',
+    designation: 'Competitive Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Siddharth.jpg`,
+    github: 'https://github.com/VickyNahar',
+    linkedIn: 'https://linkedin.com/in/sidharth-nahar-03013018b'
+  },
+  {
+    id: 15,
+    name: 'Sriya Reddi',
+    designation: 'Operations Head',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sriya.jpg`,
+    github: 'https://github.com/SriyaReddi',
+    linkedIn: 'https://in.linkedin.com/in/SriyaReddi'
   }
 ];
 
