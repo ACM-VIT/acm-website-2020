@@ -25,6 +25,7 @@ const EventsPage = () => {
             date={event.date}
             title={event.name}
             info={event.info}
+            modalImg={event.modalImg}
           />
         ))}
       </VerticalTimeline>

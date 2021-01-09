@@ -312,7 +312,8 @@ const EVENTS = [
     developer. She has had 3-4 years of experience in AR/VR/MR
     industry. She has created more then 40+ applications in
     AR/VR/MR/games, which also includes web XR applications.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/L2A.jpeg`
   },
   {
     id: 2,
@@ -327,7 +328,8 @@ const EVENTS = [
       `Mr Satyam Jindal a VIT alumnus currently working as a software developer at Amazon. He was one of the best coders of his year, winning awards at international competitions like CalHacks organized by UC Berkeley and coming in 3rd at the ICPC Chennai Provincial contest.
       He has a 5-star rating on CodeChef placing him in the top 1.3% and is in the top 3%tile on SPOJ. 
       `
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/L2C.png`
   },
   {
     id: 3,
@@ -344,7 +346,8 @@ const EVENTS = [
       second round was conducted on 20th December 2020. The entirety of the event was conducted
       online using Google Meet and a portal made by the ACM Technical Team. The essence of the
       event was to deduce the script code whose input-output pairs were given as questions.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/RC.jpeg`
   },
   {
     id: 4,
@@ -357,7 +360,8 @@ const EVENTS = [
     info: [
       `ACM VIT Student chapter conducted “Code Plus Plus”, a competitive coding contest. The five-hour competition aimed to challenge the mathematical and logical thinking skills of the participants. It was held on the HackerRank portal where the participants were awarded points based on the number of test cases they were able to run successfully. Moreover, a forum was created to post the editorials and answer queries.`,
       `The event was a huge success with the participants appreciating the difficulty of the problem statements.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/CPP.png`
   },
   {
     id: 5,
@@ -370,7 +374,8 @@ const EVENTS = [
     info: [
       `ACM-VIT Student chapter organized “The Neural Hack”, a 48 hour long hackathon which focussed on problems in the field of AI. The hackathon was open to all and was conducted on Devpost. A discord channel was created for the participants to discuss and converse.`,
       `The guest speaker, Dr. Ganna Pogrebna held a session for the participants and also served as the judge for the event. The event was well-received by the participants.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/Neural.jpeg`
   },
   {
     id: 6,
@@ -383,7 +388,8 @@ const EVENTS = [
     info: [
       `ACM VIT Student chapter conducted “Apptitude”, a 24hrs app hackathon where the participants had to build innovative apps with the certain constraints given to them. It was held on the “Apptitude” app which was made by our app team.`,
       `A discord channel was created for the participants to engage in discussion and to answer queries. The event was a resounding success and we received rave reviews from our participants.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/Apptitude.jpeg`
   },
   {
     id: 7,
@@ -396,7 +402,8 @@ const EVENTS = [
     info: [
       `A thrilling tech sprint awaited by numerous innovators, Code2Create witnesses a plethora of skill sets. Code2Create is all about designing, building and creating; a place where graphic designers, software developers, app developers, and web developers collaborate intensively on projects.`,
       `Code2Create'20 saw more than 500 participants. The judges were renowned experts in their respective fields. Participants from across the country indulge in 36 hours of intense brainstorming, designing, creating and testing, along with some engaging and very enjoyable side quests.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/C2C.jpeg`
   },
   {
     id: 8,
@@ -409,7 +416,8 @@ const EVENTS = [
     info: [
       `We were delighted to use the "Hour of Code" as an opportunity to enlighten the little minds at The NSM school, with a little about computers and code. After sitting them down for a good introduction, we were glad to help them with the fun coding games we had in store for them and soon had a little quiz about computers the form of the game.`,
       `After bringing our fun 2 hour learning session with the kids to an end, we took the time out to get to know the kids a bit with a little chat and had a round of fun and dance before we bid them goodbye.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/HOC.jpeg`
   },
   {
     id: 9,
@@ -422,7 +430,8 @@ const EVENTS = [
     info: [
       `ACM VIT Student chapter conducted “KICK START LEARN”, an online session where we gave an intro to the different tech domains namely App, Web, Research, Design and Competitive. It was an interactive session held on Microsoft teams, where the participants were actively engaging in discussions.`,
       `The event was a great success and we received laudable feedback from our participants.`
-    ]
+    ],
+    modalImg: `${process.env.PUBLIC_URL}/assets/images/KSL.jpeg`
   }
 ];
 

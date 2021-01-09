@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 const CarouselCard = props => {
-  const { children, image, desc, url, title, info, date } = props;
+  const { children, image, desc, url, title, info, date, modalImg } = props;
 
   return (
     <>
@@ -42,7 +42,12 @@ const CarouselCard = props => {
         >
           <div className="p-6">
             <h1 className="mb-2 text-2xl font-bold">{title}</h1>
-            <h3 className="mb-4 text-lg font-bold">{date}</h3>
+            <h3 className="mb-2 text-lg font-bold">{date}</h3>
+            <img
+              src={modalImg}
+              alt="Event"
+              className="w-3/4 mx-auto mt-2 mb-4"
+            />
             {info.map(para => (
               <p className="mb-2">{para}</p>
             ))}
@@ -79,7 +84,8 @@ CarouselCard.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
   info: PropTypes.arrayOf(PropTypes.any),
-  date: PropTypes.string
+  date: PropTypes.string,
+  modalImg: PropTypes.string.isRequired
 };
 
 export default CarouselCard;

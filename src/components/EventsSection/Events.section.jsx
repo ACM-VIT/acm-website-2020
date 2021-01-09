@@ -61,6 +61,7 @@ const Events = ({ findOffset }) => {
                 title={event.name}
                 info={event.info}
                 date={event.date}
+                modalImg={event.modalImg}
               >
                 {event.name}
               </CarouselCard>

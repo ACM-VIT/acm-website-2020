@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 const EventsNet = props => {
-  const { image, name, desc, date, title, info } = props;
+  const { image, name, desc, date, title, info, modalImg } = props;
 
   return (
     <VerticalTimelineElement
@@ -40,7 +40,8 @@ const EventsNet = props => {
       >
         <div className="p-6">
           <h1 className="mb-2 text-2xl font-bold">{title}</h1>
-          <h3 className="mb-4 text-lg font-bold">{date}</h3>
+          <h3 className="mb-2 text-lg font-bold">{date}</h3>
+          <img src={modalImg} alt="Event" className="w-3/4 mx-auto mt-2 mb-4" />
           {info.map(para => (
             <p className="mb-2">{para}</p>
           ))}
@@ -56,7 +57,8 @@ EventsNet.propTypes = {
   desc: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  info: PropTypes.arrayOf(PropTypes.any).isRequired
+  info: PropTypes.arrayOf(PropTypes.any).isRequired,
+  modalImg: PropTypes.string.isRequired
 };
 
 EventsNet.defaultProps = { url: '' };
