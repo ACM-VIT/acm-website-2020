@@ -287,97 +287,86 @@ const FACULTY = [
 
 const EVENTS = [
   {
-    id: 10,
-    name: 'Code2Create 4.0',
+    id: 1,
+    name: 'Learn to Augment',
     desc:
-      'The wait is finally over, find yourself a team and get ready to lock horns with the wittiest and most creative minds across South India.',
-    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
-    url: 'https://c2c.acmvit.in',
-    date: '7th - 9th March 2020'
+      'ACM VIT conducted its workshop ‘Learn to Augment’ on 4th October which took a deep dive into the world of Augmented reality.',
+    image: `${process.env.PUBLIC_URL}/assets/images/L2A.svg`,
+    url: '',
+    date: '4th October, 2020',
+    info: [
+      `ACM VIT conducted its workshop ‘Learn to Augment’ on 4th October
+    which took a deep dive into the world of Augmented reality. The
+    workshop started with the guest speaker, Ms. Neha Tiwari, who
+    talked about AR and also answered the participant’s queries. It
+    was then followed by a session where the participants were taught,
+    all the basics about spark AR and how to make innovative filters
+    using the spark AR software. A fun mini hack was then conducted
+    where the participants had a chance to showcase the skills they
+    learnt in the workshop.`,
+      `The Guest speaker for the workshop was Neha Tiwari, a senior unity
+    developer. She has had 3-4 years of experience in AR/VR/MR
+    industry. She has created more then 40+ applications in
+    AR/VR/MR/games, which also includes web XR applications.`
+    ]
   },
   {
-    id: 9,
-    name: 'Code Your Dreams',
+    id: 2,
+    name: 'Learn to Compete',
     desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HourOfCode.png`,
-    url: 'https://www.instagram.com/p/B6Ggh8Bhwtd/?utm_source=ig_web_copy_link',
-    date: '15th December 2019'
-  },
-  {
-    id: 8,
-    name: 'Local Hack Day',
-    desc:
-      'Presenting Local Hack Day Build - a one day hack where you think out the tangible or even the untangible!',
-    image: `${process.env.PUBLIC_URL}/assets/images/LocalHackDay.png`,
-    url:
-      'https://www.instagram.com/p/B5fUVn5hKYN/?utm_source=ig_web_button_share_sheet',
-    date: '8th December 2019'
-  },
-  {
-    id: 7,
-    name: 'Reverse Coding',
-    desc:
-      'ACM-VIT presents a whole reversal of your conventional perspective with our innovative event, Reverse Coding!',
-    url: 'http://rcpc19.acmvit.in/',
-    image: `${process.env.PUBLIC_URL}/assets/images/ReverseCoding.png`,
-    date: '20th October 2019'
-  },
-  {
-    id: 6,
-    name: 'Learn To Compete',
-    desc:
-      'Learn To Compete is an exclusive competitive coding workshop, designed for the aspiring coders within you.',
-    image: `${process.env.PUBLIC_URL}/assets/images/LearnToCompete.png`,
-    url:
-      'https://www.instagram.com/p/B2HiyflBI-X/?utm_source=ig_web_button_share_sheet',
-    date: '21st September 2019'
-  },
-  {
-    id: 5,
-    name: 'Learn To Augment',
-    desc:
-      'Through Learn to Augment, ACM-VIT would like to provide you the opportunity to dive deeper into augmented reality.',
-    image: `${process.env.PUBLIC_URL}/assets/images/LearnToAugment.png`,
-    url: 'https://www.instagram.com/p/B14GIqLhEBZ/?utm_source=ig_web_copy_link',
-    date: '31st August 2019'
-  },
-  {
-    id: 4,
-    name: 'Competitive Coding Cometh(by Coding Blocks)',
-    desc:
-      'We have for you the co-founder and mentor of Coding Blocks, Prateek Narang to impart his knowledge to the beginners and experts alike.',
-    image: `${process.env.PUBLIC_URL}/assets/images/CodingBlocks.png`,
-    url: 'https://c3.acmvit.in/',
-    date: '20th July 2019'
+      'Learn to Compete - a two-day workshop wherein participants were taught a few common tricks and algorithms needed in Competitive Programming.',
+    image: `${process.env.PUBLIC_URL}/assets/images/L2C.svg`,
+    url: '',
+    date: '2nd – 3rd October, 2020',
+    info: [
+      `Learn to Compete - a two-day workshop wherein participants were taught a few common tricks and algorithms needed in Competitive Programming. This was be followed by an intense 12- hour long code-a-thon to get a hands-on experience with competitive programming.`,
+      `Mr Satyam Jindal a VIT alumnus currently working as a software developer at Amazon. He was one of the best coders of his year, winning awards at international competitions like CalHacks organized by UC Berkeley and coming in 3rd at the ICPC Chennai Provincial contest.
+      He has a 5-star rating on CodeChef placing him in the top 1.3% and is in the top 3%tile on SPOJ. 
+      `
+    ]
   },
   {
     id: 3,
-    name: 'Code2Create 3.0',
+    name: 'Reverse Coding',
     desc:
-      'Code2Create is back with its third rendition, and it is bigger and greater than ever before!',
-    image: `${process.env.PUBLIC_URL}/assets/images/Code2Create.png`,
-    url: 'https://c2c.acmvit.in',
-    date: '22nd - 24th March 2019'
-  },
-
-  {
-    id: 2,
-    name: 'Code Your Dreams',
-    desc:
-      'An initiative by ACM-VIT in collaboration with NGOs to enlighten the little minds at various schools about computers and coding.',
-    image: `${process.env.PUBLIC_URL}/assets/images/HourOfCode.png`,
-    url: 'https://www.instagram.com/p/BufpgVtlarK/?utm_source=ig_web_copy_link',
-    date: '26th, 27th February 2019 and 1st March 2019'
+      'Reverse Coding was a competitive coding event held over the course of two rounds. Participants could participate individually or as a team of two.',
+    image: `${process.env.PUBLIC_URL}/assets/images/RC.svg`,
+    url: '',
+    date: '18th December, 2020 and 20th December, 2020',
+    info: [
+      `Reverse Coding was a competitive coding event held over the course of two rounds. Participants
+      could participate individually or as a team of two. The first round was conducted on the 18th of
+      December 2020. The 15 best-performing teams of round one advanced to round two. The
+      second round was conducted on 20th December 2020. The entirety of the event was conducted
+      online using Google Meet and a portal made by the ACM Technical Team. The essence of the
+      event was to deduce the script code whose input-output pairs were given as questions.`
+    ]
   },
   {
-    id: 1,
-    name: 'Codart',
+    id: 4,
+    name: 'Code++',
     desc:
-      'The name says it all. Codart = Code + Dart. This unconventional combination provides for an amusing experience, and it is the USP of this very unique coding contest.',
-    image: `${process.env.PUBLIC_URL}/assets/images/CodeArt.png`,
-    url: 'https://codart.acmvit.in/',
-    date: '3rd February 2019'
+      'The five-hour competition aimed to challenge the mathematical and logical thinking skills of the participants.',
+    image: `${process.env.PUBLIC_URL}/assets/images/CPP.svg`,
+    url: '',
+    date: '2nd May, 2020',
+    info: [
+      `ACM VIT Student chapter conducted “Code Plus Plus”, a competitive coding contest. The five-hour competition aimed to challenge the mathematical and logical thinking skills of the participants. It was held on the HackerRank portal where the participants were awarded points based on the number of test cases they were able to run successfully. Moreover, a forum was created to post the editorials and answer queries.`,
+      `The event was a huge success with the participants appreciating the difficulty of the problem statements.`
+    ]
+  },
+  {
+    id: 5,
+    name: 'Neural Hack',
+    desc:
+      'ACM-VIT Student Chapter organized “The Neural Hack”, a 48 hour long hackathon which focussed on problems in the field of AI.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Neural.svg`,
+    url: '',
+    date: '4th and 5th December, 2020',
+    info: [
+      `ACM-VIT Student chapter organized “The Neural Hack”, a 48 hour long hackathon which focussed on problems in the field of AI. The hackathon was open to all and was conducted on Devpost. A discord channel was created for the participants to discuss and converse.`,
+      ` The guest speaker, Dr. Ganna Pogrebna held a session for the participants and also served as the judge for the event. The event was well-received by the participants.`
+    ]
   }
 ];
 

@@ -59,6 +59,9 @@ const Events = ({ findOffset }) => {
                   desc={event.desc}
                   url={event.url}
                   key={event.id}
+                  title={event.name}
+                  info={event.info}
+                  date={event.date}
                 >
                   {event.name}
                 </CarouselCard>
