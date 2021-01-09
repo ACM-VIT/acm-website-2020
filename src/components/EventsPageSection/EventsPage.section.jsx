@@ -23,6 +23,8 @@ const EventsPage = () => {
             image={event.image}
             url={event.url}
             date={event.date}
+            title={event.name}
+            info={event.info}
           />
         ))}
       </VerticalTimeline>
