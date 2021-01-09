@@ -168,12 +168,20 @@ const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
 
 const PROJECTS = [
   {
-    id: -1,
+    id: -2,
     title: 'Hacktoberfest 2020',
     description:
       'Collection of projects developed cheering the biggest open source fest.',
     image: `${process.env.PUBLIC_URL}/assets/images/hacktober.jpg`,
     url: 'https://github.com/acm-vit'
+  },
+  {
+    id: -1,
+    title: 'Reverse Coding',
+    description:
+      'Tech stack written for our flagship event, ReverseCoding 2020. Handles user interaction, team operations, IDE and online judge.',
+    image: `${process.env.PUBLIC_URL}/assets/images/rc.jpg`,
+    url: 'https://github.com/ACM-VIT/rc-heimdall'
   },
   {
     id: 0,
