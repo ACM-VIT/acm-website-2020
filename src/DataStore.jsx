@@ -1,8 +1,8 @@
+import React from 'react';
 import { ReactComponent as Email } from './vectors/Email.svg';
 import { ReactComponent as Facebook } from './vectors/Facebook.svg';
 // Components
 import { ReactComponent as Instagram } from './vectors/Instagram.svg';
-import React from 'react';
 import { ReactComponent as Twitter } from './vectors/Twitter.svg';
 
 const LEFTS_AND_WIDTHS = [
@@ -361,7 +361,59 @@ const EVENTS = [
     date: '4th and 5th December, 2020',
     info: [
       `ACM-VIT Student chapter organized “The Neural Hack”, a 48 hour long hackathon which focussed on problems in the field of AI. The hackathon was open to all and was conducted on Devpost. A discord channel was created for the participants to discuss and converse.`,
-      ` The guest speaker, Dr. Ganna Pogrebna held a session for the participants and also served as the judge for the event. The event was well-received by the participants.`
+      `The guest speaker, Dr. Ganna Pogrebna held a session for the participants and also served as the judge for the event. The event was well-received by the participants.`
+    ]
+  },
+  {
+    id: 6,
+    name: 'Apptitude',
+    desc:
+      'Apptitude was a 24hrs app hackathon where the participants had to build innovative apps with the certain constraints given to them.',
+    image: `${process.env.PUBLIC_URL}/assets/images/Apptitude.svg`,
+    url: '',
+    date: '26th and 27th July, 2020',
+    info: [
+      `ACM VIT Student chapter conducted “Apptitude”, a 24hrs app hackathon where the participants had to build innovative apps with the certain constraints given to them. It was held on the “Apptitude” app which was made by our app team.`,
+      `A discord channel was created for the participants to engage in discussion and to answer queries. The event was a resounding success and we received rave reviews from our participants.`
+    ]
+  },
+  {
+    id: 7,
+    name: 'Code2Create',
+    desc:
+      'Code2Create, a 36 hour long hackathon, is ACM-VIT’s flagship event and one of the grandest annual events hosted in VIT.',
+    image: `${process.env.PUBLIC_URL}/assets/images/C2C.svg`,
+    url: '',
+    date: '7th - 9th March, 2019',
+    info: [
+      `A thrilling tech sprint awaited by numerous innovators, Code2Create witnesses a plethora of skill sets. Code2Create is all about designing, building and creating; a place where graphic designers, software developers, app developers, and web developers collaborate intensively on projects.`,
+      `Code2Create'20 saw more than 500 participants. The judges were renowned experts in their respective fields. Participants from across the country indulge in 36 hours of intense brainstorming, designing, creating and testing, along with some engaging and very enjoyable side quests.`
+    ]
+  },
+  {
+    id: 8,
+    name: 'Hour of Code',
+    desc:
+      'Hour of Code was an opportunity to enlighten the little minds at The NSM school, with a little about computers and code.',
+    image: `${process.env.PUBLIC_URL}/assets/images/HOC.svg`,
+    url: '',
+    date: '15th December, 2019',
+    info: [
+      `We were delighted to use the "Hour of Code" as an opportunity to enlighten the little minds at The NSM school, with a little about computers and code. After sitting them down for a good introduction, we were glad to help them with the fun coding games we had in store for them and soon had a little quiz about computers the form of the game.`,
+      `After bringing our fun 2 hour learning session with the kids to an end, we took the time out to get to know the kids a bit with a little chat and had a round of fun and dance before we bid them goodbye.`
+    ]
+  },
+  {
+    id: 9,
+    name: 'Kick Start Learn',
+    desc:
+      'KICK START LEARN was an online session where we gave an intro to the different tech domains namely App, Web, Research, Design and Competitive.',
+    image: `${process.env.PUBLIC_URL}/assets/images/KSL.svg`,
+    url: '',
+    date: '18th November, 2020',
+    info: [
+      `ACM VIT Student chapter conducted “KICK START LEARN”, an online session where we gave an intro to the different tech domains namely App, Web, Research, Design and Competitive. It was an interactive session held on Microsoft teams, where the participants were actively engaging in discussions.`,
+      `The event was a great success and we received laudable feedback from our participants.`
     ]
   }
 ];

@@ -52,21 +52,19 @@ const Events = ({ findOffset }) => {
           }}
         >
           {events.map((event, index) => {
-            if (index < 6)
-              return (
-                <CarouselCard
-                  image={event.image}
-                  desc={event.desc}
-                  url={event.url}
-                  key={event.id}
-                  title={event.name}
-                  info={event.info}
-                  date={event.date}
-                >
-                  {event.name}
-                </CarouselCard>
-              );
-            return false;
+            return (
+              <CarouselCard
+                image={event.image}
+                desc={event.desc}
+                url={event.url}
+                key={event.id}
+                title={event.name}
+                info={event.info}
+                date={event.date}
+              >
+                {event.name}
+              </CarouselCard>
+            );
           })}
         </div>
         <div className="hidden md:flex flex-shrink-0 justify-center items-center w-32">
