@@ -127,26 +127,6 @@ const GALLERY_IMAGES = [
     id: 21,
     original: `${process.env.PUBLIC_URL}/assets/images/Slideshow21.jpg`,
     thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow21.jpg`
-  },
-  {
-    id: 22,
-    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow22.jpg`,
-    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow22.jpg`
-  },
-  {
-    id: 23,
-    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow23.jpg`,
-    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow23.jpg`
-  },
-  {
-    id: 24,
-    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow24.jpg`,
-    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow24.jpg`
-  },
-  {
-    id: 25,
-    original: `${process.env.PUBLIC_URL}/assets/images/Slideshow25.jpg`,
-    thumbnail: `${process.env.PUBLIC_URL}/assets/images/Slideshow25.jpg`
   }
 ];
 
