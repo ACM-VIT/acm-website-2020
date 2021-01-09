@@ -735,12 +735,12 @@ img {
   padding: 0;
 }
 
-.p-4 {
-  padding: 1rem;
+.p-2 {
+  padding: 0.5rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .p-8 {
@@ -861,6 +861,10 @@ img {
 
 .text-sm {
   font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
 }
 
 .text-lg {
@@ -998,6 +1002,30 @@ img {
   .sm\:mx-40 {
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+  }
+
+  .sm\:text-lg {
+    font-size: 1.125rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
   }
 
   .sm\:w-1\/3 {

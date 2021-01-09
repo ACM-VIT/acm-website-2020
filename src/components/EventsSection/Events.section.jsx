@@ -51,7 +51,7 @@ const Events = ({ findOffset }) => {
             node = el;
           }}
         >
-          {events.map((event, index) => {
+          {events.map(event => {
             return (
               <CarouselCard
                 image={event.image}
