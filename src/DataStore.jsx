@@ -1,9 +1,8 @@
-import React from 'react';
-
+import { ReactComponent as Email } from './vectors/Email.svg';
+import { ReactComponent as Facebook } from './vectors/Facebook.svg';
 // Components
 import { ReactComponent as Instagram } from './vectors/Instagram.svg';
-import { ReactComponent as Facebook } from './vectors/Facebook.svg';
-import { ReactComponent as Email } from './vectors/Email.svg';
+import React from 'react';
 import { ReactComponent as Twitter } from './vectors/Twitter.svg';
 
 const LEFTS_AND_WIDTHS = [
@@ -169,12 +168,29 @@ const OFFSET_POS = [0, 0, 0, 0, 0, 0, 0];
 
 const PROJECTS = [
   {
+    id: -1,
+    title: 'Hacktoberfest 2020',
+    description:
+      'Collection of projects developed cheering the biggest open source fest.',
+    image: `${process.env.PUBLIC_URL}/assets/images/hacktober.jpg`,
+    url: 'https://github.com/acm-vit'
+  },
+  {
+    id: 0,
+    title: 'Dolos',
+    description:
+      'A friendly data mocking service to generate random data in the required format.',
+    image: `${process.env.PUBLIC_URL}/assets/images/dolos.jpg`,
+    url: 'https://github.com/ACM-VIT/dolos'
+  },
+  {
     id: 1,
     title: 'Octave',
     description: "Music Website for ACM's iconic Code2Create.",
     image: `${process.env.PUBLIC_URL}/assets/images/Octave.png`,
     url: 'https://octave.acmvit.in'
   },
+
   {
     id: 2,
     title: 'Research Projects',
