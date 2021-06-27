@@ -27,7 +27,7 @@ const TeamCard = props => {
         <div className="text-center text-sm">{memberInfo.designation}</div>
       </div>
       {memberInfo.github && (
-        <div className="flex justify-center items-center w-full mt-4">
+        <div className="flex justify-center items-center w-full mt-4 hidden">
           <a href={memberInfo.github} target="_blank" rel="noopener noreferrer">
             <GithubIcon />
           </a>

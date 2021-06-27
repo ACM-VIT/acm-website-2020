@@ -676,123 +676,139 @@ const BLOGS = [
 const TEAM = [
   {
     id: 1,
-    name: 'Sarthak Gupta',
-    designation: 'President',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sarthak.jpg`,
-    github: 'https://github.com/sarthakg04',
-    linkedIn: 'https://linkedin.com/in/sarthak-gupta-b615398b'
+    name: 'Rishabh Keshan',
+    designation: 'Chairperson',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Rishabh.png`,
+    github: 'https://github.com/rishabhkeshan',
+    linkedIn: 'https://www.linkedin.com/in/rishabhkeshan/'
   },
   {
     id: 2,
-    name: 'Hrishita Chakrabarti',
+    name: 'Diya Pal',
     designation: 'Managing Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Hrishita.jpg`,
-    github: 'https://github.com/HrishitaC',
-    linkedIn: 'https://linkedin.com/in/hrishita-chakrabarti-a26018185'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Diya.png`,
+    github: 'https://github.com/deeyaa01',
+    linkedIn: 'https://www.linkedin.com/in/diya-pal-4b885a1b8/'
   },
   {
     id: 3,
-    name: 'Eesha Shetty',
+    name: 'Yash Kumar Verma',
     designation: 'Technical Director',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Eesha.png`,
-    github: 'https://github.com/eeshashetty',
-    linkedIn: 'https://linkedin.com/in/eeshashetty'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Yash.png`,
+    github: 'https://github.com/yashkumarverma',
+    linkedIn: 'https://www.linkedin.com/in/yash-kumar-verma/'
   },
   {
     id: 4,
-    name: 'Anjali Roy',
+    name: 'Ishi Yadav',
     designation: 'General Secretary',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Anjali.jpg`,
-    github: 'https://github.com/Anjali2505',
-    linkedIn: 'https://linkedin.com/in/anjali-roy-b29814153'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Ishi.png`,
+    github: 'https://github.com/ishiyadav',
+    linkedIn: 'https://www.linkedin.com/in/ishiyadav/'
   },
   {
     id: 5,
-    name: 'Kashish Mittal',
+    name: 'Shreyas Khan',
     designation: 'Web-Master',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Kashish.jpg`,
-    github: 'https://github.com/KASHISH2000',
-    linkedIn: 'https://linkedin.com/in/kashish-mittal-profile'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shreyas.png`,
+    github: 'https://github.com/HelixW',
+    linkedIn: 'https://linkedin.com/in/shreyaskhan'
   },
   {
     id: 6,
-    name: 'Shovin Kakaraddi',
-    designation: 'UI/UX Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Shovin.jpg`,
-    github: ' https://github.com/NIVOSH379',
-    linkedIn: 'https://in.linkedin.com/in/shovin-kakaraddi-30112718b'
+    name: 'Hemanth Krishna',
+    designation: 'App Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Hemanth.png`,
+    github: 'https://github.com/DarthBenro008',
+    linkedIn: 'https://www.linkedin.com/in/darthbenro008/'
   },
   {
     id: 7,
-    name: 'Dhruv Roy',
-    designation: 'Treasurer',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Dhruv.jpg`,
-    github: 'https://github.com/DhruvRoy247',
-    linkedIn: 'https://linkedin.com/mwlite/in/kumar-dhruv-roy-79633b166'
+    name: 'Rohan Arora',
+    designation: 'Design Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Rohan.png`,
+    github: '#',
+    linkedIn: 'https://www.linkedin.com/in/rohanxdesign'
   },
   {
     id: 8,
-    name: 'Devansh Mehta',
-    designation: 'App Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Devansh.jpg`,
-    github: 'https://github.com/dev5151',
-    linkedIn: 'https://linkedin.com/in/devansh-mehta-181381167/'
+    name: 'Vinamra Khoria',
+    designation: 'Research Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Vinamra.png`,
+    github: 'https://github.com/vinamrak',
+    linkedIn: 'https://www.linkedin.com/in/vinamra-khoria-214339175/'
   },
   {
     id: 9,
-    name: 'Iishi Patel',
-    designation: 'Research Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Iishi.jpg`,
-    github: 'https://github.com/iishipatel',
-    linkedIn: 'https://linkedin.com/in/iishi-patel-603411182'
+    name: 'Ansh Sharma',
+    designation: 'Competetive Lead',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Ansh.png`,
+    github: '#',
+    linkedIn: '#'
   },
   {
     id: 10,
-    name: 'Nimit Jain',
-    designation: 'Competetive Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Nimit.jpg`,
-    github: 'https://github.com/n4nimit2000',
-    linkedIn: 'https://linkedin.com/in/nimit-jain-6b5859172/'
+    name: 'Deepankar Jain',
+    designation: 'Treasurer',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Deepankar.png`,
+    github: 'https://github.com/decipher07',
+    linkedIn: 'https://www.linkedin.com/in/decipher07/'
   },
   {
     id: 11,
-    name: 'Jerelyn Preeja',
-    designation: 'ACM-W Lead',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Jerelyn.jpg`,
-    github: 'https://github.com/TheWildWanderer',
-    linkedIn: 'https://linkedin.com/in/jerelyn-p-premjit-b92159184'
+    name: 'Amit Krishna A',
+    designation: 'App Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Amit.png`,
+    github: '#',
+    linkedIn: '#'
   },
   {
     id: 12,
-    name: 'Garima Bothra',
-    designation: 'App Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Garima.jpg`,
-    github: 'http://github.com/garima94921',
-    linkedIn: 'http://linkedin.com/in/garima-bothra'
+    name: 'Anmol Bhardwaj',
+    designation: 'Design Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Anmol.png`,
+    github: '#',
+    linkedIn: '#'
   },
   {
     id: 13,
-    name: 'Elio Jordan Lopes',
-    designation: 'Web Projects Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Elio.png`,
-    github: 'https://github.com/lopeselio',
-    linkedIn: 'https://linkedin.com/mwlite/in/elio-jordan-lopes-5b1533149'
+    name: 'Aryan Vats',
+    designation: 'Research Guide',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Aryan.png`,
+    github: 'https://github.com/avats101',
+    linkedIn: 'https://www.linkedin.com/in/aryan-vats/'
   },
   {
     id: 14,
-    name: 'Siddharth Nahar',
+    name: 'Sarthak Bhardwaj',
     designation: 'Competitive Guide',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Siddharth.jpg`,
-    github: 'https://github.com/VickyNahar',
-    linkedIn: 'https://linkedin.com/in/sidharth-nahar-03013018b'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sarthak.png`,
+    github: '#',
+    linkedIn: '#'
   },
   {
     id: 15,
-    name: 'Sriya Reddi',
+    name: 'Rishav Jain',
     designation: 'Operations Head',
-    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Sriya.jpg`,
-    github: 'https://github.com/SriyaReddi',
-    linkedIn: 'https://in.linkedin.com/in/SriyaReddi'
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Rishav.png`,
+    github: '#',
+    linkedIn: '#'
+  },
+  {
+    id: 16,
+    name: 'Anusha Verma Chandraju',
+    designation: 'ACM-W Chair',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Anusha.png`,
+    github: 'https://github.com/anushavc',
+    linkedIn: 'https://www.linkedin.com/in/anusha-verma-chandraju/'
+  },
+  {
+    id: 17,
+    name: 'Aritri Basu',
+    designation: 'ACM-W General Secretary',
+    avatarURL: `${process.env.PUBLIC_URL}/assets/images/Aritri.png`,
+    github: '#',
+    linkedIn: '#'
   }
 ];
 
