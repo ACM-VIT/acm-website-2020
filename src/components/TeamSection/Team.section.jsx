@@ -9,10 +9,11 @@ import TeamCard from './TeamCard.component';
 import offsetY from '../../utils/offsetY';
 
 // Data
-import { FACULTY, TEAM } from '../../DataStore';
+import { FACULTY, TEAM, ACMWTEAM } from '../../DataStore';
 
 const Team = ({ findOffset }) => {
   const [ACMTeam] = useState(TEAM);
+  const [ACMWTeam] = useState(ACMWTEAM);
   const [faculties] = useState(FACULTY);
 
   return (
@@ -34,6 +35,11 @@ const Team = ({ findOffset }) => {
         </div>
         <div className="flex flex-row justify-center flex-wrap">
           {ACMTeam.map(member => (
+            <TeamCard memberInfo={member} key={member.id} />
+          ))}
+        </div>
+        <div className="flex flex-row justify-center flex-wrap">
+          {ACMWTeam.map(member => (
             <TeamCard memberInfo={member} key={member.id} />
           ))}
         </div>
