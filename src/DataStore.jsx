@@ -588,6 +588,45 @@ const LINKS = [
 const BLOGS = [
   {
     id: 1,
+    name: 'Getting started with Neural Networks',
+    desc:
+      'Neural networks are a set of algorithms, modeled loosely after the human brain, that...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/getting-started-with-neural-networks-3e9af6c837db'
+  },
+  {
+    id: 2,
+    name: 'Jetpack Compose: Build Better Apps Faster',
+    desc: 'Jetpack Compose is a modern toolkit for building native Android UI. It simplifies...',
+      image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/jetpack-compose-build-better-apps-faster-23869369f476'
+  },
+  {
+    id: 3,
+    name: 'POP! - Portfolio Optimization in Python',
+    desc: 
+      'When we invest our money an age-old idiom comes to mind, “Do not put all eggs in one basket.” Therefore...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/pop-python-optimization-in-python-647ee3366edf'
+  },
+  {
+    id: 4,
+    name: 'How I coded an iOS app in 20 minutes',
+    desc:
+      'Want to create your own iOS App that fetches news from your favorite news websites?',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/how-i-coded-an-ios-app-in-20-minutes-830c1e894579'
+  },
+  {
+    id: 5,
+    name: 'Restful CRUD API with hapi.js',
+    desc:
+      'Hapi.js (shorthand for Http-API, pronounced happy and also known as hapi) is an open-source...',
+    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
+    url: 'https://medium.com/acmvit/restful-crud-api-with-hapi-js-c92edd36d8df'
+  },
+  {
+    id: 6,
     name: 'Li-Fi:The Future Of Internet',
     desc:
       'Imagine a time when each of the lightbulbs in your house is a source of Internet. Imagine a scenario where, standing...',
@@ -595,7 +634,7 @@ const BLOGS = [
     url: 'https://medium.com/acmvit/li-fi-the-future-of-internet-e573eab6bd0d'
   },
   {
-    id: 2,
+    id: 7,
     name: 'Lottie Animations',
     desc:
       'Lottie is a mobile library for Android and iOS that parses Adobe After Effects animations exported as json...',
@@ -604,7 +643,7 @@ const BLOGS = [
       'https://medium.com/acmvit/getting-started-with-lottie-animations-android-2c225ad2c467'
   },
   {
-    id: 3,
+    id: 8,
     name: 'How to project an image...',
     desc:
       'We all have come across and used web apps where we can insert our pictures into other background images like...',
@@ -613,7 +652,7 @@ const BLOGS = [
       'https://medium.com/acmvit/how-to-project-an-image-in-perspective-view-of-a-background-image-opencv-python-d101bdf966bc'
   },
   {
-    id: 4,
+    id: 9,
     name: 'Bring out your Inner Technocrat',
     desc:
       'Remember the good old days when human interactions happened in real life and not via a screen? The...',
@@ -622,7 +661,7 @@ const BLOGS = [
       'https://medium.com/acmvit/bring-out-your-inner-technocrat-b7da5f50190c'
   },
   {
-    id: 5,
+    id: 10,
     name: 'The Infinite Art Machine',
     desc:
       'From time immemorial, humans have tried to be creative. We started with cave paintings and now...',
@@ -630,7 +669,7 @@ const BLOGS = [
     url: 'https://medium.com/acmvit/the-infinite-art-machine-3a2decab85d9'
   },
   {
-    id: 6,
+    id: 11,
     name: 'The Future Of Software Bugs',
     desc:
       'A software bug is an error, a flaw or a fault in a computer program or software system that causes the app...',
@@ -638,7 +677,7 @@ const BLOGS = [
     url: 'https://medium.com/acmvit/the-future-of-software-bugs-4f8891184bdf'
   },
   {
-    id: 7,
+    id: 12,
     name: 'Bash — Geek Mode On',
     desc:
       'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
@@ -646,15 +685,7 @@ const BLOGS = [
     url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
   },
   {
-    id: 8,
-    name: 'Bash — Geek Mode On',
-    desc:
-      'Shell? Well sorry, this is a technical blog so I am not talking about the beach. I am talking about this shell...',
-    image: `${process.env.PUBLIC_URL}/assets/images/Medium.png`,
-    url: 'https://medium.com/acmvit/bash-geek-mode-on-b3d2d14e37e1'
-  },
-  {
-    id: 9,
+    id: 13,
     name: 'Hyperloop',
     desc:
       'Since the very beginning of civilization, people have been discovering and inventing new ways of transportation...',
@@ -663,7 +694,7 @@ const BLOGS = [
       'https://medium.com/acmvit/hyperloop-future-of-ultra-high-speed-transport-system-457b09cc86cd'
   },
   {
-    id: 10,
+    id: 14,
     name: 'Chirp',
     desc:
       'Chirp SDKs take data, convert it into sound, which nearby devices decode seamlessly back into data. It...',
